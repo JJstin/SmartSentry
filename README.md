@@ -16,7 +16,3 @@ This project aims to develop an intelligent multi-sensor security camera system 
    git clone https://github.com/JJstin/SmartSentry.git
    ```
 
-2. Navigate to the project directory:
-    ```bash
-    cd project-name
-    ```
