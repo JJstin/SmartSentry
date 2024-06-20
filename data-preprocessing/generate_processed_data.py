@@ -7,8 +7,8 @@ import argparse
 import shutil
 
 # Constants
-ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-TEMP_DIR = os.path.join(ROOT_DIR, 'datasets', 'temp')  # Temporary directory to store all images
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+TEMP_DIR = os.path.join(ROOT_DIR, 'datasets', 'processed_raw')  # Temporary directory to store all images
 OUTPUT_DIR = os.path.join(ROOT_DIR, 'datasets', 'processed')
 TRAIN_DIR = os.path.join(OUTPUT_DIR, 'train')
 VAL_DIR = os.path.join(OUTPUT_DIR, 'val')
@@ -21,13 +21,10 @@ os.makedirs(TEST_DIR, exist_ok=True)
 
 def clear_directory(directory):
     """Clear all files in the given directory."""
-    if os.path.exists(directory):
-        for filename in os.listdir(directory):
-            file_path = os.path.join(directory, filename)
-            if os.path.isfile(file_path) or os.path.islink(file_path):
-                os.unlink(file_path)
-            elif os.path.isdir(file_path):
-                shutil.rmtree(file_path)
+    if not os.path.exists(directory) or not os.path.isdir(directory):
+        return
+    shutil.rmtree(directory)
+    os.makedirs(directory)
 
 def split_data(all_images, x):
     # Shuffle and pick the first x images if x is specified and less than total images

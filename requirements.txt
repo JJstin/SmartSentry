@@ -4,3 +4,4 @@ pillow
 torchvision
 torch
 scikit-learn
+opencv-python

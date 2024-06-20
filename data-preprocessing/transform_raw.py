@@ -7,7 +7,7 @@ import argparse
 
 # Constants
 IMAGE_SIZE = 160
-ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 INPUT_DIR = os.path.join(ROOT_DIR, 'datasets', 'raw')
 TEMP_DIR = os.path.join(ROOT_DIR, 'datasets', 'processed_raw')  # Directory to store all transformed raw images
 
@@ -25,13 +25,17 @@ transform = transforms.Compose([
 
 def clear_directory(directory):
     """Clear all files in the given directory."""
-    if os.path.exists(directory):
-        for filename in os.listdir(directory):
-            file_path = os.path.join(directory, filename)
-            if os.path.isfile(file_path) or os.path.islink(file_path):
-                os.unlink(file_path)
-            elif os.path.isdir(file_path):
-                shutil.rmtree(file_path)
+    # if os.path.exists(directory):
+    #     for filename in os.listdir(directory):
+    #         file_path = os.path.join(directory, filename)
+    #         if os.path.isfile(file_path) or os.path.islink(file_path):
+    #             os.unlink(file_path)
+    #         elif os.path.isdir(file_path):
+    #             shutil.rmtree(file_path)
+    if not os.path.exists(directory) or not os.path.isdir(directory):
+        return
+    shutil.rmtree(directory)
+    os.makedirs(directory)
 
 def process_images(input_dir, temp_dir, augment=True):
     filenames = os.listdir(input_dir)
