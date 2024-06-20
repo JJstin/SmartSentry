@@ -7,10 +7,10 @@ import os
 import shutil
 
 # Directory to save frames with detected faces
-save_dir = 'detected_faces'
-# if os.path.exists(save_dir):
-#     shutil.rmtree(save_dir)
-# os.makedirs(save_dir)
+save_dir = '../../datasets'
+if os.path.exists(save_dir):
+    shutil.rmtree(save_dir)
+os.makedirs(save_dir)
 
 # Load the pre-trained Haar Cascade classifier for face detection
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -39,7 +39,7 @@ while cap.isOpened():
         # Perform aspect ratio check (assuming face boxes are more square)
         if 0.75 < w/h < 1.33:
             cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
-            
+
             # Crop the face frame out
             face_frame = frame[y:y+h, x:x+w]
 

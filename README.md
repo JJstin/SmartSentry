@@ -7,7 +7,7 @@ This project aims to develop an intelligent multi-sensor security camera system 
 ## Getting Started
 
 ### Prerequisites
- - 
+ -
 
 ### Installation
 
@@ -15,4 +15,7 @@ This project aims to develop an intelligent multi-sensor security camera system 
    ```bash
    git clone https://github.com/JJstin/SmartSentry.git
    ```
-
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
