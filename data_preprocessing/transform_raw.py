@@ -8,11 +8,8 @@ import argparse
 # Constants
 IMAGE_SIZE = 160
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-INPUT_DIR = os.path.join(ROOT_DIR, 'datasets', 'raw')
-TEMP_DIR = os.path.join(ROOT_DIR, 'datasets', 'processed_raw')  # Directory to store all transformed raw images
-
-# Ensure directories exist
-os.makedirs(TEMP_DIR, exist_ok=True)
+INPUT_DIR = os.path.join(ROOT_DIR, 'datasets', 'joe', 'ordered')
+TEMP_DIR = os.path.join(ROOT_DIR, 'datasets', 'joe', 'processed_raw')  # Directory to store all transformed raw images
 
 # Image transformations for augmentation
 transform = transforms.Compose([
@@ -37,7 +34,11 @@ def clear_directory(directory):
     shutil.rmtree(directory)
     os.makedirs(directory)
 
-def process_images(input_dir, temp_dir, augment=True):
+def process_images(input_dir, temp_dir, augment=True, clear=False):
+    # Ensure directories exist
+    if clear:
+        clear_directory(TEMP_DIR)
+    os.makedirs(TEMP_DIR, exist_ok=True)
     filenames = os.listdir(input_dir)
     all_images = []
 
@@ -62,16 +63,18 @@ def process_images(input_dir, temp_dir, augment=True):
 
     return all_images
 
-# Parse command-line arguments
-parser = argparse.ArgumentParser(description="Process raw images and save to temp directory.")
-parser.add_argument('--clear_temp', action='store_true', help="Clear the temporary directory before processing")
-args = parser.parse_args()
+if __name__ == "__main__":
+    # Parse command-line arguments
+    parser = argparse.ArgumentParser(description="Process raw images and save to temp directory.")
+    parser.add_argument('--clear_temp', action='store_true', help="Clear the temporary directory before processing")
+    args = parser.parse_args()
 
-# Clear the temp directory if the flag is set
-if args.clear_temp:
-    clear_directory(TEMP_DIR)
+    # Clear the temp directory if the flag is set
+    clear = False
+    if args.clear_temp:
+        clear = True
 
-# Process and collect all images in a temp directory
-process_images(INPUT_DIR, TEMP_DIR, augment=True)
+    # Process and collect all images in a temp directory
+    process_images(INPUT_DIR, TEMP_DIR, augment=True, clear=clear)
 
 
