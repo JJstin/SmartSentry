@@ -3,12 +3,12 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Jul 10 15:45:40 2024
-# Process ID: 10692
-# Current directory: C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1
+# Start of session at: Wed Jul 10 16:49:32 2024
+# Process ID: 3620
+# Current directory: C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1
 # Command line: vivado.exe -log camera_design_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source camera_design_processing_system7_0_0.tcl
-# Log file: C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1/camera_design_processing_system7_0_0.vds
-# Journal file: C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1\vivado.jou
+# Log file: C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1/camera_design_processing_system7_0_0.vds
+# Journal file: C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1\vivado.jou
 # Running On        :GJiang-Laptop
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
@@ -19,6 +19,6 @@
 # Host memory       :34228 MB
 # Swap memory       :34359 MB
 # Total Virtual     :68587 MB
-# Available Virtual :54375 MB
+# Available Virtual :49845 MB
 #-----------------------------------------------------------
 source camera_design_processing_system7_0_0.tcl -notrace

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/camera_design_processing_system7_0_0.xdc rfile:../../../camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/camera_design_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/camera_design_processing_system7_0_0.xdc rfile:../../../camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/camera_design_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
 current_instance inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.3

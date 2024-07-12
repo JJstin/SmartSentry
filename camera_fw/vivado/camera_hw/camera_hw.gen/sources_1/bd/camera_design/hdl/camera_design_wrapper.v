@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-//Date        : Wed Jul 10 16:22:28 2024
+//Date        : Wed Jul 10 16:49:00 2024
 //Host        : GJiang-Laptop running 64-bit major release  (build 9200)
 //Command     : generate_target camera_design_wrapper.bd
 //Design      : camera_design_wrapper

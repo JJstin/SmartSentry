@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vitis/camera_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/standalone/src/arm/common
+# Install script for directory: C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/standalone/src/arm/common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vitis/camera_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/arm/common/gcc/cmake_install.cmake")
+  include("C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/arm/common/gcc/cmake_install.cmake")
 endif()
 

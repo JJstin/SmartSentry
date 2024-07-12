@@ -8,12 +8,12 @@
   **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Wed Jul 10 15:45:40 2024
+  **** Start of session at: Wed Jul 10 16:49:32 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source camera_design_processing_system7_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 614.016 ; gain = 199.863
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 613.293 ; gain = 198.441
 Command: synth_design -top camera_design_processing_system7_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
@@ -22,34 +22,34 @@ INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18740
+INFO: [Synth 8-7075] Helper process launched with PID 7520
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1509.508 ; gain = 447.148
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1511.145 ; gain = 448.363
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'camera_design_processing_system7_0_0' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-6157] synthesizing module 'camera_design_processing_system7_0_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1951]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1951]
 INFO: [Synth 8-6157] synthesizing module 'BIBUF' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1598]
 INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1598]
 INFO: [Synth 8-6157] synthesizing module 'PS7' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:115258]
 INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:115258]
-INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:323]
-INFO: [Synth 8-6155] done synthesizing module 'camera_design_processing_system7_0_0' (0#1) [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:329]
+INFO: [Synth 8-6155] done synthesizing module 'camera_design_processing_system7_0_0' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/synth/camera_design_processing_system7_0_0.v:53]
 WARNING: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ENET0_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ENET0_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
@@ -130,55 +130,55 @@ WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1627.285 ; gain = 564.926
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1627.504 ; gain = 564.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1627.285 ; gain = 564.926
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1627.504 ; gain = 564.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1627.285 ; gain = 564.926
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1627.504 ; gain = 564.723
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1627.285 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1627.504 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/camera_design_processing_system7_0_0.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/camera_design_processing_system7_0_0.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/camera_design_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/camera_design_processing_system7_0_0_propImpl.xdc].
+Parsing XDC File [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/camera_design_processing_system7_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/camera_design_processing_system7_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_processing_system7_0_0/camera_design_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/camera_design_processing_system7_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/camera_design_processing_system7_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1648.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1643.582 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1648.879 ; gain = 0.039
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1643.582 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1648.879 ; gain = 586.520
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1643.582 ; gain = 580.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1648.879 ; gain = 586.520
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1643.582 ; gain = 580.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1648.879 ; gain = 586.520
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1643.582 ; gain = 580.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1648.879 ; gain = 586.520
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1643.582 ; gain = 580.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -223,25 +223,25 @@ WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5
 WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1648.879 ; gain = 586.520
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1643.582 ; gain = 580.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1721.688 ; gain = 659.328
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1713.441 ; gain = 650.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1741.660 ; gain = 679.301
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1733.422 ; gain = 670.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1744.000 ; gain = 681.641
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1735.645 ; gain = 672.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -259,37 +259,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1758.766 ; gain = 696.406
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1750.414 ; gain = 687.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1758.766 ; gain = 696.406
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1750.414 ; gain = 687.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1758.766 ; gain = 696.406
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1750.414 ; gain = 687.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1758.766 ; gain = 696.406
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1750.414 ; gain = 687.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1758.766 ; gain = 696.406
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1750.414 ; gain = 687.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1758.766 ; gain = 696.406
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1750.414 ; gain = 687.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -311,25 +311,25 @@ Report Cell Usage:
 |4     |PS7   |     1|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1758.766 ; gain = 696.406
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1750.414 ; gain = 687.633
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 80 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1758.766 ; gain = 674.812
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1758.766 ; gain = 696.406
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1750.414 ; gain = 671.555
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1750.414 ; gain = 687.633
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1758.766 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1750.414 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1771.551 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1763.223 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: f145bd98
+Synth Design complete | Checksum: ab4773e4
 INFO: [Common 17-83] Releasing license: Synthesis
 26 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1771.551 ; gain = 1138.617
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1771.551 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1/camera_design_processing_system7_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1763.223 ; gain = 1129.188
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1763.223 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1/camera_design_processing_system7_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file camera_design_processing_system7_0_0_utilization_synth.rpt -pb camera_design_processing_system7_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jul 10 15:46:37 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 10 16:50:27 2024...

@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/impl_1/camera_design_wrapper.tcl"
+  variable script "C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/impl_1/camera_design_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -97,6 +97,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -113,16 +114,16 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.cache/wt [current_project]
-  set_property parent.project_path C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.xpr [current_project]
-  set_property ip_output_repo C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.cache/wt [current_project]
+  set_property parent.project_path C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.xpr [current_project]
+  set_property ip_output_repo C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/camera_design_wrapper.dcp
+  add_files -quiet C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/camera_design_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/sources_1/bd/camera_design/camera_design.bd
+  add_files C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/sources_1/bd/camera_design/camera_design.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
 OPTRACE "read constraints: implementation" END { }

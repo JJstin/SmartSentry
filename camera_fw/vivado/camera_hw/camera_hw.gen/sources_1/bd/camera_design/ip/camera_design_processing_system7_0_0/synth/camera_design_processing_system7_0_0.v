@@ -58,6 +58,9 @@ NS_CHECK=0,C_USE_DEFAULT_ACP_USER_VAL=0,C_S_AXI_ACP_ARUSER_VAL=31,C_S_AXI_ACP_AW
 LE_TXN=1,C_GP1_EN_MODIFIABLE_TXN=1}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module camera_design_processing_system7_0_0 (
+  TTC0_WAVE0_OUT,
+  TTC0_WAVE1_OUT,
+  TTC0_WAVE2_OUT,
   USB0_PORT_INDCTL,
   USB0_VBUS_PWRSELECT,
   USB0_VBUS_PWRFAULT,
@@ -125,6 +128,9 @@ module camera_design_processing_system7_0_0 (
   PS_PORB
 );
 
+output wire TTC0_WAVE0_OUT;
+output wire TTC0_WAVE1_OUT;
+output wire TTC0_WAVE2_OUT;
 (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 PORT_INDCTL" *)
 output wire [1 : 0] USB0_PORT_INDCTL;
 (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRSELECT" *)
@@ -464,9 +470,9 @@ inout wire PS_PORB;
     .UART1_DSRN(1'B0),
     .UART1_RIN(1'B0),
     .UART1_RX(1'B1),
-    .TTC0_WAVE0_OUT(),
-    .TTC0_WAVE1_OUT(),
-    .TTC0_WAVE2_OUT(),
+    .TTC0_WAVE0_OUT(TTC0_WAVE0_OUT),
+    .TTC0_WAVE1_OUT(TTC0_WAVE1_OUT),
+    .TTC0_WAVE2_OUT(TTC0_WAVE2_OUT),
     .TTC0_CLK0_IN(1'B0),
     .TTC0_CLK1_IN(1'B0),
     .TTC0_CLK2_IN(1'B0),

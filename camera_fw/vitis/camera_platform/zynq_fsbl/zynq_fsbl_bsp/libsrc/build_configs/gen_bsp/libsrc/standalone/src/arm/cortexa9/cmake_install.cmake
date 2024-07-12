@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/cortexa9
+# Install script for directory: C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/cortexa9
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/arm/cortexa9/gcc/cmake_install.cmake")
+  include("C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/arm/cortexa9/gcc/cmake_install.cmake")
 endif()
 

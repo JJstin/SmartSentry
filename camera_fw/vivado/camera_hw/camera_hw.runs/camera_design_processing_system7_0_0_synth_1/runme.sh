@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1'
+HD_PWD='C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_processing_system7_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -10,4 +10,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_desi
 # IP: bd/camera_design/ip/camera_design_proc_sys_reset_0_0/camera_design_proc_sys_reset_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_proc_sys_reset_0_0 || ORIG_REF_NAME==camera_design_proc_sys_reset_0_0} -quiet] -quiet
 
-# XDC: c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/camera_design_ooc.xdc
+# XDC: c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/camera_design_ooc.xdc

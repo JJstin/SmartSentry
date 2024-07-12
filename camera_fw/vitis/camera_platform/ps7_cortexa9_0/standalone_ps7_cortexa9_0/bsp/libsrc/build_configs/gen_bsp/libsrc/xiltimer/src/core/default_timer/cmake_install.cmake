@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vitis/camera_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/xiltimer/src/core/default_timer
+# Install script for directory: C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/xiltimer/src/core/default_timer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
