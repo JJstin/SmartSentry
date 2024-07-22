@@ -97,7 +97,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -118,6 +117,7 @@ OPTRACE "set parameters" START { }
   set_property parent.project_path C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.xpr [current_project]
   set_property ip_output_repo C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/camera_design_wrapper.dcp
@@ -126,6 +126,7 @@ OPTRACE "add files" START { }
   add_files C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/sources_1/bd/camera_design/camera_design.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
+  read_xdc C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/constrs_1/new/pynq_z2_constraints.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
@@ -291,6 +292,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force -no_partial_mmi camera_design_wrapper.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }

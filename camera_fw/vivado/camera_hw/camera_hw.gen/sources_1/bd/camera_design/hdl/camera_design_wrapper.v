@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-//Date        : Wed Jul 10 16:49:00 2024
+//Date        : Mon Jul 22 01:15:33 2024
 //Host        : GJiang-Laptop running 64-bit major release  (build 9200)
 //Command     : generate_target camera_design_wrapper.bd
 //Design      : camera_design_wrapper
@@ -31,7 +31,9 @@ module camera_design_wrapper
     FIXED_IO_mio,
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
-    FIXED_IO_ps_srstb);
+    FIXED_IO_ps_srstb,
+    raspberry_i2c_scl_io,
+    raspberry_i2c_sda_io);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -53,6 +55,8 @@ module camera_design_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  inout raspberry_i2c_scl_io;
+  inout raspberry_i2c_sda_io;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -75,6 +79,14 @@ module camera_design_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire raspberry_i2c_scl_i;
+  wire raspberry_i2c_scl_io;
+  wire raspberry_i2c_scl_o;
+  wire raspberry_i2c_scl_t;
+  wire raspberry_i2c_sda_i;
+  wire raspberry_i2c_sda_io;
+  wire raspberry_i2c_sda_o;
+  wire raspberry_i2c_sda_t;
 
   camera_design camera_design_i
        (.DDR_addr(DDR_addr),
@@ -97,5 +109,21 @@ module camera_design_wrapper
         .FIXED_IO_mio(FIXED_IO_mio),
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
-        .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb));
+        .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .raspberry_i2c_scl_i(raspberry_i2c_scl_i),
+        .raspberry_i2c_scl_o(raspberry_i2c_scl_o),
+        .raspberry_i2c_scl_t(raspberry_i2c_scl_t),
+        .raspberry_i2c_sda_i(raspberry_i2c_sda_i),
+        .raspberry_i2c_sda_o(raspberry_i2c_sda_o),
+        .raspberry_i2c_sda_t(raspberry_i2c_sda_t));
+  IOBUF raspberry_i2c_scl_iobuf
+       (.I(raspberry_i2c_scl_o),
+        .IO(raspberry_i2c_scl_io),
+        .O(raspberry_i2c_scl_i),
+        .T(raspberry_i2c_scl_t));
+  IOBUF raspberry_i2c_sda_iobuf
+       (.I(raspberry_i2c_sda_o),
+        .IO(raspberry_i2c_sda_io),
+        .O(raspberry_i2c_sda_i),
+        .T(raspberry_i2c_sda_t));
 endmodule
