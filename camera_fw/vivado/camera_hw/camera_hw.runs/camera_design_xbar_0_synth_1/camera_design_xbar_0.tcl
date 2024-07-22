@@ -56,7 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "camera_design_xbar_0_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -76,7 +75,7 @@ set_property ip_output_repo c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/ca
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/sources_1/bd/camera_design/ip/camera_design_xbar_0/camera_design_xbar_0.xci
+read_ip -quiet C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/sources_1/bd/camera_design/ip/camera_design_xbar_0/camera_design_xbar_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_xbar_0/camera_design_xbar_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }

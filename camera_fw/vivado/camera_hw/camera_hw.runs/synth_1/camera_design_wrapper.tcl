@@ -56,7 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -83,9 +82,6 @@ set_property used_in_implementation false [get_files -all c:/Users/georg/vitis/S
 set_property used_in_implementation false [get_files -all c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_axi_iic_0_0/camera_design_axi_iic_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_axi_iic_0_0/camera_design_axi_iic_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_xbar_0/camera_design_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_axi_intc_0_0/camera_design_axi_intc_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_axi_intc_0_0/camera_design_axi_intc_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_axi_intc_0_0/camera_design_axi_intc_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_auto_pc_0/camera_design_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/camera_design_ooc.xdc]
 
