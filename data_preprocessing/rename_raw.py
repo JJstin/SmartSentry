@@ -9,10 +9,10 @@ def rename_images(directory):
     """
 
     # Get a list of all files in the directory
-    input_dir = os.path.join(directory, "raw")
+    input_dir = os.path.join(directory, "raw", "Justin")
     files = os.listdir(input_dir)
     counter = 1  # Initialize a counter for numbering the images
-    
+
     destination_directory = os.path.join(directory, "ordered")
     if os.path.exists(destination_directory):
         shutil.rmtree(destination_directory)
@@ -28,5 +28,5 @@ def rename_images(directory):
 
 if __name__ == "__main__":
     # Define the directory containing the raw images
-    INPUT_DIR = '../datasets/joe'
+    INPUT_DIR = './datasets/'
     rename_images(INPUT_DIR)

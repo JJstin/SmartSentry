@@ -6,10 +6,10 @@ from torchvision import transforms
 import argparse
 
 # Constants
-IMAGE_SIZE = 160
+IMAGE_SIZE = 224
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-INPUT_DIR = os.path.join(ROOT_DIR, 'datasets', 'joe', 'ordered')
-TEMP_DIR = os.path.join(ROOT_DIR, 'datasets', 'joe', 'processed_raw')  # Directory to store all transformed raw images
+INPUT_DIR = os.path.join(ROOT_DIR, 'datasets', 'raw', 'justin')
+TEMP_DIR = os.path.join(ROOT_DIR, 'datasets', 'transformed', 'train', 'justin')  # Directory to store all transformed raw images
 
 # Image transformations for augmentation
 transform = transforms.Compose([
@@ -22,13 +22,6 @@ transform = transforms.Compose([
 
 def clear_directory(directory):
     """Clear all files in the given directory."""
-    # if os.path.exists(directory):
-    #     for filename in os.listdir(directory):
-    #         file_path = os.path.join(directory, filename)
-    #         if os.path.isfile(file_path) or os.path.islink(file_path):
-    #             os.unlink(file_path)
-    #         elif os.path.isdir(file_path):
-    #             shutil.rmtree(file_path)
     if not os.path.exists(directory) or not os.path.isdir(directory):
         return
     shutil.rmtree(directory)

@@ -9,7 +9,7 @@ import shutil
 def extract(filename=None, thread_num="", name="joe"):
     # Directory to save frames with detected faces
     dirpath = os.path.dirname(__file__)
-    save_dir = os.path.join(dirpath, "..", "..", "datasets", name, "raw")
+    save_dir = os.path.join(dirpath, "..", "..", "datasets", "raw", "Justin")
 
     if os.path.exists(save_dir):
         shutil.rmtree(save_dir)
@@ -20,7 +20,7 @@ def extract(filename=None, thread_num="", name="joe"):
 
 
     # Feel free to replace name of video here with one in the directory
-    video = 'Joe 1080_1920 60fps BackCam.MOV'
+    video = 'Justin 1080_1920 30fps BackCam.MOV'
     cap = cv2.VideoCapture(os.path.join(dirpath, "videos", video))
     if filename:
         video = filename
