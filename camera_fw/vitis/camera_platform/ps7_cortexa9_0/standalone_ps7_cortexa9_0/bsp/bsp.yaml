@@ -1,7 +1,7 @@
 sdt: hw_artifacts\ps7_cortexa9_0_baremetal.dts
 family: Zynq
-path: D:/design_project-code/SmartSentry/camera_fw/vitis/camera_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
-config: None
+path: C:\Users\georg\vitis\SmartSentry\camera_fw\vitis\camera_platform\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+config: reconfig
 os: standalone
 os_info:
   standalone:
@@ -166,6 +166,10 @@ include_folder: include
 lib_folder: lib
 libsrc_folder: libsrc
 drv_info:
+  axi_iic_0:
+    driver: iic
+    ip_name: axi_iic
+    path: C:\Xilinx\Vitis\2024.1\data\embeddedsw\XilinxProcessorIPLib\drivers\iic_v3_11
   ps7_afi_0: None
   ps7_afi_1: None
   ps7_afi_2: None
