@@ -1,0 +1,7 @@
+Running: xsim.dir/xf_cv_subtract/xsimk.exe -simmode gui -wdb xf_cv_subtract.wdb -simrunnum 0 -socket 60183
+Design successfully loaded
+Design Loading Memory Usage: 10168 KB (Peak: 10168 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 1295172 KB (Peak: 1295172 KB)
+Simulation CPU Usage: 439671 ms

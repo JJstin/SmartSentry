@@ -1,0 +1,372 @@
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:1450:7: warning: Added loop label VITIS_LOOP_1223_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1223_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:1450:7: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:2424:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:2424:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:2438:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:2438:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:2452:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:2452:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:4081:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:4081:7: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15331:2: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < N; k++) {
+ ^~~
+ VITIS_LOOP_307_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15331:2: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15345:5: warning: Added loop label VITIS_LOOP_321_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_321_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15345:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15360:5: warning: Added loop label VITIS_LOOP_336_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_336_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15360:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15375:5: warning: Added loop label VITIS_LOOP_351_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_351_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15375:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15390:5: warning: Added loop label VITIS_LOOP_366_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_366_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15390:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15405:5: warning: Added loop label VITIS_LOOP_381_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_381_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15405:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15420:5: warning: Added loop label VITIS_LOOP_396_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_396_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15420:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15435:5: warning: Added loop label VITIS_LOOP_411_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_411_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15435:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15450:5: warning: Added loop label VITIS_LOOP_426_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_426_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15450:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15527:9: warning: Added loop label VITIS_LOOP_511_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < (rows * ((cols + NPC - 1) >> xfNPixelsPerCycle<NPC>::datashift)); ++i) {
+        ^~~
+        VITIS_LOOP_511_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15527:9: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15735:5: warning: Added loop label VITIS_LOOP_719_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_719_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15735:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15736:9: warning: Added loop label VITIS_LOOP_720_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < packcols; c++) {
+        ^~~
+        VITIS_LOOP_720_2: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15736:9: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15737:13: warning: Added loop label VITIS_LOOP_721_3:   [xilinx-label-all-loops]
+            for (int p = 0; p < nppc; p++) {
+            ^~~
+            VITIS_LOOP_721_3: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15737:13: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15739:17: warning: Added loop label VITIS_LOOP_723_4:   [xilinx-label-all-loops]
+                for (int ch = 0; ch < DataType<T, NPPC>::channel; ch++) {
+                ^~~
+                VITIS_LOOP_723_4: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15739:17: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15777:5: warning: Added loop label VITIS_LOOP_761_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_761_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15777:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15778:9: warning: Added loop label VITIS_LOOP_762_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < cols; c++) {
+        ^~~
+        VITIS_LOOP_762_2: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15778:9: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15780:13: warning: Added loop label VITIS_LOOP_764_3:   [xilinx-label-all-loops]
+            for (int ch = 0; ch < DataType<T, NPPC>::channel; ch++) {
+            ^~~
+            VITIS_LOOP_764_3: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15780:13: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15781:17: warning: Added loop label VITIS_LOOP_765_4:   [xilinx-label-all-loops]
+                for (int b = 0; b < cv_nbytes; ++b) {
+                ^~~
+                VITIS_LOOP_765_4: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15781:17: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15835:5: warning: Added loop label VITIS_LOOP_819_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < rows; i++) {
+    ^~~
+    VITIS_LOOP_819_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15835:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15836:9: warning: Added loop label VITIS_LOOP_820_2:   [xilinx-label-all-loops]
+        for (int j = 0; j<cols>> (xfNPixelsPerCycle<NPPC>::datashift); j++) {
+        ^~~
+        VITIS_LOOP_820_2: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15836:9: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15844:13: warning: Added loop label VITIS_LOOP_828_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < (1 << (xfNPixelsPerCycle<NPPC>::datashift)); k++) {
+            ^~~
+            VITIS_LOOP_828_3: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15844:13: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:15957:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable=mul_rows_cols op=mul impl=dsp latency=2
+        ^
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:16029:2: warning: Added loop label VITIS_LOOP_1021_1:   [xilinx-label-all-loops]
+ for (c = 0; c < cols_addrbound; c++) {
+ ^~~
+ VITIS_LOOP_1021_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:16029:2: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:16437:13: warning: Added loop label VITIS_LOOP_1429_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1429_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:16437:13: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:16465:13: warning: Added loop label VITIS_LOOP_1457_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1457_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:16465:13: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:16495:13: warning: Added loop label VITIS_LOOP_1487_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1487_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:16495:13: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:16525:13: warning: Added loop label VITIS_LOOP_1517_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1517_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:16525:13: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17407:5: warning: Added loop label VITIS_LOOP_913_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < DataType<SRC_T, NPC>::channel; i++) {
+    ^~~
+    VITIS_LOOP_913_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17407:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17432:5: warning: Added loop label VITIS_LOOP_947_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < DataType<SRC_T, NPC>::channel; i++) {
+    ^~~
+    VITIS_LOOP_947_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17432:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17457:5: warning: Added loop label VITIS_LOOP_980_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < DataType<SRC_T, NPC>::channel; i++) {
+    ^~~
+    VITIS_LOOP_980_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17457:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17503:5: warning: Added loop label VITIS_LOOP_1042_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < DataType<SRC_T, NPC>::channel; i++) {
+    ^~~
+    VITIS_LOOP_1042_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17503:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17549:5: warning: Added loop label VITIS_LOOP_1103_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < DataType<SRC_T, NPC>::channel; i++) {
+    ^~~
+    VITIS_LOOP_1103_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17549:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17595:5: warning: Added loop label VITIS_LOOP_1164_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < DataType<SRC_T, NPC>::channel; i++) {
+    ^~~
+    VITIS_LOOP_1164_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17595:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17647:5: warning: Added loop label VITIS_LOOP_1224_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < DataType<SRC_T, NPC>::channel; i++) {
+    ^~~
+    VITIS_LOOP_1224_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17647:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17918:5: warning: Added loop label VITIS_LOOP_122_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_122_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17918:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17922:2: warning: Added loop label VITIS_LOOP_126_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS - 1; j++) {
+ ^~~
+ VITIS_LOOP_126_2: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17922:2: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17949:5: warning: Added loop label VITIS_LOOP_166_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_166_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17949:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17953:2: warning: Added loop label VITIS_LOOP_170_2:   [xilinx-label-all-loops]
+ for (j = COLS - 1; j > 0; j--) {
+ ^~~
+ VITIS_LOOP_170_2: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17953:2: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17980:5: warning: Added loop label VITIS_LOOP_210_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS - 1; i++) {
+    ^~~
+    VITIS_LOOP_210_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17980:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17984:2: warning: Added loop label VITIS_LOOP_214_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_214_2: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:17984:2: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18011:5: warning: Added loop label VITIS_LOOP_254_1:   [xilinx-label-all-loops]
+    for (i = ROWS - 1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_254_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18011:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18015:2: warning: Added loop label VITIS_LOOP_258_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_258_2: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18015:2: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18061:5: warning: Added loop label VITIS_LOOP_330_1:   [xilinx-label-all-loops]
+    for (j = 0; j < COLS; j++) {
+    ^~~
+    VITIS_LOOP_330_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18061:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18124:5: warning: Added loop label VITIS_LOOP_435_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_435_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18124:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18321:44: error: Invalid Directive: for current device, RAM_1P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=BRAM
+                                           ^
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18326:44: error: Invalid Directive: for current device, RAM_1P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=URAM
+                                           ^
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18331:44: error: Invalid Directive: for current device, RAM_2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=BRAM
+                                           ^
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18336:44: error: Invalid Directive: for current device, RAM_2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=URAM
+                                           ^
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18341:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=BRAM
+                                           ^
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18346:44: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=URAM
+                                           ^
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18351:44: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=BRAM
+                                           ^
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18356:44: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=URAM
+                                           ^
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18412:5: warning: Added loop label VITIS_LOOP_824_1:   [xilinx-label-all-loops]
+    for (i = ROWS - 1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_824_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18412:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18438:5: warning: Added loop label VITIS_LOOP_867_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS - 1; i++) {
+    ^~~
+    VITIS_LOOP_867_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18438:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18494:5: warning: Added loop label VITIS_LOOP_968_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_968_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18494:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18590:5: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_39_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18590:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18609:5: warning: Added loop label VITIS_LOOP_58_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_58_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18609:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18637:5: warning: Added loop label VITIS_LOOP_86_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_86_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18637:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18670:5: warning: Added loop label VITIS_LOOP_119_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_119_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18670:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18704:5: warning: Added loop label VITIS_LOOP_153_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_153_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18704:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18732:5: warning: Added loop label VITIS_LOOP_181_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_181_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18732:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18756:5: warning: Added loop label VITIS_LOOP_205_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_205_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18756:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18779:5: warning: Added loop label VITIS_LOOP_228_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_228_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18779:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18814:5: warning: Added loop label VITIS_LOOP_263_1:   [xilinx-label-all-loops]
+    for (uint16_t r = 0; r < K_ROWS; r++) {
+    ^~~
+    VITIS_LOOP_263_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18814:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18816:2: warning: Added loop label VITIS_LOOP_265_2:   [xilinx-label-all-loops]
+ for (uint16_t c = 0; c < K_COLS; c++) {
+ ^~~
+ VITIS_LOOP_265_2: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18816:2: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18876:5: warning: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (ap_int<9> i = 0; i < loopIter; i++) {
+    ^~~
+    VITIS_LOOP_325_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18876:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18948:5: warning: Added loop label VITIS_LOOP_397_1:   [xilinx-label-all-loops]
+    for (i = 0; i < 6; i++, ind++) {
+    ^~~
+    VITIS_LOOP_397_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:18948:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:19019:5: warning: Added loop label VITIS_LOOP_468_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < imheight; i++) {
+    ^~~
+    VITIS_LOOP_468_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:19019:5: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:19024:2: warning: Added loop label VITIS_LOOP_473_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < (imwidth >> NPC); j++) {
+ ^~~
+ VITIS_LOOP_473_2: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:19024:2: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:19050:9: warning: Added loop label VITIS_LOOP_499_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_499_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:19050:9: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:19156:9: warning: Added loop label VITIS_LOOP_623_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_623_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:19156:9: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:19270:9: warning: Added loop label VITIS_LOOP_737_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_737_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:19270:9: note: FIX-IT applied suggested code changes
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:19302:9: warning: Added loop label VITIS_LOOP_788_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_788_1: 
+D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp:19302:9: note: FIX-IT applied suggested code changes

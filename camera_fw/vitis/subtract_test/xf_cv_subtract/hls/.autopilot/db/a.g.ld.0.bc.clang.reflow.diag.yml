@@ -1,0 +1,654 @@
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 670, Column: 0 }
+Function:        _ZN2xf2cv3MatILi16ELi1920ELi1080ELi1ELi2EEC2Eii
+Args:            
+  - String:          'In function '''
+  - Function:        'xf::cv::Mat<16, 1920, 1080, 1, 2>::Mat(int, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 670, Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 605, Column: 0 }
+Function:        _ZN2xf2cv3MatILi16ELi1920ELi1080ELi1ELi2EE4initEiib
+Args:            
+  - String:          'In function '''
+  - Function:        'xf::cv::Mat<16, 1920, 1080, 1, 2>::init(int, int, bool)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 605, Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 675, Column: 2 }
+Function:        _ZN2xf2cv3MatILi16ELi1920ELi1080ELi1ELi2EEC2Eii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Mat<16, 1920, 1080, 1, 2>::init(int, int, bool)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 605, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'xf::cv::Mat<16, 1920, 1080, 1, 2>::Mat(int, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 670, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                   Line: 849, Column: 17 }
+Function:        _ZN2xf2cv13xFarithm_procILi16ELi1920ELi1080ELi3ELi16ELi1ELi2ELi2ELi2ELi10ELi10ELi1080E10kernel_subLi1EEEvRNS0_3MatIXT_EXT0_EXT1_EXT4_EXT5_EEERNS3_IXT_EXT0_EXT1_EXT4_EXT6_EEENS0_6ScalarIXsr8DataTypeIXT_EXT4_EEE7channelEhEERNS3_IXT_EXT0_EXT1_EXT4_EXT7_EEEitt
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void kernel_sub::apply<16>(PixelType<16>::name&, PixelType<16>::name&, PixelType<16>::name&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                       Line: 67, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::xFarithm_proc<16, 1920, 1080, 3, 16, 1, 2, 2, 2, 10, 10, 1080, kernel_sub, 1>(xf::cv::Mat<16, 1920, 1080, 1, 2>&, xf::cv::Mat<16, 1920, 1080, 1, 2>&, xf::cv::Scalar<DataType<16, 1>::channel, unsigned char>, xf::cv::Mat<16, 1920, 1080, 1, 2>&, int, unsigned short, unsigned short)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                       Line: 810, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                   Line: 1017, Column: 48 }
+Function:        _ZN2xf2cv8subtractILi0ELi16ELi1920ELi1080ELi1ELi2ELi2ELi2EEEvRNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEERNS2_IXT0_EXT1_EXT2_EXT3_EXT5_EEERNS2_IXT0_EXT1_EXT2_EXT3_EXT6_EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Scalar<3, unsigned char>::Scalar(unsigned char)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 250, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::subtract<0, 16, 1920, 1080, 1, 2, 2, 2>(xf::cv::Mat<16, 1920, 1080, 1, 2>&, xf::cv::Mat<16, 1920, 1080, 1, 2>&, xf::cv::Mat<16, 1920, 1080, 1, 2>&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                       Line: 1000, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: xf_cv_subtract.cpp, Line: 32, Column: 49 }
+Function:        _Z14xf_cv_subtractP7ap_uintILi32EES1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Mat<16, 1920, 1080, 1, 2>::Mat(int, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 670, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'xf_cv_subtract(ap_uint<32>*, ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: xf_cv_subtract.cpp, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: xf_cv_subtract.cpp, Line: 33, Column: 52 }
+Function:        _Z14xf_cv_subtractP7ap_uintILi32EES1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Mat<16, 1920, 1080, 1, 2>::Mat(int, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 670, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'xf_cv_subtract(ap_uint<32>*, ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: xf_cv_subtract.cpp, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: xf_cv_subtract.cpp, Line: 34, Column: 52 }
+Function:        _Z14xf_cv_subtractP7ap_uintILi32EES1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Mat<16, 1920, 1080, 1, 2>::Mat(int, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 670, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'xf_cv_subtract(ap_uint<32>*, ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: xf_cv_subtract.cpp, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 468, Column: 5 }
+Function:        _Z14xf_cv_subtractP7ap_uintILi32EES1_S1_
+Args:            
+  - String:          'Adding '''
+  - Name:            imgOutput
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 468, Column: 5 }
+Function:        _Z14xf_cv_subtractP7ap_uintILi32EES1_S1_
+Args:            
+  - String:          'Adding '''
+  - Name:            imgInput2
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 468, Column: 5 }
+Function:        _Z14xf_cv_subtractP7ap_uintILi32EES1_S1_
+Args:            
+  - String:          'Adding '''
+  - Name:            imgInput1
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 253, Column: 9 }
+Function:        _ZN2xf2cv8subtractILi0ELi16ELi1920ELi1080ELi1ELi2ELi2ELi2EEEvRNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEERNS2_IXT0_EXT1_EXT2_EXT3_EXT5_EEERNS2_IXT0_EXT1_EXT2_EXT3_EXT6_EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            agg.tmp
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 468, Column: 5 }
+Function:        _Z14xf_cv_subtractP7ap_uintILi32EES1_S1_
+Args:            
+  - String:          'Adding '''
+  - Name:            imgOutput
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 468, Column: 5 }
+Function:        _Z14xf_cv_subtractP7ap_uintILi32EES1_S1_
+Args:            
+  - String:          'Adding '''
+  - Name:            imgInput2
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 468, Column: 5 }
+Function:        _Z14xf_cv_subtractP7ap_uintILi32EES1_S1_
+Args:            
+  - String:          'Adding '''
+  - Name:            imgInput1
+  - String:          ''' into disaggregation list because there''s '
+  - String:          stream pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 253, Column: 9 }
+Function:        _ZN2xf2cv8subtractILi0ELi16ELi1920ELi1080ELi1ELi2ELi2ELi2EEEvRNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEERNS2_IXT0_EXT1_EXT2_EXT3_EXT5_EEERNS2_IXT0_EXT1_EXT2_EXT3_EXT6_EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            agg.tmp
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: xf_cv_subtract.cpp, Line: 34, Column: 52 }
+Function:        _Z14xf_cv_subtractP7ap_uintILi32EES1_S1_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            imgOutput
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: xf_cv_subtract.cpp, Line: 33, Column: 52 }
+Function:        _Z14xf_cv_subtractP7ap_uintILi32EES1_S1_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            imgInput2
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: xf_cv_subtract.cpp, Line: 32, Column: 49 }
+Function:        _Z14xf_cv_subtractP7ap_uintILi32EES1_S1_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            imgInput1
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZN2xf2cv8subtractILi0ELi16ELi1920ELi1080ELi1ELi2ELi2ELi2EEEvRNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEERNS2_IXT0_EXT1_EXT2_EXT3_EXT5_EEERNS2_IXT0_EXT1_EXT2_EXT3_EXT6_EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            agg.tmp
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                   Line: 838, Column: 13 }
+Function:        _ZN2xf2cv13xFarithm_procILi16ELi1920ELi1080ELi3ELi16ELi1ELi2ELi2ELi2ELi10ELi10ELi1080E10kernel_subLi1EEEvRNS0_3MatIXT_EXT0_EXT1_EXT4_EXT5_EEERNS3_IXT_EXT0_EXT1_EXT4_EXT6_EEENS0_6ScalarIXsr8DataTypeIXT_EXT4_EEE7channelEhEERNS3_IXT_EXT0_EXT1_EXT4_EXT7_EEEitt
+Args:            
+  - String:          'Loop '''
+  - LoopName:        procLoop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 1011, Column: 0 }
+Function:        _ZN2xf2cv8MMIterInILi32ELi16ELi1920ELi1080ELi1ELi2EE13Axi2AxiStreamEP7ap_uintILi32EERN3hls6streamIS4_Li0EEEiiii.106
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '1920'
+  - String:          ' to '
+  - NewBound:        '1'
+  - String:          ' for loop '''
+  - LoopName:        MMIterInLoop1
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:1017:9'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'xf::cv::MMIterIn<32, 16, 1920, 1080, 1, 2>::Axi2AxiStream'
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                   Line: 810, Column: 0 }
+Function:        _ZN2xf2cv13xFarithm_procILi16ELi1920ELi1080ELi3ELi16ELi1ELi2ELi2ELi2ELi10ELi10ELi1080E10kernel_subLi1EEEvRNS0_3MatIXT_EXT0_EXT1_EXT4_EXT5_EEERNS3_IXT_EXT0_EXT1_EXT4_EXT6_EEENS0_6ScalarIXsr8DataTypeIXT_EXT4_EEE7channelEhEERNS3_IXT_EXT0_EXT1_EXT4_EXT7_EEEitt
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        procLoop
+  - String:          ''' ('
+  - LoopLoc:         'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp:838:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::cv::xFarithm_proc<16, 1920, 1080, 3, 16, 1, 2, 2, 2, 10, 10, 1080, kernel_sub, 1>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 1011, Column: 0 }
+Function:        _ZN2xf2cv8MMIterInILi32ELi16ELi1920ELi1080ELi1ELi2EE13Axi2AxiStreamEP7ap_uintILi32EERN3hls6streamIS4_Li0EEEiiii.106
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::MMIter<32, 16, 1920, 1080, 1, 2>::addrbound(int, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 942, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'xf::cv::MMIterIn<32, 16, 1920, 1080, 1, 2>::Axi2AxiStream(ap_uint<32>*, hls::stream<ap_uint<32>, 0>&, int, int, int, int) (.106)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 1011, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_utility.hpp', 
+                   Line: 834, Column: 0 }
+Function:        _ZN2xf2cv11Array2xfMatILi32ELi16ELi1920ELi1080ELi1ELi2EEEvP7ap_uintIXT_EERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEEi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::MMIterIn<32, 16, 1920, 1080, 1, 2>::Array2xfMat(ap_uint<32>*, xf::cv::Mat<16, 1920, 1080, 1, 2>&, int) (.35.58.100)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 1234, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::Array2xfMat<32, 16, 1920, 1080, 1, 2>(ap_uint<32>*, xf::cv::Mat<16, 1920, 1080, 1, 2>&, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_utility.hpp', 
+                       Line: 834, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                   Line: 810, Column: 0 }
+Function:        _ZN2xf2cv13xFarithm_procILi16ELi1920ELi1080ELi3ELi16ELi1ELi2ELi2ELi2ELi10ELi10ELi1080E10kernel_subLi1EEEvRNS0_3MatIXT_EXT0_EXT1_EXT4_EXT5_EEERNS3_IXT_EXT0_EXT1_EXT4_EXT6_EEENS0_6ScalarIXsr8DataTypeIXT_EXT4_EEE7channelEhEERNS3_IXT_EXT0_EXT1_EXT4_EXT7_EEEitt
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_uint<24> xf::cv::Mat<16, 1920, 1080, 1, 2>::read<2, (void*)0>(int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 541, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::xFarithm_proc<16, 1920, 1080, 3, 16, 1, 2, 2, 2, 10, 10, 1080, kernel_sub, 1>(xf::cv::Mat<16, 1920, 1080, 1, 2>&, xf::cv::Mat<16, 1920, 1080, 1, 2>&, xf::cv::Scalar<DataType<16, 1>::channel, unsigned char>, xf::cv::Mat<16, 1920, 1080, 1, 2>&, int, unsigned short, unsigned short)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                       Line: 810, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                   Line: 810, Column: 0 }
+Function:        _ZN2xf2cv13xFarithm_procILi16ELi1920ELi1080ELi3ELi16ELi1ELi2ELi2ELi2ELi10ELi10ELi1080E10kernel_subLi1EEEvRNS0_3MatIXT_EXT0_EXT1_EXT4_EXT5_EEERNS3_IXT_EXT0_EXT1_EXT4_EXT6_EEENS0_6ScalarIXsr8DataTypeIXT_EXT4_EEE7channelEhEERNS3_IXT_EXT0_EXT1_EXT4_EXT7_EEEitt
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void xf::cv::Mat<16, 1920, 1080, 1, 2>::write<2, (void*)0>(int, ap_uint<24>)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::xFarithm_proc<16, 1920, 1080, 3, 16, 1, 2, 2, 2, 10, 10, 1080, kernel_sub, 1>(xf::cv::Mat<16, 1920, 1080, 1, 2>&, xf::cv::Mat<16, 1920, 1080, 1, 2>&, xf::cv::Scalar<DataType<16, 1>::channel, unsigned char>, xf::cv::Mat<16, 1920, 1080, 1, 2>&, int, unsigned short, unsigned short)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                       Line: 810, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                   Line: 1000, Column: 0 }
+Function:        _ZN2xf2cv8subtractILi0ELi16ELi1920ELi1080ELi1ELi2ELi2ELi2EEEvRNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEERNS2_IXT0_EXT1_EXT2_EXT3_EXT5_EEERNS2_IXT0_EXT1_EXT2_EXT3_EXT6_EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void xf::cv::xFarithm_proc<16, 1920, 1080, 3, 16, 1, 2, 2, 2, 10, 10, 1080, kernel_sub, 1>(xf::cv::Mat<16, 1920, 1080, 1, 2>&, xf::cv::Mat<16, 1920, 1080, 1, 2>&, xf::cv::Scalar<DataType<16, 1>::channel, unsigned char>, xf::cv::Mat<16, 1920, 1080, 1, 2>&, int, unsigned short, unsigned short)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                       Line: 810, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::subtract<0, 16, 1920, 1080, 1, 2, 2, 2>(xf::cv::Mat<16, 1920, 1080, 1, 2>&, xf::cv::Mat<16, 1920, 1080, 1, 2>&, xf::cv::Mat<16, 1920, 1080, 1, 2>&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\core/xf_arithm.hpp', 
+                       Line: 1000, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_utility.hpp', 
+                   Line: 824, Column: 0 }
+Function:        _ZN2xf2cv11xfMat2ArrayILi32ELi16ELi1920ELi1080ELi1ELi2ELi1EEEvRNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEEP7ap_uintIXT_EEi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::MMIterOut<32, 16, 1920, 1080, 1, 1, 2>::xfMat2Array(xf::cv::Mat<16, 1920, 1080, 1, 2>&, ap_uint<32>*, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 1556, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::cv::xfMat2Array<32, 16, 1920, 1080, 1, 2, 1>(xf::cv::Mat<16, 1920, 1080, 1, 2>&, ap_uint<32>*, int)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_utility.hpp', 
+                       Line: 824, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 1379, Column: 9 }
+Function:        _ZN2xf2cv9MMIterOutILi32ELi16ELi1920ELi1080ELi1ELi1ELi2EE13AxiStream2AxiERN3hls6streamI7ap_uintILi32EELi0EEEPS6_RS5_ILi22EE
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        dout2seq
+  - ArrayName:       dout
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        MMIterOutLoop2
+  - String:          ' '
+  - LoopLoc:         'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:1379:9'
+  - String:          ' '
+  - Function:        'xf::cv::MMIterOut<32, 16, 1920, 1080, 1, 1, 2>::AxiStream2Axi(hls::stream<ap_uint<32>, 0>&, ap_uint<32>*, ap_uint<22>&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 1375, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 1384, Column: 10 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.store.5
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 1021, Column: 21 }
+Function:        _ZN2xf2cv8MMIterInILi32ELi16ELi1920ELi1080ELi1ELi2EE13Axi2AxiStreamEP7ap_uintILi32EERN3hls6streamIS4_Li0EEEiiii.106
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '1555200'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        din1seq
+  - ArrayName:       din
+  - String:          ' '
+  - BundleName:      gmem0,gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_1021_1
+  - String:          ' '
+  - LoopLoc:         'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:1021:21'
+  - String:          ' '
+  - Function:        'xf::cv::MMIterIn<32, 16, 1920, 1080, 1, 2>::Axi2AxiStream(ap_uint<32>*, hls::stream<ap_uint<32>, 0>&, int, int, int, int) (.106)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 1011, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 1026, Column: 7 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.7
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 1379, Column: 9 }
+Function:        _ZN2xf2cv9MMIterOutILi32ELi16ELi1920ELi1080ELi1ELi1ELi2EE13AxiStream2AxiERN3hls6streamI7ap_uintILi32EELi0EEEPS6_RS5_ILi22EE
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 1379, Column: 9 }
+  - OrigDirection:   write
+  - OrigID:          dout2seq
+  - ArrayName:       dout
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        MMIterOutLoop2
+  - String:          ' '
+  - LoopLoc:         'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:1379:9'
+  - String:          ' '
+  - Function:        'xf::cv::MMIterOut<32, 16, 1920, 1080, 1, 1, 2>::AxiStream2Axi(hls::stream<ap_uint<32>, 0>&, ap_uint<32>*, ap_uint<22>&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 1375, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 1021, Column: 21 }
+Function:        _ZN2xf2cv8MMIterInILi32ELi16ELi1920ELi1080ELi1ELi2EE13Axi2AxiStreamEP7ap_uintILi32EERN3hls6streamIS4_Li0EEEiiii.106
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 1021, Column: 21 }
+  - OrigDirection:   read
+  - OrigID:          din1seq
+  - ArrayName:       din
+  - String:          ' '
+  - BundleName:      gmem0,gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_1021_1
+  - String:          ' '
+  - LoopLoc:         'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:1021:21'
+  - String:          ' '
+  - Function:        'xf::cv::MMIterIn<32, 16, 1920, 1080, 1, 2>::Axi2AxiStream(ap_uint<32>*, hls::stream<ap_uint<32>, 0>&, int, int, int, int) (.106)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 1011, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 1021, Column: 21 }
+Function:        _ZN2xf2cv8MMIterInILi32ELi16ELi1920ELi1080ELi1ELi2EE13Axi2AxiStreamEP7ap_uintILi32EERN3hls6streamIS4_Li0EEEiiii.106.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '1555200'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_1021_1
+  - String:          ' '
+  - LoopLoc:         'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:1021:21'
+  - String:          ' '
+  - Function:        'xf::cv::MMIterIn<32, 16, 1920, 1080, 1, 2>::Axi2AxiStream(ap_uint<32>*, hls::stream<ap_uint<32>, 0>&, int, int, int, int) (.106.1)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 1011, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 1021, Column: 21 }
+Function:        _ZN2xf2cv8MMIterInILi32ELi16ELi1920ELi1080ELi1ELi2EE13Axi2AxiStreamEP7ap_uintILi32EERN3hls6streamIS4_Li0EEEiiii.106.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '1555200'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_1021_1
+  - String:          '''('
+  - LoopLoc:         'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:1021:21'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 1379, Column: 9 }
+Function:        _ZN2xf2cv9MMIterOutILi32ELi16ELi1920ELi1080ELi1ELi1ELi2EE13AxiStream2AxiERN3hls6streamI7ap_uintILi32EELi0EEEPS6_RS5_ILi22EE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        MMIterOutLoop2
+  - String:          ' '
+  - LoopLoc:         'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:1379:9'
+  - String:          ' '
+  - Function:        'xf::cv::MMIterOut<32, 16, 1920, 1080, 1, 1, 2>::AxiStream2Axi(hls::stream<ap_uint<32>, 0>&, ap_uint<32>*, ap_uint<22>&) (.1)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                       Line: 1375, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: 'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp', 
+                   Line: 1379, Column: 9 }
+Function:        _ZN2xf2cv9MMIterOutILi32ELi16ELi1920ELi1080ELi1ELi1ELi2EE13AxiStream2AxiERN3hls6streamI7ap_uintILi32EELi0EEEPS6_RS5_ILi22EE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        MMIterOutLoop2
+  - String:          '''('
+  - LoopLoc:         'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp:1379:9'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem2
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

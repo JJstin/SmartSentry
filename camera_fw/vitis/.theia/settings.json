@@ -1,3 +1,16 @@
 {
-    "clangd.fallbackFlags": []
+    "clangd.fallbackFlags": [
+        "-IC:\\Users\\yifei\\.Xilinx\\Vitis\\2024.1\\vitis_libraries\\vision\\L1\\include",
+        "-ID:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+        "-ID:\\Xilinx\\Vitis_HLS\\2024.1\\include\\etc",
+        "-ID:\\Xilinx\\Vitis_HLS\\2024.1\\include\\ap_sysc",
+        "-ID:\\Xilinx\\Vitis_HLS\\2024.1\\win64\\tools\\auto_cc\\include",
+        "-ID:\\Xilinx\\Vitis_HLS\\2024.1\\win64\\tools\\systemc\\include",
+        "-ID:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test\\.",
+        "-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config",
+        "-ID:/Xilinx/Vitis_Libraries/vision/L1/include",
+        "-ID:/OpenCV/install/include",
+        "-ID:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\vitis_vision_test\\.",
+        "-ID:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\."
+    ]
 }

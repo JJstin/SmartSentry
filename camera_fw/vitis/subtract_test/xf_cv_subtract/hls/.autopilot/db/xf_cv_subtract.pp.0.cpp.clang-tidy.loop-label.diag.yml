@@ -1,0 +1,670 @@
+---
+MainSourceFile:  'D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract/hls/.autopilot/db/xf_cv_subtract.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1223_1:  '
+    FileOffset:      1223
+    FilePath:        'D:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          59875
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1223_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'D:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          287660
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'D:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          288128
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'D:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          288597
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        'D:\Xilinx\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          572480
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_307_1:  '
+    FileOffset:      307
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1222864
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_307_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_321_1:  '
+    FileOffset:      321
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1223062
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_321_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_336_1:  '
+    FileOffset:      336
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1223296
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_336_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_351_1:  '
+    FileOffset:      351
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1223526
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_351_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_366_1:  '
+    FileOffset:      366
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1223760
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_366_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_381_1:  '
+    FileOffset:      381
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1223990
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_381_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_396_1:  '
+    FileOffset:      396
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1224224
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_396_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_411_1:  '
+    FileOffset:      411
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1224454
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_411_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_426_1:  '
+    FileOffset:      426
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1224688
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_426_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_511_1:  '
+    FileOffset:      511
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1226279
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_511_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_719_1:  '
+    FileOffset:      719
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1231899
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_719_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_720_2:  '
+    FileOffset:      720
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1231940
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_720_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_721_3:  '
+    FileOffset:      721
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1231989
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_721_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_723_4:  '
+    FileOffset:      723
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1232072
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_723_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_761_1:  '
+    FileOffset:      761
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1233294
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_761_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_762_2:  '
+    FileOffset:      762
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1233335
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_762_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_764_3:  '
+    FileOffset:      764
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1233424
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_764_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_765_4:  '
+    FileOffset:      765
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1233498
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_765_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_819_1:  '
+    FileOffset:      819
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1235260
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_819_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_820_2:  '
+    FileOffset:      820
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1235301
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_820_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_828_3:  '
+    FileOffset:      828
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1235728
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_828_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, mul + dsp is invalid combination for bind_op'
+    FileOffset:      949
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1021_1:  '
+    FileOffset:      1021
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1243343
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1021_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1429_1:  '
+    FileOffset:      1429
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1258911
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1429_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1457_1:  '
+    FileOffset:      1457
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1259989
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1457_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1487_1:  '
+    FileOffset:      1487
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1261200
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1487_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1517_1:  '
+    FileOffset:      1517
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1262387
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1517_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_913_1:  '
+    FileOffset:      913
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\core\xf_arithm.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1291982
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_913_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_947_1:  '
+    FileOffset:      947
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\core\xf_arithm.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1293123
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_947_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_980_1:  '
+    FileOffset:      980
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\core\xf_arithm.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1294267
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_980_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1042_1:  '
+    FileOffset:      1042
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\core\xf_arithm.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1296425
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1042_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1103_1:  '
+    FileOffset:      1103
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\core\xf_arithm.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1298520
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1103_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1164_1:  '
+    FileOffset:      1164
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\core\xf_arithm.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1300648
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1164_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1224_1:  '
+    FileOffset:      1224
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\core\xf_arithm.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1302728
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1224_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_122_1:  '
+    FileOffset:      122
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1318327
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_122_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_126_2:  '
+    FileOffset:      126
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1318378
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_126_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_166_1:  '
+    FileOffset:      166
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1318702
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_166_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_170_2:  '
+    FileOffset:      170
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1318753
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_170_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_210_1:  '
+    FileOffset:      210
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1319074
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_210_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_214_2:  '
+    FileOffset:      214
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1319129
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_214_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_254_1:  '
+    FileOffset:      254
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1319448
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_254_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_258_2:  '
+    FileOffset:      258
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1319503
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_258_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_330_1:  '
+    FileOffset:      330
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1320191
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_330_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_435_1:  '
+    FileOffset:      435
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1320990
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_435_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_1P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      711
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_1P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      716
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      721
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      726
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      731
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      736
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      741
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      746
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_824_1:  '
+    FileOffset:      824
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1325809
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_824_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_867_1:  '
+    FileOffset:      867
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1326286
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_867_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_968_1:  '
+    FileOffset:      968
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1327564
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_968_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_1:  '
+    FileOffset:      39
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1329845
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_58_1:  '
+    FileOffset:      58
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1330421
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_58_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_86_1:  '
+    FileOffset:      86
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1331188
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_86_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_119_1:  '
+    FileOffset:      119
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1332214
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_119_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_153_1:  '
+    FileOffset:      153
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1333221
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_153_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_181_1:  '
+    FileOffset:      181
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1333984
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_181_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_205_1:  '
+    FileOffset:      205
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1334638
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_205_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_228_1:  '
+    FileOffset:      228
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1335351
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_228_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_263_1:  '
+    FileOffset:      263
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1336221
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_263_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_265_2:  '
+    FileOffset:      265
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1336281
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_265_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_325_1:  '
+    FileOffset:      325
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1338341
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_325_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_397_1:  '
+    FileOffset:      397
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1341498
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_397_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_468_1:  '
+    FileOffset:      468
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1343336
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_468_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_473_2:  '
+    FileOffset:      473
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1343452
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_473_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_499_1:  '
+    FileOffset:      499
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1344109
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_499_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_623_1:  '
+    FileOffset:      623
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1348262
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_623_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_737_1:  '
+    FileOffset:      737
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1352950
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_737_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_788_1:  '
+    FileOffset:      788
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract\hls\.autopilot\db\xf_cv_subtract.pp.0.cpp'
+        Offset:          1354130
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_788_1: '
+...

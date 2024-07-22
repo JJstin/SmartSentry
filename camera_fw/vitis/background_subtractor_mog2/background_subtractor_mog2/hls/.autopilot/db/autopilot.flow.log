@@ -1,0 +1,371 @@
+INFO-FLOW: Workspace D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/background_subtractor_mog2/hls opened at Sun Jul 21 21:44:41 -0400 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=bg_sub.hpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=bg_sub.hpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(14)
+Execute     add_files D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.hpp 
+INFO: [HLS 200-10] Adding design file 'D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.hpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(15)
+Execute     add_files D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp 
+INFO: [HLS 200-10] Adding design file 'D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(9)
+Execute     add_files * -appendflags -cflags -ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -ID:/OpenCV/install/include -ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2 -D__SDSVHLS__ -std=c++14 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.csimflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.csimflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(10)
+Execute     add_files * -appendflags -csimflags -ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -ID:/OpenCV/install/include -ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2 -D__SDSVHLS__ -std=c++14 
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\captured_frames' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\captured_frames' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(16)
+Execute     add_files -tb D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\captured_frames 
+INFO: [HLS 200-10] Adding test bench file 'D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/captured_frames' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=bg_sub_tb.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=bg_sub_tb.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(17)
+Execute     add_files -tb D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub_tb.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'tb.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(12)
+Execute     add_files -tb * -appendflags -cflags -ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -ID:/OpenCV/install/include -ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2 -D__SDSVHLS__ -std=c++14 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=bg_sub' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=bg_sub' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(7)
+Execute     set_top bg_sub 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 1.165 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.282 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.clean=1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'csim.clean=1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(13)
+Execute     config_csim -clean=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(8)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(5)
+Command     send_msg_by_id done; 0.421 sec.
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1465@%s 'sim.ldflags=-L D:/OpenCV/install/x64/mingw/lib -lopencv_imgcodecs440 -lopencv_imgproc440 -lopencv_calib3d440 -lopencv_core440 -lopencv_highgui440 -lopencv_flann440 -lopencv_features2d440' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'sim.ldflags=-L D:/OpenCV/install/x64/mingw/lib -lopencv_imgcodecs440 -lopencv_imgproc440 -lopencv_calib3d440 -lopencv_core440 -lopencv_highgui440 -lopencv_flann440 -lopencv_features2d440' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(11)
+Execute     config_sim -ldflags -L D:/OpenCV/install/x64/mingw/lib -lopencv_imgcodecs440 -lopencv_imgproc440 -lopencv_calib3d440 -lopencv_core440 -lopencv_highgui440 -lopencv_flann440 -lopencv_features2d440 
+Command   apply_ini done; 1.754 sec.
+Execute   apply_ini D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/background_subtractor_mog2/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO-FLOW: ::SLX::run_csim failed: child process exited abnormally
+INFO-FLOW: Caught error in csim_design: Problem running csim: child process exited abnormally
+    while executing
+"error "Problem running $stage: $result""
+    (procedure "::AP::hls_slx_hook" line 54)
+    invoked from within
+"::AP::hls_slx_hook csim $config_value_dict replace_flow"
+    (procedure "ap_internal_csim_design" line 104)
+    invoked from within
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 0.609 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/background_subtractor_mog2/hls opened at Sun Jul 21 21:45:02 -0400 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=bg_sub.hpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=bg_sub.hpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(14)
+Execute     add_files D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.hpp 
+INFO: [HLS 200-10] Adding design file 'D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.hpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(15)
+Execute     add_files D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp 
+INFO: [HLS 200-10] Adding design file 'D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(9)
+Execute     add_files * -appendflags -cflags -ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -ID:/OpenCV/install/include -ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2 -D__SDSVHLS__ -std=c++14 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.csimflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.csimflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(10)
+Execute     add_files * -appendflags -csimflags -ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -ID:/OpenCV/install/include -ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2 -D__SDSVHLS__ -std=c++14 
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\captured_frames' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\captured_frames' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(16)
+Execute     add_files -tb D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\captured_frames 
+INFO: [HLS 200-10] Adding test bench file 'D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/captured_frames' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=bg_sub_tb.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=bg_sub_tb.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(17)
+Execute     add_files -tb D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub_tb.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'tb.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(12)
+Execute     add_files -tb * -appendflags -cflags -ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -ID:/OpenCV/install/include -ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2 -D__SDSVHLS__ -std=c++14 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=bg_sub' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=bg_sub' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(7)
+Execute     set_top bg_sub 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 1.174 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.276 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.clean=0' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'csim.clean=0' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(13)
+Execute     config_csim -clean=0 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(8)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1465@%s 'sim.ldflags=-L D:/OpenCV/install/x64/mingw/lib -lopencv_imgcodecs440 -lopencv_imgproc440 -lopencv_calib3d440 -lopencv_core440 -lopencv_highgui440 -lopencv_flann440 -lopencv_features2d440' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'sim.ldflags=-L D:/OpenCV/install/x64/mingw/lib -lopencv_imgcodecs440 -lopencv_imgproc440 -lopencv_calib3d440 -lopencv_core440 -lopencv_highgui440 -lopencv_flann440 -lopencv_features2d440' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(11)
+Command     send_msg_by_id done; 0.626 sec.
+Execute     config_sim -ldflags -L D:/OpenCV/install/x64/mingw/lib -lopencv_imgcodecs440 -lopencv_imgproc440 -lopencv_calib3d440 -lopencv_core440 -lopencv_highgui440 -lopencv_flann440 -lopencv_features2d440 
+Command   apply_ini done; 1.961 sec.
+Execute   apply_ini D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/background_subtractor_mog2/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO-FLOW: ::SLX::run_csim failed: child process exited abnormally
+INFO-FLOW: Caught error in csim_design: Problem running csim: child process exited abnormally
+    while executing
+"error "Problem running $stage: $result""
+    (procedure "::AP::hls_slx_hook" line 54)
+    invoked from within
+"::AP::hls_slx_hook csim $config_value_dict replace_flow"
+    (procedure "ap_internal_csim_design" line 104)
+    invoked from within
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 4.736 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/background_subtractor_mog2/hls opened at Sun Jul 21 21:45:39 -0400 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=bg_sub.hpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=bg_sub.hpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(14)
+Execute     add_files D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.hpp 
+INFO: [HLS 200-10] Adding design file 'D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.hpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(15)
+Execute     add_files D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp 
+INFO: [HLS 200-10] Adding design file 'D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(9)
+Execute     add_files * -appendflags -cflags -ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -ID:/OpenCV/install/include -ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2 -D__SDSVHLS__ -std=c++14 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.csimflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.csimflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(10)
+Execute     add_files * -appendflags -csimflags -ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -ID:/OpenCV/install/include -ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2 -D__SDSVHLS__ -std=c++14 
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\captured_frames' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\captured_frames' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(16)
+Execute     add_files -tb D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\captured_frames 
+INFO: [HLS 200-10] Adding test bench file 'D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/captured_frames' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=bg_sub_tb.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=bg_sub_tb.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(17)
+Execute     add_files -tb D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub_tb.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'tb.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(12)
+Execute     add_files -tb * -appendflags -cflags -ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -ID:/OpenCV/install/include -ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2 -D__SDSVHLS__ -std=c++14 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=bg_sub' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=bg_sub' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(7)
+Execute     set_top bg_sub 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 1.154 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.262 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.clean=0' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'csim.clean=0' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(13)
+Execute     config_csim -clean=0 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(8)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(5)
+Command     send_msg_by_id done; 0.561 sec.
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1465@%s 'sim.ldflags=-L D:/OpenCV/install/x64/mingw/lib -lopencv_imgcodecs440 -lopencv_imgproc440 -lopencv_calib3d440 -lopencv_core440 -lopencv_highgui440 -lopencv_flann440 -lopencv_features2d440' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'sim.ldflags=-L D:/OpenCV/install/x64/mingw/lib -lopencv_imgcodecs440 -lopencv_imgproc440 -lopencv_calib3d440 -lopencv_core440 -lopencv_highgui440 -lopencv_flann440 -lopencv_features2d440' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(11)
+Execute     config_sim -ldflags -L D:/OpenCV/install/x64/mingw/lib -lopencv_imgcodecs440 -lopencv_imgproc440 -lopencv_calib3d440 -lopencv_core440 -lopencv_highgui440 -lopencv_flann440 -lopencv_features2d440 
+Command   apply_ini done; 1.863 sec.
+Execute   apply_ini D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/background_subtractor_mog2/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO-FLOW: ::SLX::run_csim failed: child process exited abnormally
+INFO-FLOW: Caught error in csim_design: Problem running csim: child process exited abnormally
+    while executing
+"error "Problem running $stage: $result""
+    (procedure "::AP::hls_slx_hook" line 54)
+    invoked from within
+"::AP::hls_slx_hook csim $config_value_dict replace_flow"
+    (procedure "ap_internal_csim_design" line 104)
+    invoked from within
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 23.349 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/background_subtractor_mog2/hls opened at Sun Jul 21 21:46:29 -0400 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=bg_sub.hpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=bg_sub.hpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(14)
+Execute     add_files D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.hpp 
+INFO: [HLS 200-10] Adding design file 'D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.hpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(15)
+Execute     add_files D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp 
+INFO: [HLS 200-10] Adding design file 'D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(9)
+Execute     add_files * -appendflags -cflags -ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -ID:/OpenCV/install/include -ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2 -D__SDSVHLS__ -std=c++14 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.csimflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.csimflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(10)
+Execute     add_files * -appendflags -csimflags -ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -ID:/OpenCV/install/include -ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2 -D__SDSVHLS__ -std=c++14 
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\captured_frames' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\captured_frames' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(16)
+Execute     add_files -tb D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\captured_frames 
+INFO: [HLS 200-10] Adding test bench file 'D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/captured_frames' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=bg_sub_tb.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=bg_sub_tb.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(17)
+Execute     add_files -tb D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub_tb.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'tb.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(12)
+Execute     add_files -tb * -appendflags -cflags -ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -ID:/OpenCV/install/include -ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2 -D__SDSVHLS__ -std=c++14 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=bg_sub' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=bg_sub' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(7)
+Execute     set_top bg_sub 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 1.145 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.25 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.clean=0' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'csim.clean=0' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(13)
+Execute     config_csim -clean=0 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(8)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(5)
+Command     send_msg_by_id done; 0.54 sec.
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1465@%s 'sim.ldflags=-L D:/OpenCV/install/x64/mingw/lib -lopencv_imgcodecs440 -lopencv_imgproc440 -lopencv_calib3d440 -lopencv_core440 -lopencv_highgui440 -lopencv_flann440 -lopencv_features2d440' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'sim.ldflags=-L D:/OpenCV/install/x64/mingw/lib -lopencv_imgcodecs440 -lopencv_imgproc440 -lopencv_calib3d440 -lopencv_core440 -lopencv_highgui440 -lopencv_flann440 -lopencv_features2d440' from D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/hls_config.cfg(11)
+Execute     config_sim -ldflags -L D:/OpenCV/install/x64/mingw/lib -lopencv_imgcodecs440 -lopencv_imgproc440 -lopencv_calib3d440 -lopencv_core440 -lopencv_highgui440 -lopencv_flann440 -lopencv_features2d440 
+Command   apply_ini done; 1.828 sec.
+Execute   apply_ini D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/background_subtractor_mog2/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO-FLOW: SLX proc replaces csim
+Command   csim_design done; 68.122 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

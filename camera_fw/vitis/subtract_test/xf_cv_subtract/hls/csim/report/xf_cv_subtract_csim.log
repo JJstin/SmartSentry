@@ -1,0 +1,41 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../main.cpp in debug mode
+csim.mk:89: recipe for target 'obj/main.o' failed
+In file included from ../../../../main.cpp:3:
+In file included from D:/Xilinx/Vitis_Libraries/vision/L1/include/core/xf_arithm.hpp:25:
+In file included from D:/Xilinx/Vitis_Libraries/vision/L1/include/common/xf_common.hpp:20:
+In file included from D:/Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:27:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/ap_axi_sdata.h:15:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/ap_int.h:10:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+../../../../main.cpp:45:47: error: too many arguments provided to function-like macro invocation
+    std::cout << SHOW_DEFINE(XF_TNAME(IN_TYPE,NPPCX)) << std::endl;
+                                              ^
+D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract.hpp:12:15: note: expanded from macro 'NPPCX'
+#define NPPCX XF_NPPC1
+              ^
+D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract.hpp:3:9: note: macro 'STR' defined here
+#define STR(x)   #x
+        ^
+../../../../main.cpp:45:18: error: use of undeclared identifier 'STR'
+    std::cout << SHOW_DEFINE(XF_TNAME(IN_TYPE,NPPCX)) << std::endl;
+                 ^
+D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract.hpp:4:46: note: expanded from macro 'SHOW_DEFINE'
+#define SHOW_DEFINE(x) printf("%s=%s\n", #x, STR(x))
+                                             ^
+1 warning and 2 errors generated.
+make: *** [obj/main.o] Error 1
+ERR: [SIM 100] CSim file generation failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<cpuFpgaMapping:cpuFpgaMapping xmlns:cpuFpgaMapping="http://www.xilinx.com/act/cpuFpgaMapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xilinx.com/act/cpuFpgaMapping cpuFPGAMapping.xsd">
+  <Function id="_f214" name="cvflann::anyimpl::big_any_policy&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char>, std::allocator&lt;char> > >::static_delete">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f215" name="cvflann::anyimpl::big_any_policy&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char>, std::allocator&lt;char> > >::copy_from_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f216" name="cvflann::anyimpl::big_any_policy&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char>, std::allocator&lt;char> > >::clone">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f217" name="cvflann::anyimpl::big_any_policy&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char>, std::allocator&lt;char> > >::move">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f218" name="cvflann::anyimpl::big_any_policy&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char>, std::allocator&lt;char> > >::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f219" name="cvflann::anyimpl::big_any_policy&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char>, std::allocator&lt;char> > >::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f220" name="cvflann::anyimpl::typed_base_any_policy&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char>, std::allocator&lt;char> > >::get_size">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f221" name="cvflann::anyimpl::typed_base_any_policy&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char>, std::allocator&lt;char> > >::type">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f222" name="cvflann::anyimpl::big_any_policy&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char>, std::allocator&lt;char> > >::print">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f228" name="cvflann::anyimpl::base_any_policy::~base_any_policy">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f237" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_centers_init_t>::static_delete">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f238" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_centers_init_t>::copy_from_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f239" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_centers_init_t>::clone">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f240" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_centers_init_t>::move">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f241" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_centers_init_t>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f242" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_centers_init_t>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f243" name="cvflann::anyimpl::typed_base_any_policy&lt;cvflann::flann_centers_init_t>::get_size">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f244" name="cvflann::anyimpl::typed_base_any_policy&lt;cvflann::flann_centers_init_t>::type">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f245" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_centers_init_t>::print">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f252" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_algorithm_t>::static_delete">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f253" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_algorithm_t>::copy_from_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f254" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_algorithm_t>::clone">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f255" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_algorithm_t>::move">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f256" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_algorithm_t>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f257" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_algorithm_t>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f258" name="cvflann::anyimpl::typed_base_any_policy&lt;cvflann::flann_algorithm_t>::get_size">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f259" name="cvflann::anyimpl::typed_base_any_policy&lt;cvflann::flann_algorithm_t>::type">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f260" name="cvflann::anyimpl::big_any_policy&lt;cvflann::flann_algorithm_t>::print">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f266" name="cvflann::anyimpl::small_any_policy&lt;bool>::static_delete">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f267" name="cvflann::anyimpl::small_any_policy&lt;bool>::copy_from_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f268" name="cvflann::anyimpl::small_any_policy&lt;bool>::clone">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f269" name="cvflann::anyimpl::small_any_policy&lt;bool>::move">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f270" name="cvflann::anyimpl::small_any_policy&lt;bool>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f271" name="cvflann::anyimpl::small_any_policy&lt;bool>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f272" name="cvflann::anyimpl::typed_base_any_policy&lt;bool>::get_size">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f273" name="cvflann::anyimpl::typed_base_any_policy&lt;bool>::type">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f274" name="cvflann::anyimpl::small_any_policy&lt;bool>::print">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f281" name="cvflann::anyimpl::small_any_policy&lt;float>::static_delete">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f282" name="cvflann::anyimpl::small_any_policy&lt;float>::copy_from_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f283" name="cvflann::anyimpl::small_any_policy&lt;float>::clone">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f284" name="cvflann::anyimpl::small_any_policy&lt;float>::move">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f285" name="cvflann::anyimpl::small_any_policy&lt;float>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f286" name="cvflann::anyimpl::small_any_policy&lt;float>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f287" name="cvflann::anyimpl::typed_base_any_policy&lt;float>::get_size">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f288" name="cvflann::anyimpl::typed_base_any_policy&lt;float>::type">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f289" name="cvflann::anyimpl::small_any_policy&lt;float>::print">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f296" name="cvflann::anyimpl::small_any_policy&lt;int>::static_delete">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f297" name="cvflann::anyimpl::small_any_policy&lt;int>::copy_from_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f298" name="cvflann::anyimpl::small_any_policy&lt;int>::clone">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f299" name="cvflann::anyimpl::small_any_policy&lt;int>::move">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f300" name="cvflann::anyimpl::small_any_policy&lt;int>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f301" name="cvflann::anyimpl::small_any_policy&lt;int>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f302" name="cvflann::anyimpl::typed_base_any_policy&lt;int>::get_size">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f303" name="cvflann::anyimpl::typed_base_any_policy&lt;int>::type">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f304" name="cvflann::anyimpl::small_any_policy&lt;int>::print">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f310" name="cvflann::anyimpl::small_any_policy&lt;char const*>::static_delete">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f311" name="cvflann::anyimpl::small_any_policy&lt;char const*>::copy_from_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f312" name="cvflann::anyimpl::small_any_policy&lt;char const*>::clone">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f313" name="cvflann::anyimpl::small_any_policy&lt;char const*>::move">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f314" name="cvflann::anyimpl::small_any_policy&lt;char const*>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f315" name="cvflann::anyimpl::small_any_policy&lt;char const*>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f316" name="cvflann::anyimpl::typed_base_any_policy&lt;char const*>::get_size">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f317" name="cvflann::anyimpl::typed_base_any_policy&lt;char const*>::type">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f318" name="cvflann::anyimpl::small_any_policy&lt;char const*>::print">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f324" name="cvflann::anyimpl::big_any_policy&lt;cvflann::anyimpl::empty_any>::static_delete">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f325" name="cvflann::anyimpl::big_any_policy&lt;cvflann::anyimpl::empty_any>::copy_from_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f326" name="cvflann::anyimpl::big_any_policy&lt;cvflann::anyimpl::empty_any>::clone">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f327" name="cvflann::anyimpl::big_any_policy&lt;cvflann::anyimpl::empty_any>::move">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f328" name="cvflann::anyimpl::big_any_policy&lt;cvflann::anyimpl::empty_any>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f329" name="cvflann::anyimpl::big_any_policy&lt;cvflann::anyimpl::empty_any>::get_value">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f330" name="cvflann::anyimpl::typed_base_any_policy&lt;cvflann::anyimpl::empty_any>::get_size">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f331" name="cvflann::anyimpl::typed_base_any_policy&lt;cvflann::anyimpl::empty_any>::type">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f332" name="cvflann::anyimpl::big_any_policy&lt;cvflann::anyimpl::empty_any>::print">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f337" name="cvflann::anyimpl::operator&lt;&lt;">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f339" name="main">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f344" name="cv::Mat::Mat">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f347" name="cv::Mat::type">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f348" name="cv::_InputArray::_InputArray">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f349" name="cv::_OutputArray::_OutputArray">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f353" name="cv::_InputArray::~_InputArray">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f354" name="cv::Mat::create">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f355" name="cv::Mat::total">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f356" name="cv::Mat::elemSize">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f358" name="cv::Mat::depth">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f359" name="std::vector&lt;int, std::allocator&lt;int> >::vector">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f361" name="std::vector&lt;int, std::allocator&lt;int> >::~vector">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f363" name="xf::cv::analyzeDiff">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f364" name="printf">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f365" name="cv::Mat::~Mat">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f366" name="cv::Mat::~Mat">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f367" name="cv::Mat::release">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f369" name="__clang_call_terminate">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f375" name="fprintf">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f376" name="std::pow&lt;double, int>">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f377" name="cv::Mat::channels">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f378" name="cv::Mat::at&lt;unsigned char>">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f379" name="cv::Mat::at&lt;unsigned short>">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f380" name="cv::Mat::at&lt;short>">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f381" name="cv::Mat::at&lt;int>">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f382" name="cv::Mat::at&lt;cv::Vec&lt;unsigned char, 3> >">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f383" name="cv::Vec&lt;unsigned char, 3>::operator[]">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f384" name="cv::Mat::at&lt;float>">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f387" name="std::vector&lt;int, std::allocator&lt;int> >::~vector">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f388" name="std::_Vector_base&lt;int, std::allocator&lt;int> >::_M_get_Tp_allocator">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f389" name="std::_Destroy&lt;int*, int>">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f390" name="std::_Vector_base&lt;int, std::allocator&lt;int> >::~_Vector_base">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f391" name="std::_Vector_base&lt;int, std::allocator&lt;int> >::_M_deallocate">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f394" name="std::allocator&lt;int>::~allocator">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f395" name="__gnu_cxx::new_allocator&lt;int>::~new_allocator">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f396" name="std::allocator_traits&lt;std::allocator&lt;int> >::deallocate">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f397" name="__gnu_cxx::new_allocator&lt;int>::deallocate">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f398" name="std::_Destroy&lt;int*>">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f399" name="std::_Destroy_aux&lt;true>::__destroy&lt;int*>">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f400" name="std::vector&lt;int, std::allocator&lt;int> >::vector">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f401" name="std::_Vector_base&lt;int, std::allocator&lt;int> >::_Vector_base">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f402" name="std::_Vector_base&lt;int, std::allocator&lt;int> >::_Vector_impl::_Vector_impl">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f403" name="std::_Vector_base&lt;int, std::allocator&lt;int> >::_Vector_impl::_Vector_impl">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f404" name="std::allocator&lt;int>::allocator">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f405" name="std::_Vector_base&lt;int, std::allocator&lt;int> >::_Vector_impl_data::_Vector_impl_data">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f406" name="__gnu_cxx::new_allocator&lt;int>::new_allocator">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f407" name="cv::MatSize::operator[]">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f409" name="cv::_InputArray::~_InputArray">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f411" name="cv::_OutputArray::_OutputArray">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f412" name="cv::_InputArray::_InputArray">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f413" name="cv::_InputArray::init">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f414" name="cv::Size_&lt;int>::Size_">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f415" name="cv::Size_&lt;int>::Size_">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f416" name="cv::_InputArray::_InputArray">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f417" name="cv::Mat::Mat">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f418" name="cv::MatSize::MatSize">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f419" name="cv::MatStep::MatStep">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f420" name="cv::MatStep::MatStep">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f421" name="cv::MatSize::MatSize">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f428" name="bg_sub">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>true</TopLevel>
+    <IsCalledByHwFn>false</IsCalledByHwFn>
+    <Interfaces>
+      <Return>
+        <PragmaOrigin id="_fi428_return">
+          <CodeSection beginColumn="0" beginLine="29" endColumn="0" endLine="29" file="bg_sub.cpp"/>
+        </PragmaOrigin>
+        <AXI-Lite>
+          <Depth/>
+          <Name/>
+          <Register>false</Register>
+          <Offset/>
+          <Clock/>
+          <Bundle/>
+          <PortBitwidth>32</PortBitwidth>
+        </AXI-Lite>
+      </Return>
+      <Argument declaration="img_in1 (ap_uint&lt;32>*)" id="_v426" name="img_in1">
+        <PragmaOrigin id="_fi428_426">
+          <CodeSection beginColumn="0" beginLine="26" endColumn="0" endLine="26" file="bg_sub.cpp"/>
+        </PragmaOrigin>
+        <AXI>
+          <Depth>1555200</Depth>
+          <Name/>
+          <Offset>slave</Offset>
+          <NumReadOutstanding/>
+          <NumWriteOutstanding/>
+          <MaxReadBurstLength/>
+          <MaxWriteBurstLength/>
+          <Bundle>gmem0</Bundle>
+          <PortBitwidth>128</PortBitwidth>
+        </AXI>
+      </Argument>
+      <Argument declaration="img_in2 (ap_uint&lt;32>*)" id="_v427" name="img_in2">
+        <PragmaOrigin id="_fi428_427">
+          <CodeSection beginColumn="0" beginLine="27" endColumn="0" endLine="27" file="bg_sub.cpp"/>
+        </PragmaOrigin>
+        <AXI>
+          <Depth>1555200</Depth>
+          <Name/>
+          <Offset>slave</Offset>
+          <NumReadOutstanding/>
+          <NumWriteOutstanding/>
+          <MaxReadBurstLength/>
+          <MaxWriteBurstLength/>
+          <Bundle>gmem1</Bundle>
+          <PortBitwidth>128</PortBitwidth>
+        </AXI>
+      </Argument>
+      <Argument declaration="img_out (ap_uint&lt;32>*)" id="_v428" name="img_out">
+        <PragmaOrigin id="_fi428_428">
+          <CodeSection beginColumn="0" beginLine="28" endColumn="0" endLine="28" file="bg_sub.cpp"/>
+        </PragmaOrigin>
+        <AXI>
+          <Depth>1555200</Depth>
+          <Name/>
+          <Offset>slave</Offset>
+          <NumReadOutstanding/>
+          <NumWriteOutstanding/>
+          <MaxReadBurstLength/>
+          <MaxWriteBurstLength/>
+          <Bundle>gmem2</Bundle>
+          <PortBitwidth>128</PortBitwidth>
+        </AXI>
+      </Argument>
+    </Interfaces>
+  </Function>
+  <Function id="_f429" name="xf::cv::Mat&lt;16, 1920, 1080, 1, 2>::Mat">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f430" name="xf::cv::Array2xfMat&lt;32, 16, 1920, 1080, 1, 2>">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f431" name="xf::cv::subtract&lt;0, 16, 1920, 1080, 1, 2, 2, 2>">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f432" name="xf::cv::xfMat2Array&lt;32, 16, 1920, 1080, 1, 2, 1>">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f433" name="xf::cv::Mat&lt;16, 1920, 1080, 1, 2>::~Mat">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f434" name="xf::cv::Mat&lt;16, 1920, 1080, 1, 2>::~Mat">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f436" name="xf::cv::MMIterOut&lt;32, 16, 1920, 1080, 1, 1, 2>::xfMat2Array">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f437" name="xf::cv::MMIterOut&lt;32, 16, 1920, 1080, 1, 1, 2>::Mat2Axi">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f438" name="xf::cv::MMIter&lt;32, 16, 1920, 1080, 1, 2>::addrbound">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f439" name="xf::cv::MMIterOut&lt;32, 16, 1920, 1080, 1, 1, 2>::Mat2AxiStream">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f440" name="xf::cv::MMIterOut&lt;32, 16, 1920, 1080, 1, 1, 2>::AxiStream2Axi">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f441" name="xf::cv::MMIter&lt;32, 16, 1920, 1080, 1, 2>::cols_npc_aligned">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f442" name="xf::cv::MMIter&lt;32, 16, 1920, 1080, 1, 2>::last_blk_pxl_width">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f443" name="xf::cv::MMIterOut&lt;32, 16, 1920, 1080, 1, 1, 2>::MatStream2AxiStream&lt;2>">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f445" name="xf::cv::Scalar&lt;3, unsigned char>::Scalar">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f446" name="xf::cv::xFarithm_proc&lt;16, 1920, 1080, 3, 16, 1, 2, 2, 2, 10, 10, 1080, kernel_sub, 1>">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f447" name="xf::cv::Mat&lt;16, 1920, 1080, 1, 2>::read&lt;2, (void*)0>">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f448" name="kernel_sub::apply&lt;16>">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f449" name="xf::cv::Mat&lt;16, 1920, 1080, 1, 2>::write&lt;2, (void*)0>">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f450" name="xf::cv::Scalar&lt;3, unsigned char>::Scalar">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f451" name="xf::cv::MMIterIn&lt;32, 16, 1920, 1080, 1, 2>::Array2xfMat">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f452" name="xf::cv::MMIterIn&lt;32, 16, 1920, 1080, 1, 2>::Axi2Mat">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f453" name="xf::cv::MMIterIn&lt;32, 16, 1920, 1080, 1, 2>::Axi2AxiStream">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f454" name="xf::cv::MMIterIn&lt;32, 16, 1920, 1080, 1, 2>::AxiStream2Mat">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f455" name="xf::cv::MMIterIn&lt;32, 16, 1920, 1080, 1, 2>::AxiStream2MatStream&lt;2>">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f456" name="xf::cv::Mat&lt;16, 1920, 1080, 1, 2>::Mat">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f457" name="xf::cv::Mat&lt;16, 1920, 1080, 1, 2>::init">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f459" name="xf::cv::Mat&lt;16, 1920, 1080, 1, 2>::alloc_data&lt;2, (void*)0>">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+</cpuFpgaMapping:cpuFpgaMapping>

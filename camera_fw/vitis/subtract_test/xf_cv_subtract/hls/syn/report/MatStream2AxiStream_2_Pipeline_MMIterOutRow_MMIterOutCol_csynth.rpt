@@ -1,0 +1,183 @@
+
+
+================================================================
+== Vitis HLS Report for 'MatStream2AxiStream_2_Pipeline_MMIterOutRow_MMIterOutCol'
+================================================================
+* Date:           Sun Jul 21 20:36:52 2024
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        xf_cv_subtract
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.609 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+---------+---------+-----------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |      Interval     |                    Pipeline                   |
+    |   min   |   max   |    min    |    max    |   min   |   max   |                      Type                     |
+    +---------+---------+-----------+-----------+---------+---------+-----------------------------------------------+
+    |  2073604|  2073604|  20.736 ms|  20.736 ms|  2073601|  2073601|  loop auto-rewind stp(delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+---------+---------+-----------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |                             |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        |          Loop Name          |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +-----------------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- MMIterOutRow_MMIterOutCol  |  2073602|  2073602|         4|          1|          1|  2073600|       yes|
+        +-----------------------------+---------+---------+----------+-----------+-----------+---------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    499|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     82|    -|
+|Register         |        -|    -|     162|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     162|    581|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+-----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+-----+------------+------------+
+    |add_ln1301_fu_125_p2              |         +|   0|  0|   28|          21|           1|
+    |add_ln1325_fu_200_p2              |         +|   0|  0|   14|           6|           5|
+    |add_ln1333_fu_189_p2              |         +|   0|  0|   14|           6|           5|
+    |sub_ln1332_1_fu_183_p2            |         -|   0|  0|   14|           1|           6|
+    |sub_ln1332_fu_169_p2              |         -|   0|  0|   14|           7|           6|
+    |ap_block_state2_pp0_stage0_iter1  |       and|   0|  0|    2|           1|           1|
+    |ap_block_state4_pp0_stage0_iter3  |       and|   0|  0|    2|           1|           1|
+    |ap_condition_298                  |       and|   0|  0|    2|           1|           1|
+    |ap_condition_302                  |       and|   0|  0|    2|           1|           1|
+    |icmp_ln1301_fu_119_p2             |      icmp|   0|  0|   28|          21|          16|
+    |icmp_ln1324_fu_163_p2             |      icmp|   0|  0|   11|           3|           1|
+    |lshr_ln1332_fu_231_p2             |      lshr|   0|  0|  100|          32|          32|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|    2|           1|           1|
+    |localbuffer_1_fu_214_p2           |        or|   0|  0|   32|          32|          32|
+    |localbuffer_2_fu_236_p3           |    select|   0|  0|   32|           1|          32|
+    |shl_ln1332_fu_226_p2              |       shl|   0|  0|  100|          32|          32|
+    |tempval_fu_147_p2                 |       shl|   0|  0|  100|          32|          32|
+    |ap_enable_pp0                     |       xor|   0|  0|    2|           1|           2|
+    +----------------------------------+----------+----+---+-----+------------+------------+
+    |Total                             |          |   0|  0|  499|         200|         207|
+    +----------------------------------+----------+----+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter3               |   9|          2|    1|          2|
+    |ap_sig_allocacmp_indvar_flatten_load  |   9|          2|   21|         42|
+    |filled_fu_62                          |  14|          3|    6|         18|
+    |imgOutput_data_blk_n                  |   9|          2|    1|          2|
+    |indvar_flatten_fu_70                  |   9|          2|   21|         42|
+    |ldata_blk_n                           |   9|          2|    1|          2|
+    |localbuffer_fu_66                     |  14|          3|   32|         96|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  82|         18|   84|        206|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------+----+----+-----+-----------+
+    |                Name               | FF | LUT| Bits| Const Bits|
+    +-----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                          |   1|   0|    1|          0|
+    |ap_done_reg                        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3            |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg   |   1|   0|    1|          0|
+    |filled_fu_62                       |   6|   0|    6|          0|
+    |icmp_ln1301_reg_281                |   1|   0|    1|          0|
+    |icmp_ln1301_reg_281_pp0_iter1_reg  |   1|   0|    1|          0|
+    |icmp_ln1324_reg_301                |   1|   0|    1|          0|
+    |indvar_flatten_fu_70               |  21|   0|   21|          0|
+    |localbuffer_fu_66                  |  32|   0|   32|          0|
+    |sub_ln1332_1_reg_315               |   6|   0|    6|          0|
+    |sub_ln1332_reg_305                 |   6|   0|    6|          0|
+    |tempval_reg_296                    |  32|   0|   32|          0|
+    |tmp_6_reg_310                      |   1|   0|    1|          0|
+    |val_reg_285                        |  24|   0|   24|          0|
+    |zext_ln1316_reg_290                |  24|   0|   32|          8|
+    +-----------------------------------+----+----+-----+-----------+
+    |Total                              | 162|   0|  170|          8|
+    +-----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------+-----+-----+------------+-----------------------------------------------------------+--------------+
+|           RTL Ports           | Dir | Bits|  Protocol  |                       Source Object                       |    C Type    |
++-------------------------------+-----+-----+------------+-----------------------------------------------------------+--------------+
+|ap_clk                         |   in|    1|  ap_ctrl_hs|  MatStream2AxiStream<2>_Pipeline_MMIterOutRow_MMIterOutCol|  return value|
+|ap_rst                         |   in|    1|  ap_ctrl_hs|  MatStream2AxiStream<2>_Pipeline_MMIterOutRow_MMIterOutCol|  return value|
+|ap_start                       |   in|    1|  ap_ctrl_hs|  MatStream2AxiStream<2>_Pipeline_MMIterOutRow_MMIterOutCol|  return value|
+|ap_done                        |  out|    1|  ap_ctrl_hs|  MatStream2AxiStream<2>_Pipeline_MMIterOutRow_MMIterOutCol|  return value|
+|ap_idle                        |  out|    1|  ap_ctrl_hs|  MatStream2AxiStream<2>_Pipeline_MMIterOutRow_MMIterOutCol|  return value|
+|ap_ready                       |  out|    1|  ap_ctrl_hs|  MatStream2AxiStream<2>_Pipeline_MMIterOutRow_MMIterOutCol|  return value|
+|imgOutput_data_dout            |   in|   24|     ap_fifo|                                             imgOutput_data|       pointer|
+|imgOutput_data_num_data_valid  |   in|    3|     ap_fifo|                                             imgOutput_data|       pointer|
+|imgOutput_data_fifo_cap        |   in|    3|     ap_fifo|                                             imgOutput_data|       pointer|
+|imgOutput_data_empty_n         |   in|    1|     ap_fifo|                                             imgOutput_data|       pointer|
+|imgOutput_data_read            |  out|    1|     ap_fifo|                                             imgOutput_data|       pointer|
+|ldata_din                      |  out|   32|     ap_fifo|                                                      ldata|       pointer|
+|ldata_num_data_valid           |   in|    3|     ap_fifo|                                                      ldata|       pointer|
+|ldata_fifo_cap                 |   in|    3|     ap_fifo|                                                      ldata|       pointer|
+|ldata_full_n                   |   in|    1|     ap_fifo|                                                      ldata|       pointer|
+|ldata_write                    |  out|    1|     ap_fifo|                                                      ldata|       pointer|
+|localbuffer_1_out              |  out|   32|      ap_vld|                                          localbuffer_1_out|       pointer|
+|localbuffer_1_out_ap_vld       |  out|    1|      ap_vld|                                          localbuffer_1_out|       pointer|
+|filled_1_out                   |  out|    6|      ap_vld|                                               filled_1_out|       pointer|
+|filled_1_out_ap_vld            |  out|    1|      ap_vld|                                               filled_1_out|       pointer|
++-------------------------------+-----+-----+------------+-----------------------------------------------------------+--------------+
+

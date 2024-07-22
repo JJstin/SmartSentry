@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2",
+    "arguments": [
+      "D:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14",
+      "-c",
+      "D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp"
+    ],
+    "file": "D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2/bg_sub.cpp"
+  },
+  {
+    "directory": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2",
+    "arguments": [
+      "D:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=D:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14",
+      "-c",
+      "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\bg_sub_tb.cpp"
+    ],
+    "file": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\bg_sub_tb.cpp"
+  }
+]

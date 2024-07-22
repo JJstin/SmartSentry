@@ -1,0 +1,11 @@
+{
+  "name": "subtract_test",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "xf_cv_subtract"
+  }
+}

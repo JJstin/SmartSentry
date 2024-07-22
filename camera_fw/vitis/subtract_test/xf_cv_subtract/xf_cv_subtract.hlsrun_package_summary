@@ -1,0 +1,161 @@
+<ENTRY>
+{
+ "thisFile": "D:/design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test\\xf_cv_subtract\\xf_cv_subtract.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "07/21/24 21:00:11",
+ "timestampMillis": "3623092817",
+ "buildStep": {
+  "cmdId": "4dc6d5d5-c072-481a-93b3-c891796b360a",
+  "name": "vitis-run",
+  "logFile": "D:/design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test\\xf_cv_subtract\\logs\\xf_cv_subtract.steps.log",
+  "commandLine": "D:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test\\hls_config.cfg --work_dir xf_cv_subtract ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test\\hls_config.cfg",
+   "--work_dir",
+   "xf_cv_subtract"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/21/24 21:00:11",
+ "timestampMillis": "3623092817",
+ "status": {
+  "cmdId": "4dc6d5d5-c072-481a-93b3-c891796b360a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "07/21/24 21:00:18",
+ "timestampMillis": "3623099972",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "xf_cv_subtract",
+     "file": "D:/design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test\\xf_cv_subtract\\xf_cv_subtract.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test\\xf_cv_subtract.cpp",
+     "D:/design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test\\xf_cv_subtract.hpp",
+     "D:/design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test\\test.hpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "07/21/24 21:00:18",
+ "timestampMillis": "3623099973",
+ "buildStep": {
+  "cmdId": "9c0f9b74-711a-4b80-9038-84e05859e032",
+  "name": "export_design",
+  "logFile": "D:/design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test\\xf_cv_subtract\\hls\\hls.log",
+  "commandLine": "export_design -flow none",
+  "args": [
+   "-flow",
+   "none"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/21/24 21:00:18",
+ "timestampMillis": "3623099973",
+ "status": {
+  "cmdId": "9c0f9b74-711a-4b80-9038-84e05859e032",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/21/24 21:00:37",
+ "timestampMillis": "3623118664",
+ "status": {
+  "cmdId": "9c0f9b74-711a-4b80-9038-84e05859e032",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/21/24 21:00:37",
+ "timestampMillis": "3623118799",
+ "status": {
+  "cmdId": "4dc6d5d5-c072-481a-93b3-c891796b360a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/21/24 21:00:37",
+ "timestampMillis": "3623118799",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/21/24 21:00:37",
+ "timestampMillis": "3623118799",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

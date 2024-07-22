@@ -1,0 +1,4 @@
+parallelismSelector::WARNG: Variable 'unnamed' unknown source VariableId 438 is not part of the design space!--
+                            
+parallelismSelector::WARNG: WARNING: [SIM 211-200] Code Analyzer will not display the impact of 'tripcount' (Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1019:2) as the loop has been optimized out
+parallelismSelector::WARNG: WARNING: [SIM 211-200] Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1023:2: Pragma 'tripcount' has been kept but may be incorrect: The maximum tripcount in the pragma (810) is less than the maximum dynamic tripcount computed for the loop (1555200)

@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "D:/design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test\\xf_cv_subtract\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jul 22 00:47:49 2024",
+ "timestampMillis": "1721623669511",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jul 22 00:47:49 2024",
+ "timestampMillis": "1721623669511",
+ "buildStep": {
+  "cmdId": "8c15f9a5-47e5-11ef-bf87-207bd2d2ea0c",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jul 22 00:47:49 2024",
+ "timestampMillis": "1721623669512",
+ "status": {
+  "cmdId": "8c15f9a5-47e5-11ef-bf87-207bd2d2ea0c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jul 22 00:49:09 2024",
+ "timestampMillis": "1721623749564",
+ "status": {
+  "cmdId": "8c15f9a5-47e5-11ef-bf87-207bd2d2ea0c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jul 22 00:49:09 2024",
+ "timestampMillis": "1721623749565",
+ "report": {
+  "path": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\subtract_test",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "8c15f9a5-47e5-11ef-bf87-207bd2d2ea0c"
+ }
+}
+</ENTRY>

@@ -1,0 +1,166 @@
+
+
+================================================================
+== Vitis HLS Report for 'subtract_0_16_1920_1080_1_2_2_2_Pipeline_colLoop'
+================================================================
+* Date:           Sun Jul 21 20:36:51 2024
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        xf_cv_subtract
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.797 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+-----------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  |                    Pipeline                   |
+    |   min   |   max   |    min    |    max    |  min |  max |                      Type                     |
+    +---------+---------+-----------+-----------+------+------+-----------------------------------------------+
+    |     1083|     1083|  10.830 us|  10.830 us|  1081|  1081|  loop auto-rewind stp(delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+------+------+-----------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+        |           |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- colLoop  |     1081|     1081|         3|          1|          1|  1080|       yes|
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     96|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     63|    -|
+|Register         |        -|    -|      40|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      40|    159|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |j_2_fu_91_p2                      |         +|   0|  0|  12|          11|           1|
+    |result_temp_1_fu_172_p2           |         -|   0|  0|  14|           9|           9|
+    |result_temp_2_fu_226_p2           |         -|   0|  0|  14|           9|           9|
+    |result_temp_fu_118_p2             |         -|   0|  0|  14|           9|           9|
+    |icmp_ln827_fu_85_p2               |      icmp|   0|  0|  12|          11|          11|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|   2|           1|           1|
+    |ap_block_state2_pp0_stage0_iter1  |        or|   0|  0|   2|           1|           1|
+    |select_ln851_1_fu_190_p3          |    select|   0|  0|   8|           1|           1|
+    |select_ln851_2_fu_244_p3          |    select|   0|  0|   8|           1|           1|
+    |select_ln851_fu_136_p3            |    select|   0|  0|   8|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  96|          55|          46|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_j_1     |   9|          2|   11|         22|
+    |imgInput1_data_blk_n     |   9|          2|    1|          2|
+    |imgInput2_data_blk_n     |   9|          2|    1|          2|
+    |imgOutput_data_blk_n     |   9|          2|    1|          2|
+    |j_fu_54                  |   9|          2|   11|         22|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  63|         14|   27|         54|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |j_fu_54                           |  11|   0|   11|          0|
+    |select_ln851_1_reg_276            |   8|   0|    8|          0|
+    |select_ln851_2_reg_281            |   8|   0|    8|          0|
+    |select_ln851_reg_271              |   8|   0|    8|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             |  40|   0|   40|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------+-----+-----+------------+----------------------------------------------------------+--------------+
+|           RTL Ports           | Dir | Bits|  Protocol  |                       Source Object                      |    C Type    |
++-------------------------------+-----+-----+------------+----------------------------------------------------------+--------------+
+|ap_clk                         |   in|    1|  ap_ctrl_hs|  subtract<0, 16, 1920, 1080, 1, 2, 2, 2>_Pipeline_colLoop|  return value|
+|ap_rst                         |   in|    1|  ap_ctrl_hs|  subtract<0, 16, 1920, 1080, 1, 2, 2, 2>_Pipeline_colLoop|  return value|
+|ap_start                       |   in|    1|  ap_ctrl_hs|  subtract<0, 16, 1920, 1080, 1, 2, 2, 2>_Pipeline_colLoop|  return value|
+|ap_done                        |  out|    1|  ap_ctrl_hs|  subtract<0, 16, 1920, 1080, 1, 2, 2, 2>_Pipeline_colLoop|  return value|
+|ap_idle                        |  out|    1|  ap_ctrl_hs|  subtract<0, 16, 1920, 1080, 1, 2, 2, 2>_Pipeline_colLoop|  return value|
+|ap_ready                       |  out|    1|  ap_ctrl_hs|  subtract<0, 16, 1920, 1080, 1, 2, 2, 2>_Pipeline_colLoop|  return value|
+|imgInput1_data_dout            |   in|   24|     ap_fifo|                                            imgInput1_data|       pointer|
+|imgInput1_data_num_data_valid  |   in|    3|     ap_fifo|                                            imgInput1_data|       pointer|
+|imgInput1_data_fifo_cap        |   in|    3|     ap_fifo|                                            imgInput1_data|       pointer|
+|imgInput1_data_empty_n         |   in|    1|     ap_fifo|                                            imgInput1_data|       pointer|
+|imgInput1_data_read            |  out|    1|     ap_fifo|                                            imgInput1_data|       pointer|
+|imgInput2_data_dout            |   in|   24|     ap_fifo|                                            imgInput2_data|       pointer|
+|imgInput2_data_num_data_valid  |   in|    3|     ap_fifo|                                            imgInput2_data|       pointer|
+|imgInput2_data_fifo_cap        |   in|    3|     ap_fifo|                                            imgInput2_data|       pointer|
+|imgInput2_data_empty_n         |   in|    1|     ap_fifo|                                            imgInput2_data|       pointer|
+|imgInput2_data_read            |  out|    1|     ap_fifo|                                            imgInput2_data|       pointer|
+|imgOutput_data_din             |  out|   24|     ap_fifo|                                            imgOutput_data|       pointer|
+|imgOutput_data_num_data_valid  |   in|    3|     ap_fifo|                                            imgOutput_data|       pointer|
+|imgOutput_data_fifo_cap        |   in|    3|     ap_fifo|                                            imgOutput_data|       pointer|
+|imgOutput_data_full_n          |   in|    1|     ap_fifo|                                            imgOutput_data|       pointer|
+|imgOutput_data_write           |  out|    1|     ap_fifo|                                            imgOutput_data|       pointer|
++-------------------------------+-----+-----+------------+----------------------------------------------------------+--------------+
+

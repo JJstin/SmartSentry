@@ -1,0 +1,254 @@
+{
+    "rules": {
+        "['D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\bg_sub.cpp.0.bc', 'D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\bg_sub.cpp.0.bc.d']": {
+            "command": [
+                "d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-emit-llvm",
+                "-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config",
+                "-ID:/Xilinx/Vitis_Libraries/vision/L1/include",
+                "-ID:/OpenCV/install/include",
+                "-ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2",
+                "-D__SDSVHLS__",
+                "-std=c++14",
+                "-MD",
+                "-MF",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\bg_sub.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\data\\autopilot",
+                "-vitis-hls=D:\\Xilinx\\Vitis_HLS\\2024.1",
+                "--sysroot=D:\\Xilinx\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=bg_sub",
+                "-fslxtrace",
+                "bg_sub.cpp",
+                "-o",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\bg_sub.cpp.0.bc"
+            ],
+            "exectime": 1.699554681777954,
+            "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2"
+        },
+        "['D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\bg_sub_tb.cpp.0.o', 'D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\bg_sub_tb.cpp.0.o.d']": {
+            "command": [
+                "d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config",
+                "-ID:/Xilinx/Vitis_Libraries/vision/L1/include",
+                "-ID:/OpenCV/install/include",
+                "-ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2",
+                "-D__SDSVHLS__",
+                "-std=c++14",
+                "-MD",
+                "-MF",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\bg_sub_tb.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\data\\include",
+                "-vitis-hls=D:\\Xilinx\\Vitis_HLS\\2024.1",
+                "--sysroot=D:\\Xilinx\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=bg_sub",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "bg_sub_tb.cpp",
+                "-o",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\bg_sub_tb.cpp.0.o"
+            ],
+            "exectime": 2.918109178543091,
+            "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2"
+        },
+        "['D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\bg_sub.cpp.0.o', 'D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\bg_sub.cpp.0.o.d']": {
+            "command": [
+                "d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config",
+                "-ID:/Xilinx/Vitis_Libraries/vision/L1/include",
+                "-ID:/OpenCV/install/include",
+                "-ID:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2",
+                "-D__SDSVHLS__",
+                "-std=c++14",
+                "-MD",
+                "-MF",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\bg_sub.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\data\\include",
+                "-vitis-hls=D:\\Xilinx\\Vitis_HLS\\2024.1",
+                "--sysroot=D:\\Xilinx\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=bg_sub",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "bg_sub.cpp",
+                "-o",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\bg_sub.cpp.0.o"
+            ],
+            "exectime": 2.161647319793701,
+            "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2"
+        },
+        "['D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.bc']": {
+            "command": [
+                "d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/llvm-link.exe",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\bg_sub.cpp.0.bc",
+                "-o",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc"
+            ],
+            "exectime": 0.5499627590179443,
+            "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2"
+        },
+        "['D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.opt.bc']": {
+            "command": [
+                "d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/opt.exe",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc",
+                "-o",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc"
+            ],
+            "exectime": 0.5739157199859619,
+            "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2"
+        },
+        "['D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\app.exe']": {
+            "command": [
+                "d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/clang++.exe",
+                "-o",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe",
+                "-L",
+                "D:/OpenCV/install/x64/mingw/lib",
+                "-lopencv_imgcodecs440",
+                "-lopencv_imgproc440",
+                "-lopencv_calib3d440",
+                "-lopencv_core440",
+                "-lopencv_highgui440",
+                "-lopencv_flann440",
+                "-lopencv_features2d440",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\bg_sub_tb.cpp.0.o",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\bg_sub.cpp.0.o",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc",
+                "-fhls",
+                "-fhlstoplevel=bg_sub",
+                "-vitis-hls=D:\\Xilinx\\Vitis_HLS\\2024.1",
+                "-fslxtrace",
+                "-Wl,-mllvm,-profilerOutputDirectory=D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\profiler\\0",
+                "-fslxpthreads",
+                "-lpthread",
+                "--sysroot=D:\\Xilinx\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt"
+            ],
+            "exectime": 4.14136815071106,
+            "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2"
+        },
+        "['D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\binary_dependencies.json']": {
+            "command": [
+                "d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\libexec\\clang-scan-deps.exe",
+                "--compilation-database=D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\compile_commands.json",
+                "--format=vitiscxx",
+                "--reuse-filemanager=false",
+                "--output=D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\binary_dependencies.json"
+            ],
+            "exectime": 0.7287001609802246,
+            "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2"
+        },
+        "['D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\output\\\\app.functionGraph']": {
+            "command": [
+                "d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/staticCallGraph.exe",
+                "-i",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "-o",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\output\\app.functionGraph"
+            ],
+            "exectime": 0.8844690322875977,
+            "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2"
+        },
+        "['D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\output\\\\app.functionMapping']": {
+            "command": [
+                "d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/functionMapper.exe",
+                "--static-xml",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "--function-mapping",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\output\\app.functionMapping",
+                "--ir-module",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "--fn",
+                "428"
+            ],
+            "exectime": 0.633171796798706,
+            "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2"
+        },
+        "['D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stdout.txt', 'D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stderr.txt']": {
+            "command": [
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe"
+            ],
+            "exectime": 20.411054134368896,
+            "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\tracing\\csim\\build"
+        },
+        "['D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\output\\\\reduced_programmodel.app']": {
+            "command": [
+                "d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/optimizer.exe",
+                "-DFGPass",
+                "-appName=app",
+                "-outputDir",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\output",
+                "-logDir",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\log",
+                "-pmout=D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\output\\reduced_programmodel.app",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "-staticFile",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "-traceFile",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\profiler\\0\\app_0_0\\thread0000-trace.txt",
+                "-o",
+                "nul"
+            ],
+            "exectime": 40.72797250747681,
+            "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2"
+        },
+        "['D:\\\\design_project-code\\\\SmartSentry\\\\camera_fw\\\\vitis\\\\background_subtractor_mog2\\\\background_subtractor_mog2\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\dataflow\\\\0\\\\taskgraph.json']": {
+            "command": [
+                "d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/parallelismSelector.exe",
+                "-g",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\output\\reduced_programmodel.app",
+                "--basepath",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2",
+                "--static-xml",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "--fpga-part",
+                "xc7z020-clg400-1",
+                "--device-totals",
+                "d:\\xilinx\\vitis_hls\\2024.1\\vcxx\\data\\platform\\logic\\fpga.devicetotals",
+                "--clock-frequency",
+                "100.0",
+                "--out-dir",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\output",
+                "--log-dir",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\log",
+                "--mapping",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\output\\app.functionMapping",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "4",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--ir-module",
+                "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\background_subtractor_mog2\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--df-id",
+                "0",
+                "--df-target",
+                "%F428"
+            ],
+            "exectime": 2.5139501094818115,
+            "cwd": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2"
+        }
+    }
+}

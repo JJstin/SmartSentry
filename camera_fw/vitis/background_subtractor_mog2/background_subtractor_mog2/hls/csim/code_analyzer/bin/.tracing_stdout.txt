@@ -1,0 +1,19 @@
+values read 0
+1920x1080
+16
+calling cv subtract
+cv subtract done
+Size of img1 data buffer: 6220800
+Depth of img1: 0
+Size of img2 data buffer: 6220800
+Depth of img2: 0
+Size of hls_res data buffer: 6220800
+Size of xf_cv_subtract port: 1555200
+Bit depth of xf_cv_subtract: 2
+caling xf_cv_subtract
+xf_cv_subtract done
+	Minimum error in intensity = 0
+	Maximum error in intensity = 0
+	Percentage of pixels above error threshold = 0
+Test passed !
+Test passed !

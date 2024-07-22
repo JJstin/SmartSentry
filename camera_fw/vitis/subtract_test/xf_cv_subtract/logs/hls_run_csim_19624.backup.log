@@ -1,0 +1,125 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract\xf_cv_subtract.hlsrun_csim_summary, at 07/21/24 18:51:25
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract -config D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg -cmdlineconfig D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sun Jul 21 18:51:28 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source D:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'Pear' on host 'laptop-pear' (Windows NT_amd64 version 10.0) on Sun Jul 21 18:51:29 -0400 2024
+INFO: [HLS 200-10] In directory 'D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test'
+INFO: [HLS 200-2005] Using work_dir D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\xf_cv_subtract.hpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=test.hpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/test.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'syn.csimflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'tb.file=main.cpp' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/main.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:\design_project-code\SmartSentry\camera_fw\vitis\subtract_test\captured_frames' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding test bench file 'D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/captured_frames' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.cflags=-ID:/Xilinx/Vitis_Libraries/vision/L1/examples/remap/config -ID:/Xilinx/Vitis_Libraries/vision/L1/include -I D:/OpenCV/install/include -I ./ -D__SDSVHLS__ -std=c++14' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'syn.top=xf_cv_subtract' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'csim.clean=1' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(18)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'sim.ldflags=-L D:/OpenCV/install/x64/mingw/lib -lopencv_imgcodecs440 -lopencv_imgproc440 -lopencv_calib3d440 -lopencv_core440 -lopencv_highgui440 -lopencv_flann440 -lopencv_features2d440' from D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/hls_config.cfg(11)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [SIM 211-200] Cleaning
+[ Cleaned build and execution files ]
+INFO: [SIM 211-200] Compiling source code xf_cv_subtract.cpp as hardware code with instrumentation
+INFO: [SIM 211-200] Compiling source code main.cpp as test bench code with instrumentation
+INFO: [SIM 211-200] Compiling source code xf_cv_subtract.cpp as test bench code with instrumentation
+In file included from xf_cv_subtract.cpp:15:
+In file included from D:/Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:23:
+D:/Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:759:59: warning: 'factor' in '#pragma HLS array_reshape' is ignored [-Wextra-tokens]
+            #pragma HLS ARRAY_RESHAPE variable=val factor=RESHAPE_FACTOR  dim=1
+                                                          ^
+1 warning generated.
+main.cpp:66:17: error: no viable conversion from 'std::string' (aka 'basic_string<char>') to 'const cv::_InputArray'
+    cv::absdiff(cv_sub, hls_sub, diff);
+                ^~~~~~
+D:/OpenCV/install/include/opencv2/core/mat.hpp:158:18: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const cv::_InputArray &' for 1st argument
+class CV_EXPORTS _InputArray
+                 ^
+D:/OpenCV/install/include/opencv2/core/mat.hpp:188:5: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const cv::MatExpr &' for 1st argument
+    _InputArray(const MatExpr& expr);
+    ^
+D:/OpenCV/install/include/opencv2/core/mat.hpp:194:5: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const std::vector<std::vector<bool>> &' for 1st argument
+    _InputArray(const std::vector<std::vector<bool> >&) = delete;  // not supported
+    ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:103:21: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const cv::Mat &' for 1st argument
+inline _InputArray::_InputArray(const Mat& m) { init(MAT+ACCESS_READ, &m); }
+                    ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:104:21: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const std::vector<Mat> &' for 1st argument
+inline _InputArray::_InputArray(const std::vector<Mat>& vec) { init(STD_VECTOR_MAT+ACCESS_READ, &vec); }
+                    ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:105:21: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const cv::UMat &' for 1st argument
+inline _InputArray::_InputArray(const UMat& m) { init(UMAT+ACCESS_READ, &m); }
+                    ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:106:21: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const std::vector<UMat> &' for 1st argument
+inline _InputArray::_InputArray(const std::vector<UMat>& vec) { init(STD_VECTOR_UMAT+ACCESS_READ, &vec); }
+                    ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:121:14: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const std::vector<bool> &' for 1st argument
+_InputArray::_InputArray(const std::vector<bool>& vec)
+             ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:144:21: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const double &' for 1st argument
+inline _InputArray::_InputArray(const double& val)
+                    ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:147:21: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const cuda::GpuMat &' for 1st argument
+inline _InputArray::_InputArray(const cuda::GpuMat& d_mat)
+                    ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:150:21: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const std::vector<cuda::GpuMat> &' for 1st argument
+inline _InputArray::_InputArray(const std::vector<cuda::GpuMat>& d_mat)
+                    ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:153:21: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const ogl::Buffer &' for 1st argument
+inline _InputArray::_InputArray(const ogl::Buffer& buf)
+                    ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:156:21: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const cuda::HostMem &' for 1st argument
+inline _InputArray::_InputArray(const cuda::HostMem& cuda_mem)
+                    ^
+D:/OpenCV/install/include/opencv2/core/mat.hpp:203:28: note: candidate template ignored: could not match 'GpuMat_' against 'basic_string'
+    template<typename _Tp> _InputArray(const cudev::GpuMat_<_Tp>& m);
+                           ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:109:14: note: candidate template ignored: could not match 'vector' against 'basic_string'
+_InputArray::_InputArray(const std::vector<_Tp>& vec)
+             ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:113:14: note: candidate template ignored: could not match 'array' against 'basic_string'
+_InputArray::_InputArray(const std::array<_Tp, _Nm>& arr)
+             ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:117:14: note: candidate template ignored: could not match 'array' against 'basic_string'
+_InputArray::_InputArray(const std::array<Mat, _Nm>& arr)
+             ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:125:14: note: candidate template ignored: could not match 'vector' against 'basic_string'
+_InputArray::_InputArray(const std::vector<std::vector<_Tp> >& vec)
+             ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:129:14: note: candidate template ignored: could not match 'vector' against 'basic_string'
+_InputArray::_InputArray(const std::vector<Mat_<_Tp> >& vec)
+             ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:133:14: note: candidate template ignored: could not match 'Matx' against 'basic_string'
+_InputArray::_InputArray(const Matx<_Tp, m, n>& mtx)
+             ^
+D:/OpenCV/install/include/opencv2/core/mat.inl.hpp:141:14: note: candidate template ignored: could not match 'Mat_' against 'basic_string'
+_InputArray::_InputArray(const Mat_<_Tp>& m)
+             ^
+D:/OpenCV/install/include/opencv2/core.hpp:1352:38: note: passing argument to parameter 'src1' here
+CV_EXPORTS_W void absdiff(InputArray src1, InputArray src2, OutputArray dst);
+                                     ^
+1 error generated.
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 10.501 seconds; peak allocated memory: 176.168 MB.

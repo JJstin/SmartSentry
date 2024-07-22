@@ -1,0 +1,17 @@
+{
+  "workspaceRoot": "D:\\design_project-code\\SmartSentry\\camera_fw\\vitis",
+  "mapping": {
+    "vitis_vision_test\\xf_cv_remap.cpp": "vitis_vision_test",
+    "subtract_test\\xf_cv_subtract.cpp": "background_subtractor_mog2",
+    "background_subtractor_mog2\\xf_cv_subtract.cpp": "background_subtractor_mog2",
+    "vitis_vision_test\\main.cpp": "vitis_vision_test",
+    "subtract_test\\main.cpp": "subtract_test",
+    "subtract_test\\test.hpp": "subtract_test",
+    "background_subtractor_mog2\\main.cpp": "background_subtractor_mog2",
+    "background_subtractor_mog2\\bg_sub_tb.cpp": "background_subtractor_mog2",
+    "background_subtractor_mog2\\background_subtractor_mog2.cpp": "background_subtractor_mog2",
+    "subtract_test\\xf_cv_subtract.hpp": "subtract_test",
+    "subtract_test\\captured_frames": "subtract_test",
+    "background_subtractor_mog2\\bg_sub.cpp": "background_subtractor_mog2"
+  }
+}

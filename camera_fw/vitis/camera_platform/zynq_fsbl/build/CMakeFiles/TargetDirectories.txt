@@ -1,3 +1,3 @@
-C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
-C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
-C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir
+D:/design_project-code/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+D:/design_project-code/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+D:/design_project-code/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

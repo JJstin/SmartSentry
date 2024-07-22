@@ -1,0 +1,3 @@
+relativeroot=D:/design_project-code/SmartSentry/camera_fw/vitis/background_subtractor_mog2
+original_argv=--mode hls --csim --config D:\design_project-code\SmartSentry\camera_fw\vitis\background_subtractor_mog2\hls_config.cfg --work_dir background_subtractor_mog2 
+

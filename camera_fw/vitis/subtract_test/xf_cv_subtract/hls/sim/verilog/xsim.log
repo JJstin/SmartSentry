@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Jul 21 20:39:36 2024
+# Process ID: 32284
+# Current directory: D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract/hls/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/xf_cv_subtract/xsim_script.tcl}
+# Log file: D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract/hls/sim/verilog/xsim.log
+# Journal file: D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract/hls/sim/verilog\xsim.jou
+# Running On        :LAPTOP-PEAR
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :34048 MB
+# Swap memory       :13967 MB
+# Total Virtual     :48015 MB
+# Available Virtual :7906 MB
+#-----------------------------------------------------------
+source xsim.dir/xf_cv_subtract/xsim_script.tcl
+# xsim {xf_cv_subtract} -autoloadwcfg -tclbatch {xf_cv_subtract.tcl}
+Time resolution is 1 ps
+source xf_cv_subtract.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "41473145000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 41473205 ns : File "D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract/hls/sim/verilog/xf_cv_subtract.autotb.v" Line 733
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:07:20 . Memory (MB): peak = 228.148 ; gain = 0.000
+## quit
+INFO: xsimkernel Simulation Memory Usage: 1295172 KB (Peak: 1295172 KB), Simulation CPU Usage: 439671 ms
+INFO: [Common 17-206] Exiting xsim at Sun Jul 21 20:46:59 2024...

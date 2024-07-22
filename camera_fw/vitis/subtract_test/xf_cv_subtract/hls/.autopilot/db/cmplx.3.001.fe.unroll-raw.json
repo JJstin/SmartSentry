@@ -1,0 +1,209 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "9 9 1 6",
+    "file": "xf_cv_subtract.cpp",
+    "fileloc": 21,
+    "instructions": 32,
+    "name": "xf_cv_subtract",
+    "total_instructions": 694
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "15",
+    "file": "xf_arithm.hpp",
+    "fileloc": 998,
+    "instructions": 6,
+    "loads": {
+      "L": 2
+    },
+    "name": "subtract<0, 16, 1920, 1080, 1, 2, 2, 2>",
+    "total_instructions": 105
+  },
+  "10": {
+    "basicblocks": 3,
+    "calls": "3 19",
+    "file": "xf_structs.hpp",
+    "fileloc": 1135,
+    "instructions": 17,
+    "name": "Axi2Mat",
+    "total_instructions": 180
+  },
+  "11": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 1281,
+    "instructions": 95,
+    "name": "MatStream2AxiStream<2>",
+    "total_instructions": 95
+  },
+  "12": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 932,
+    "instructions": 6,
+    "name": "last_blk_pxl_width",
+    "total_instructions": 6
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 552,
+    "instructions": 2,
+    "name": "write<2, nullptr>",
+    "total_instructions": 2
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "2 12 11",
+    "file": "xf_structs.hpp",
+    "fileloc": 1345,
+    "instructions": 10,
+    "name": "Mat2AxiStream",
+    "total_instructions": 112
+  },
+  "15": {
+    "basicblocks": 20,
+    "calls": "8 8 13",
+    "file": "xf_arithm.hpp",
+    "fileloc": 804,
+    "instructions": 91,
+    "loads": {
+      "L": 2
+    },
+    "name": "xFarithm_proc<16, 1920, 1080, 3, 16, 1, 2, 2, 2, 10, 10, 1080, kernel_sub, 1>",
+    "total_instructions": 99
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 942,
+    "instructions": 15,
+    "name": "addrbound",
+    "total_instructions": 15
+  },
+  "17": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 1031,
+    "instructions": 83,
+    "name": "AxiStream2MatStream<2>",
+    "total_instructions": 83
+  },
+  "18": {
+    "basicblocks": 5,
+    "calls": "16 14 5",
+    "file": "xf_structs.hpp",
+    "fileloc": 1405,
+    "instructions": 35,
+    "name": "Mat2Axi",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 179
+  },
+  "19": {
+    "basicblocks": 1,
+    "calls": "2 12 17",
+    "file": "xf_structs.hpp",
+    "fileloc": 1107,
+    "instructions": 10,
+    "name": "AxiStream2Mat",
+    "total_instructions": 100
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 930,
+    "instructions": 1,
+    "name": "cols_npc_aligned",
+    "total_instructions": 1
+  },
+  "3": {
+    "basicblocks": 11,
+    "calls": "16 16",
+    "file": "xf_structs.hpp",
+    "fileloc": 1006,
+    "instructions": 33,
+    "loads": {
+      "L": 1
+    },
+    "name": "Axi2AxiStream",
+    "total_instructions": 63
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "18",
+    "file": "xf_structs.hpp",
+    "fileloc": 1554,
+    "instructions": 4,
+    "loads": {
+      "L": 2
+    },
+    "name": "xfMat2Array",
+    "total_instructions": 183
+  },
+  "5": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 1373,
+    "instructions": 17,
+    "loads": {
+      "L": 1
+    },
+    "name": "AxiStream2Axi",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 17
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "xf_utility.hpp",
+    "fileloc": 824,
+    "instructions": 2,
+    "name": "xfMat2Array<32, 16, 1920, 1080, 1, 2, 1>",
+    "total_instructions": 185
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "10",
+    "file": "xf_structs.hpp",
+    "fileloc": 1232,
+    "instructions": 4,
+    "loads": {
+      "L": 2
+    },
+    "name": "Array2xfMat",
+    "total_instructions": 184
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 541,
+    "instructions": 3,
+    "name": "read<2, nullptr>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "7",
+    "file": "xf_utility.hpp",
+    "fileloc": 834,
+    "instructions": 2,
+    "name": "Array2xfMat<32, 16, 1920, 1080, 1, 2>",
+    "total_instructions": 186
+  }
+}

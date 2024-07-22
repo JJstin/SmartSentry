@@ -1,0 +1,158 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "6 6 1 5",
+    "file": "xf_cv_subtract.cpp",
+    "fileloc": 21,
+    "instructions": 35,
+    "name": "xf_cv_subtract",
+    "total_instructions": 498
+  },
+  "1": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "xf_arithm.hpp",
+    "fileloc": 998,
+    "instructions": 68,
+    "loads": {
+      "L": 2
+    },
+    "name": "subtract<0, 16, 1920, 1080, 1, 2, 2, 2>",
+    "total_instructions": 68
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "2 9 8",
+    "file": "xf_structs.hpp",
+    "fileloc": 1345,
+    "instructions": 10,
+    "name": "Mat2AxiStream",
+    "total_instructions": 83
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 942,
+    "instructions": 15,
+    "name": "addrbound",
+    "total_instructions": 15
+  },
+  "12": {
+    "basicblocks": 14,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 1031,
+    "instructions": 61,
+    "name": "AxiStream2MatStream<2>",
+    "total_instructions": 61
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "11 10 4",
+    "file": "xf_structs.hpp",
+    "fileloc": 1405,
+    "instructions": 27,
+    "name": "Mat2Axi",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 139
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "2 9 12",
+    "file": "xf_structs.hpp",
+    "fileloc": 1107,
+    "instructions": 10,
+    "name": "AxiStream2Mat",
+    "total_instructions": 75
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 930,
+    "instructions": 1,
+    "name": "cols_npc_aligned",
+    "total_instructions": 1
+  },
+  "3": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 1006,
+    "instructions": 32,
+    "loads": {
+      "L": 1
+    },
+    "name": "Axi2AxiStream",
+    "total_instructions": 32
+  },
+  "4": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 1373,
+    "instructions": 14,
+    "loads": {
+      "L": 1
+    },
+    "name": "AxiStream2Axi",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 14
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "13",
+    "file": "xf_utility.hpp",
+    "fileloc": 824,
+    "instructions": 4,
+    "loads": {
+      "L": 2
+    },
+    "name": "xfMat2Array<32, 16, 1920, 1080, 1, 2, 1>",
+    "total_instructions": 143
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "7",
+    "file": "xf_utility.hpp",
+    "fileloc": 834,
+    "instructions": 4,
+    "loads": {
+      "L": 2
+    },
+    "name": "Array2xfMat<32, 16, 1920, 1080, 1, 2>",
+    "total_instructions": 126
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "3 14",
+    "file": "xf_structs.hpp",
+    "fileloc": 1135,
+    "instructions": 15,
+    "name": "Axi2Mat",
+    "total_instructions": 122
+  },
+  "8": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 1281,
+    "instructions": 69,
+    "name": "MatStream2AxiStream<2>",
+    "total_instructions": 69
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 932,
+    "instructions": 3,
+    "name": "last_blk_pxl_width",
+    "total_instructions": 3
+  }
+}

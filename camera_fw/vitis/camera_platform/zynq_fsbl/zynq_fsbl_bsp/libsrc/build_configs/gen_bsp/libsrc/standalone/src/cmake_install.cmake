@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src
+# Install script for directory: D:/design_project-code/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,40 +34,40 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-objdump.exe")
+  set(CMAKE_OBJDUMP "D:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/common/cmake_install.cmake")
+  include("D:/design_project-code/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/arm/cmake_install.cmake")
+  include("D:/design_project-code/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/arm/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/lib/libxilstandalone.a")
+   "D:/design_project-code/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/lib/libxilstandalone.a")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/lib" TYPE STATIC_LIBRARY MESSAGE_LAZY FILES "C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/libxilstandalone.a")
+  file(INSTALL DESTINATION "D:/design_project-code/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/lib" TYPE STATIC_LIBRARY MESSAGE_LAZY FILES "D:/design_project-code/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/libxilstandalone.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/include/../include")
+   "D:/design_project-code/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/include/../include")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/include/.." TYPE DIRECTORY MESSAGE_LAZY FILES "C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include")
+  file(INSTALL DESTINATION "D:/design_project-code/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/include/.." TYPE DIRECTORY MESSAGE_LAZY FILES "D:/design_project-code/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include")
 endif()
 

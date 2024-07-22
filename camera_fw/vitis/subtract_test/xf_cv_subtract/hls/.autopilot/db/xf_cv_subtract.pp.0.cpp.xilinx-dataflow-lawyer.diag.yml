@@ -1,0 +1,16 @@
+---
+MainSourceFile:  'D:/design_project-code/SmartSentry/camera_fw/vitis/subtract_test/xf_cv_subtract/hls/.autopilot/db/xf_cv_subtract.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '1141:9'
+    FilePath:        'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '1411:9'
+    FilePath:        'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '1411:9'
+    FilePath:        'D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_structs.hpp'
+...

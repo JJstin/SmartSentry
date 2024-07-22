@@ -1,0 +1,11 @@
+{
+  "name": "background_subtractor_mog2",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "background_subtractor_mog2"
+  }
+}
