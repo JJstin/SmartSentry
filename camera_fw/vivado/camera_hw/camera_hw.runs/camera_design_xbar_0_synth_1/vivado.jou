@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Jul 22 17:41:00 2024
-# Process ID: 2496
+# Start of session at: Tue Jul 23 02:05:56 2024
+# Process ID: 43544
 # Current directory: C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_xbar_0_synth_1
 # Command line: vivado.exe -log camera_design_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source camera_design_xbar_0.tcl
 # Log file: C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/camera_design_xbar_0_synth_1/camera_design_xbar_0.vds
@@ -19,6 +19,6 @@
 # Host memory       :34228 MB
 # Swap memory       :36507 MB
 # Total Virtual     :70735 MB
-# Available Virtual :47007 MB
+# Available Virtual :45991 MB
 #-----------------------------------------------------------
 source camera_design_xbar_0.tcl -notrace

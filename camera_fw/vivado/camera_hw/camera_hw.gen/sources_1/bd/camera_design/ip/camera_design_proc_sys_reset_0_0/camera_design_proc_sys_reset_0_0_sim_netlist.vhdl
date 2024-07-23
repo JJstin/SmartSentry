@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
--- Date        : Wed Jul 10 16:23:31 2024
+-- Date        : Wed Jul 10 16:23:30 2024
 -- Host        : GJiang-Laptop running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_proc_sys_reset_0_0/camera_design_proc_sys_reset_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top camera_design_proc_sys_reset_0_0 -prefix
+--               camera_design_proc_sys_reset_0_0_ camera_design_proc_sys_reset_0_0_sim_netlist.vhdl
 -- Design      : camera_design_proc_sys_reset_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -26,8 +26,6 @@ entity camera_design_proc_sys_reset_0_0_cdc_sync is
     aux_reset_in : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of camera_design_proc_sys_reset_0_0_cdc_sync : entity is "cdc_sync";
 end camera_design_proc_sys_reset_0_0_cdc_sync;
 
 architecture STRUCTURE of camera_design_proc_sys_reset_0_0_cdc_sync is
@@ -248,8 +246,6 @@ entity camera_design_proc_sys_reset_0_0_upcnt_n is
     seq_cnt_en : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of camera_design_proc_sys_reset_0_0_upcnt_n : entity is "upcnt_n";
 end camera_design_proc_sys_reset_0_0_upcnt_n;
 
 architecture STRUCTURE of camera_design_proc_sys_reset_0_0_upcnt_n is
@@ -414,8 +410,6 @@ entity camera_design_proc_sys_reset_0_0_lpf is
     ext_reset_in : in STD_LOGIC;
     aux_reset_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of camera_design_proc_sys_reset_0_0_lpf : entity is "lpf";
 end camera_design_proc_sys_reset_0_0_lpf;
 
 architecture STRUCTURE of camera_design_proc_sys_reset_0_0_lpf is
@@ -604,8 +598,6 @@ entity camera_design_proc_sys_reset_0_0_sequence_psr is
     lpf_int : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of camera_design_proc_sys_reset_0_0_sequence_psr : entity is "sequence_psr";
 end camera_design_proc_sys_reset_0_0_sequence_psr;
 
 architecture STRUCTURE of camera_design_proc_sys_reset_0_0_sequence_psr is
@@ -944,8 +936,6 @@ entity camera_design_proc_sys_reset_0_0_proc_sys_reset is
   attribute C_NUM_PERP_ARESETN of camera_design_proc_sys_reset_0_0_proc_sys_reset : entity is 1;
   attribute C_NUM_PERP_RST : integer;
   attribute C_NUM_PERP_RST of camera_design_proc_sys_reset_0_0_proc_sys_reset : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of camera_design_proc_sys_reset_0_0_proc_sys_reset : entity is "proc_sys_reset";
 end camera_design_proc_sys_reset_0_0_proc_sys_reset;
 
 architecture STRUCTURE of camera_design_proc_sys_reset_0_0_proc_sys_reset is

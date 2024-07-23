@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
--- Date        : Wed Jul 10 16:23:31 2024
+-- Date        : Wed Jul 10 16:23:30 2024
 -- Host        : GJiang-Laptop running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/georg/Documents/UWaterloo/4A/FYDP/camera_repo/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_proc_sys_reset_0_0/camera_design_proc_sys_reset_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top camera_design_proc_sys_reset_0_0 -prefix
+--               camera_design_proc_sys_reset_0_0_ camera_design_proc_sys_reset_0_0_stub.vhdl
 -- Design      : camera_design_proc_sys_reset_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
