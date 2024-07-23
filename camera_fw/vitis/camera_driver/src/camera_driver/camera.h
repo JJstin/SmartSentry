@@ -10,5 +10,5 @@ u8 cameraWrite(u16 address, u8 value);
 u8 cameraRead(u16 address, u8* buff);
 
 u8 cameraReadPixel(void);
-
+u8 capture(void);
 #endif
