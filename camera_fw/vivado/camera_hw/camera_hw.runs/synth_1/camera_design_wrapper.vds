@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Jul 23 02:07:20 2024
-# Process ID: 3896
+# Start of session at: Tue Jul 23 18:51:28 2024
+# Process ID: 26676
 # Current directory: C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1
 # Command line: vivado.exe -log camera_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source camera_design_wrapper.tcl
 # Log file: C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/camera_design_wrapper.vds
@@ -19,10 +19,10 @@
 # Host memory       :34228 MB
 # Swap memory       :36507 MB
 # Total Virtual     :70735 MB
-# Available Virtual :45986 MB
+# Available Virtual :38854 MB
 #-----------------------------------------------------------
 source camera_design_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 614.082 ; gain = 199.836
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 613.941 ; gain = 200.355
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
@@ -39,174 +39,109 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 33024
+INFO: [Synth 8-7075] Helper process launched with PID 3948
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1525.637 ; gain = 449.855
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1521.746 ; gain = 447.352
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'camera_design_wrapper' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/hdl/camera_design_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'camera_design' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:13]
-INFO: [Synth 8-6157] synthesizing module 'camera_design_axi_gpio_0_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'camera_design_axi_gpio_0_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'camera_design_axi_gpio_1_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'camera_design_axi_gpio_1_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'camera_design_axi_iic_0_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_axi_iic_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'camera_design_axi_iic_0_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_axi_iic_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'gpo' of module 'camera_design_axi_iic_0_0' is unconnected for instance 'axi_iic_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:284]
-WARNING: [Synth 8-7023] instance 'axi_iic_0' of module 'camera_design_axi_iic_0_0' has 27 connections declared, but only 26 given [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:284]
-INFO: [Synth 8-6157] synthesizing module 'camera_design_proc_sys_reset_0_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_proc_sys_reset_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'camera_design_proc_sys_reset_0_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_proc_sys_reset_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'camera_design_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:311]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'camera_design_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:311]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'camera_design_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:311]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'camera_design_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:311]
-WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'camera_design_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:311]
-INFO: [Synth 8-6157] synthesizing module 'camera_design_processing_system7_0_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'camera_design_processing_system7_0_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'camera_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:318]
-WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'camera_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:318]
-WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'camera_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:318]
-WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'camera_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:318]
-WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'camera_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:318]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'camera_design_processing_system7_0_0' has 69 connections declared, but only 64 given [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:318]
-INFO: [Synth 8-6157] synthesizing module 'camera_design_ps7_0_axi_periph_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:497]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1KHS3VK' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1170]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1KHS3VK' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1170]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_MG62D0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1302]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_MG62D0' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1302]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_AK36MH' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1434]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_AK36MH' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1434]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1MX7KDB' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1566]
-INFO: [Synth 8-6157] synthesizing module 'camera_design_auto_pc_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'camera_design_auto_pc_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1MX7KDB' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1566]
-INFO: [Synth 8-6157] synthesizing module 'camera_design_xbar_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'camera_design_xbar_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-3896-GJiang-Laptop/realtime/camera_design_xbar_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'camera_design_xbar_0' is unconnected for instance 'xbar' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1129]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'camera_design_xbar_0' is unconnected for instance 'xbar' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1129]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'camera_design_xbar_0' has 40 connections declared, but only 38 given [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1129]
-INFO: [Synth 8-6155] done synthesizing module 'camera_design_ps7_0_axi_periph_0' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:497]
-INFO: [Synth 8-6157] synthesizing module 'camera_design_xlconcat_0_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_xlconcat_0_0/synth/camera_design_xlconcat_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_6_xlconcat' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ipshared/6120/hdl/xlconcat_v2_1_vl_rfs.v:59]
-INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_6_xlconcat' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ipshared/6120/hdl/xlconcat_v2_1_vl_rfs.v:59]
-INFO: [Synth 8-6155] done synthesizing module 'camera_design_xlconcat_0_0' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_xlconcat_0_0/synth/camera_design_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'camera_design_axi_gpio_0_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'camera_design_axi_gpio_0_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'camera_design_axi_gpio_1_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'camera_design_axi_gpio_1_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'camera_design_axi_iic_0_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'camera_design_axi_iic_0_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_axi_iic_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpo' of module 'camera_design_axi_iic_0_0' is unconnected for instance 'axi_iic_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:256]
+WARNING: [Synth 8-7023] instance 'axi_iic_0' of module 'camera_design_axi_iic_0_0' has 27 connections declared, but only 26 given [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:256]
+INFO: [Synth 8-6157] synthesizing module 'camera_design_proc_sys_reset_0_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'camera_design_proc_sys_reset_0_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'camera_design_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:283]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'camera_design_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:283]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'camera_design_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:283]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'camera_design_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:283]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'camera_design_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:283]
+INFO: [Synth 8-6157] synthesizing module 'camera_design_processing_system7_0_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'camera_design_processing_system7_0_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'camera_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:290]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'camera_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:290]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'camera_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:290]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'camera_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:290]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'camera_design_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:290]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'camera_design_processing_system7_0_0' has 69 connections declared, but only 64 given [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:290]
+INFO: [Synth 8-6157] synthesizing module 'camera_design_ps7_0_axi_periph_0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:466]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1KHS3VK' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1139]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1KHS3VK' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1139]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_MG62D0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1271]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_MG62D0' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1271]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_AK36MH' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1403]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_AK36MH' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1403]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1MX7KDB' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1535]
+INFO: [Synth 8-6157] synthesizing module 'camera_design_auto_pc_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'camera_design_auto_pc_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1MX7KDB' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1535]
+INFO: [Synth 8-6157] synthesizing module 'camera_design_xbar_0' [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'camera_design_xbar_0' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/.Xil/Vivado-26676-GJiang-Laptop/realtime/camera_design_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'camera_design_xbar_0' is unconnected for instance 'xbar' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1098]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'camera_design_xbar_0' is unconnected for instance 'xbar' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1098]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'camera_design_xbar_0' has 40 connections declared, but only 38 given [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:1098]
+INFO: [Synth 8-6155] done synthesizing module 'camera_design_ps7_0_axi_periph_0' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:466]
+INFO: [Synth 8-6157] synthesizing module 'camera_design_xlslice_0_1' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_xlslice_0_1/synth/camera_design_xlslice_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_4_xlslice' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_4_xlslice' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'camera_design_xlslice_0_1' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_xlslice_0_1/synth/camera_design_xlslice_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'camera_design_xlslice_0_2' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_xlslice_0_2/synth/camera_design_xlslice_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_4_xlslice__parameterized0' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_4_xlslice__parameterized0' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'camera_design_xlslice_0_2' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_xlslice_0_2/synth/camera_design_xlslice_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'camera_design_xlslice_0_3' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_xlslice_0_3/synth/camera_design_xlslice_0_3.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_4_xlslice__parameterized1' [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_4_xlslice__parameterized1' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'camera_design_xlslice_0_3' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_xlslice_0_3/synth/camera_design_xlslice_0_3.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'camera_design' (0#1) [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/synth/camera_design.v:13]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:78209]
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:78209]
 INFO: [Synth 8-6155] done synthesizing module 'camera_design_wrapper' (0#1) [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/hdl/camera_design_wrapper.v:13]
-WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In104[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In105[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In106[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In107[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In108[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-WARNING: [Synth 8-7129] Port In109[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_4_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_4_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_4_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_4_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1MX7KDB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1MX7KDB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_AK36MH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_AK36MH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_AK36MH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_AK36MH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_MG62D0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_MG62D0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_MG62D0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_MG62D0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1KHS3VK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1KHS3VK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_1KHS3VK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_1KHS3VK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1642.496 ; gain = 566.715
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1638.883 ; gain = 564.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1642.496 ; gain = 566.715
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1638.883 ; gain = 564.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1642.496 ; gain = 566.715
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1638.883 ; gain = 564.488
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1642.496 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1638.883 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -228,30 +163,38 @@ Finished Parsing XDC File [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/cam
 Parsing XDC File [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_axi_gpio_1_0/camera_design_axi_gpio_1_0/camera_design_axi_gpio_1_0_in_context.xdc] for cell 'camera_design_i/axi_gpio_1'
 Finished Parsing XDC File [c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_axi_gpio_1_0/camera_design_axi_gpio_1_0/camera_design_axi_gpio_1_0_in_context.xdc] for cell 'camera_design_i/axi_gpio_1'
 Parsing XDC File [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/constrs_1/new/pynq_z2_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'camera_D9'. [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/constrs_1/new/pynq_z2_constraints.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'camera_D8'. [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/constrs_1/new/pynq_z2_constraints.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'camera_pc'. [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/constrs_1/new/pynq_z2_constraints.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'camera_vs'. [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/constrs_1/new/pynq_z2_constraints.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'camera_D6'. [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/constrs_1/new/pynq_z2_constraints.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'camera_D7'. [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/constrs_1/new/pynq_z2_constraints.xdc:161]
+WARNING: [Vivado 12-584] No ports matched 'camera_hs'. [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/constrs_1/new/pynq_z2_constraints.xdc:162]
 Finished Parsing XDC File [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/constrs_1/new/pynq_z2_constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/constrs_1/new/pynq_z2_constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/camera_design_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.srcs/constrs_1/new/pynq_z2_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/camera_design_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/camera_design_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1666.199 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1658.230 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1666.199 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1658.230 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -523,14 +466,16 @@ Applied set_property KEEP_HIERARCHY = SOFT for camera_design_i/axi_iic_0. (const
 Applied set_property KEEP_HIERARCHY = SOFT for camera_design_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for camera_design_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for camera_design_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for camera_design_i/xlconcat_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for camera_design_i/axi_gpio_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for camera_design_i/axi_gpio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for camera_design_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for camera_design_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for camera_design_i/xlslice_2. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -552,26 +497,40 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Din[1] in module camera_design_xlslice_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module camera_design_xlslice_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module camera_design_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module camera_design_xlslice_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module camera_design_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module camera_design_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module camera_design_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -589,37 +548,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -649,33 +608,33 @@ Report Cell Usage:
 |5     |camera_design_proc_sys_reset_0     |     1|
 |6     |camera_design_processing_system7_0 |     1|
 |7     |camera_design_xbar                 |     1|
-|8     |IBUF                               |    10|
+|8     |IBUF                               |     1|
 |9     |IOBUF                              |     2|
-|10    |OBUF                               |     1|
+|10    |OBUF                               |     3|
 +------+-----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1658.230 ; gain = 583.836
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1666.199 ; gain = 566.715
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.199 ; gain = 590.418
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1658.230 ; gain = 564.488
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1658.230 ; gain = 583.836
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1666.199 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1658.230 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1666.199 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1658.230 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Synth Design complete | Checksum: e50b374c
+Synth Design complete | Checksum: 277a6453
 INFO: [Common 17-83] Releasing license: Synthesis
-62 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
+69 Infos, 67 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1666.199 ; gain = 1021.238
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1666.199 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1658.230 ; gain = 1015.043
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1658.230 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.runs/synth_1/camera_design_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file camera_design_wrapper_utilization_synth.rpt -pb camera_design_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jul 23 02:08:16 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 23 18:52:25 2024...

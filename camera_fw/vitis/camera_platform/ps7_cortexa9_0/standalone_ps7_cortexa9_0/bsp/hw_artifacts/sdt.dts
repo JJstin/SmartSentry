@@ -1066,7 +1066,7 @@
                         compatible = "xlnx,axi-gpio-2.0", "xlnx,xps-gpio-1.00.a";
                         xlnx,all-outputs = <0x0>;
                         #gpio-cells = <0x2>;
-                        xlnx,gpio-width = <0xa>;
+                        xlnx,gpio-width = <0x1>;
                         xlnx,rable = <0x0>;
                         xlnx,dout-default = <0x0>;
                         xlnx,is-dual = <0x0>;
@@ -1095,7 +1095,7 @@
                         compatible = "xlnx,axi-gpio-2.0", "xlnx,xps-gpio-1.00.a";
                         xlnx,all-outputs = <0x1>;
                         #gpio-cells = <0x2>;
-                        xlnx,gpio-width = <0x1>;
+                        xlnx,gpio-width = <0x3>;
                         xlnx,rable = <0x0>;
                         xlnx,dout-default = <0x0>;
                         xlnx,is-dual = <0x0>;

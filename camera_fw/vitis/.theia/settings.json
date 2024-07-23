@@ -11,6 +11,14 @@
         "-ID:/Xilinx/Vitis_Libraries/vision/L1/include",
         "-ID:/OpenCV/install/include",
         "-ID:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\vitis_vision_test\\.",
-        "-ID:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\."
-    ]
+        "-ID:\\design_project-code\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\.",
+        "-IC:\\Users\\georg\\vitis\\SmartSentry\\camera_fw\\vitis\\background_subtractor_mog2\\.",
+        "-IC:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+        "-IC:\\Xilinx\\Vitis_HLS\\2024.1\\include\\etc",
+        "-IC:\\Xilinx\\Vitis_HLS\\2024.1\\include\\ap_sysc",
+        "-IC:\\Xilinx\\Vitis_HLS\\2024.1\\win64\\tools\\auto_cc\\include",
+        "-IC:\\Xilinx\\Vitis_HLS\\2024.1\\win64\\tools\\systemc\\include",
+        "-IC:\\Users\\georg\\vitis\\SmartSentry\\camera_fw\\vitis\\subtract_test\\."
+    ],
+    "TCFAdapter.steppingGranularity": "line"
 }

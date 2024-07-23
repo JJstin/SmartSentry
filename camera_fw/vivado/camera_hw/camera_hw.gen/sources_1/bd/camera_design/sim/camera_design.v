@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-//Date        : Tue Jul 23 02:05:20 2024
+//Date        : Tue Jul 23 18:50:18 2024
 //Host        : GJiang-Laptop running 64-bit major release  (build 9200)
 //Command     : generate_target camera_design.bd
 //Design      : camera_design
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "camera_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=camera_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=13,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=3,da_clkrst_cnt=1,da_ps7_cnt=2,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "camera_design.hwdef" *) 
+(* CORE_GENERATION_INFO = "camera_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=camera_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=15,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=3,da_clkrst_cnt=1,da_ps7_cnt=2,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "camera_design.hwdef" *) 
 module camera_design
    (DDR_addr,
     DDR_ba,
@@ -37,13 +37,6 @@ module camera_design
     camera_D3,
     camera_D4,
     camera_D5,
-    camera_D6,
-    camera_D7,
-    camera_D8,
-    camera_D9,
-    camera_hs,
-    camera_pc,
-    camera_vs,
     raspberry_i2c_scl_i,
     raspberry_i2c_scl_o,
     raspberry_i2c_scl_t,
@@ -71,17 +64,10 @@ module camera_design
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
-  input [0:0]camera_D2;
-  input [0:0]camera_D3;
+  output [0:0]camera_D2;
+  output [0:0]camera_D3;
   input [0:0]camera_D4;
-  input [0:0]camera_D5;
-  input [0:0]camera_D6;
-  input [0:0]camera_D7;
-  input [0:0]camera_D8;
-  input [0:0]camera_D9;
-  input [0:0]camera_hs;
-  output [0:0]camera_pc;
-  input [0:0]camera_vs;
+  output [0:0]camera_D5;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 raspberry_i2c SCL_I" *) input raspberry_i2c_scl_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 raspberry_i2c SCL_O" *) output raspberry_i2c_scl_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 raspberry_i2c SCL_T" *) output raspberry_i2c_scl_t;
@@ -89,17 +75,7 @@ module camera_design
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 raspberry_i2c SDA_O" *) output raspberry_i2c_sda_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 raspberry_i2c SDA_T" *) output raspberry_i2c_sda_t;
 
-  wire [0:0]In0_0_1;
-  wire [0:0]In1_0_1;
-  wire [0:0]In2_0_1;
-  wire [0:0]In3_0_1;
-  wire [0:0]In4_0_1;
-  wire [0:0]In5_0_1;
-  wire [0:0]In6_0_1;
-  wire [0:0]In7_0_1;
-  wire [0:0]In8_0_1;
-  wire [0:0]In9_0_1;
-  wire [0:0]axi_gpio_1_gpio_io_o;
+  wire [2:0]axi_gpio_1_gpio_io_o;
   wire axi_iic_0_IIC_SCL_I;
   wire axi_iic_0_IIC_SCL_O;
   wire axi_iic_0_IIC_SCL_T;
@@ -107,6 +83,7 @@ module camera_design
   wire axi_iic_0_IIC_SDA_O;
   wire axi_iic_0_IIC_SDA_T;
   wire axi_iic_0_iic2intc_irpt;
+  wire [0:0]camera_D4_1;
   wire [0:0]proc_sys_reset_0_peripheral_aresetn;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
@@ -220,27 +197,22 @@ module camera_design
   wire ps7_0_axi_periph_M02_AXI_WREADY;
   wire [3:0]ps7_0_axi_periph_M02_AXI_WSTRB;
   wire [0:0]ps7_0_axi_periph_M02_AXI_WVALID;
-  wire [9:0]xlconcat_0_dout;
+  wire [0:0]xlslice_0_Dout;
+  wire [0:0]xlslice_1_Dout;
+  wire [0:0]xlslice_2_Dout;
 
-  assign In0_0_1 = camera_D2[0];
-  assign In1_0_1 = camera_D3[0];
-  assign In2_0_1 = camera_D4[0];
-  assign In3_0_1 = camera_D5[0];
-  assign In4_0_1 = camera_D6[0];
-  assign In5_0_1 = camera_D7[0];
-  assign In6_0_1 = camera_D8[0];
-  assign In7_0_1 = camera_D9[0];
-  assign In8_0_1 = camera_hs[0];
-  assign In9_0_1 = camera_vs[0];
   assign axi_iic_0_IIC_SCL_I = raspberry_i2c_scl_i;
   assign axi_iic_0_IIC_SDA_I = raspberry_i2c_sda_i;
-  assign camera_pc[0] = axi_gpio_1_gpio_io_o;
+  assign camera_D2[0] = xlslice_0_Dout;
+  assign camera_D3[0] = xlslice_1_Dout;
+  assign camera_D4_1 = camera_D4[0];
+  assign camera_D5[0] = xlslice_2_Dout;
   assign raspberry_i2c_scl_o = axi_iic_0_IIC_SCL_O;
   assign raspberry_i2c_scl_t = axi_iic_0_IIC_SCL_T;
   assign raspberry_i2c_sda_o = axi_iic_0_IIC_SDA_O;
   assign raspberry_i2c_sda_t = axi_iic_0_IIC_SDA_T;
   camera_design_axi_gpio_0_0 axi_gpio_0
-       (.gpio_io_i(xlconcat_0_dout),
+       (.gpio_io_i(camera_D4_1),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[8:0]),
         .s_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),
@@ -480,18 +452,15 @@ module camera_design
         .S00_AXI_wready(processing_system7_0_M_AXI_GP0_WREADY),
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
-  camera_design_xlconcat_0_0 xlconcat_0
-       (.In0(In0_0_1),
-        .In1(In1_0_1),
-        .In2(In2_0_1),
-        .In3(In3_0_1),
-        .In4(In4_0_1),
-        .In5(In5_0_1),
-        .In6(In6_0_1),
-        .In7(In7_0_1),
-        .In8(In8_0_1),
-        .In9(In9_0_1),
-        .dout(xlconcat_0_dout));
+  camera_design_xlslice_0_1 xlslice_0
+       (.Din(axi_gpio_1_gpio_io_o),
+        .Dout(xlslice_0_Dout));
+  camera_design_xlslice_0_2 xlslice_1
+       (.Din(axi_gpio_1_gpio_io_o),
+        .Dout(xlslice_1_Dout));
+  camera_design_xlslice_0_3 xlslice_2
+       (.Din(axi_gpio_1_gpio_io_o),
+        .Dout(xlslice_2_Dout));
 endmodule
 
 module camera_design_ps7_0_axi_periph_0

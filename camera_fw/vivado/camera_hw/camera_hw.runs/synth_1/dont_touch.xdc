@@ -21,14 +21,20 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_desi
 # IP: bd/camera_design/ip/camera_design_ps7_0_axi_periph_0/camera_design_ps7_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_ps7_0_axi_periph_0 || ORIG_REF_NAME==camera_design_ps7_0_axi_periph_0} -quiet] -quiet
 
-# IP: bd/camera_design/ip/camera_design_xlconcat_0_0/camera_design_xlconcat_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_xlconcat_0_0 || ORIG_REF_NAME==camera_design_xlconcat_0_0} -quiet] -quiet
-
 # IP: bd/camera_design/ip/camera_design_axi_gpio_0_0/camera_design_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_axi_gpio_0_0 || ORIG_REF_NAME==camera_design_axi_gpio_0_0} -quiet] -quiet
 
 # IP: bd/camera_design/ip/camera_design_axi_gpio_1_0/camera_design_axi_gpio_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_axi_gpio_1_0 || ORIG_REF_NAME==camera_design_axi_gpio_1_0} -quiet] -quiet
+
+# IP: bd/camera_design/ip/camera_design_xlslice_0_1/camera_design_xlslice_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_xlslice_0_1 || ORIG_REF_NAME==camera_design_xlslice_0_1} -quiet] -quiet
+
+# IP: bd/camera_design/ip/camera_design_xlslice_0_2/camera_design_xlslice_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_xlslice_0_2 || ORIG_REF_NAME==camera_design_xlslice_0_2} -quiet] -quiet
+
+# IP: bd/camera_design/ip/camera_design_xlslice_0_3/camera_design_xlslice_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_xlslice_0_3 || ORIG_REF_NAME==camera_design_xlslice_0_3} -quiet] -quiet
 
 # IP: bd/camera_design/ip/camera_design_auto_pc_0/camera_design_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_auto_pc_0 || ORIG_REF_NAME==camera_design_auto_pc_0} -quiet] -quiet

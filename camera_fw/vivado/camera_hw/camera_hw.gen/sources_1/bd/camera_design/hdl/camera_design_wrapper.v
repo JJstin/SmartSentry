@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-//Date        : Tue Jul 23 02:05:20 2024
+//Date        : Tue Jul 23 18:50:18 2024
 //Host        : GJiang-Laptop running 64-bit major release  (build 9200)
 //Command     : generate_target camera_design_wrapper.bd
 //Design      : camera_design_wrapper
@@ -36,13 +36,6 @@ module camera_design_wrapper
     camera_D3,
     camera_D4,
     camera_D5,
-    camera_D6,
-    camera_D7,
-    camera_D8,
-    camera_D9,
-    camera_hs,
-    camera_pc,
-    camera_vs,
     raspberry_i2c_scl_io,
     raspberry_i2c_sda_io);
   inout [14:0]DDR_addr;
@@ -66,17 +59,10 @@ module camera_design_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  input [0:0]camera_D2;
-  input [0:0]camera_D3;
+  output [0:0]camera_D2;
+  output [0:0]camera_D3;
   input [0:0]camera_D4;
-  input [0:0]camera_D5;
-  input [0:0]camera_D6;
-  input [0:0]camera_D7;
-  input [0:0]camera_D8;
-  input [0:0]camera_D9;
-  input [0:0]camera_hs;
-  output [0:0]camera_pc;
-  input [0:0]camera_vs;
+  output [0:0]camera_D5;
   inout raspberry_i2c_scl_io;
   inout raspberry_i2c_sda_io;
 
@@ -105,13 +91,6 @@ module camera_design_wrapper
   wire [0:0]camera_D3;
   wire [0:0]camera_D4;
   wire [0:0]camera_D5;
-  wire [0:0]camera_D6;
-  wire [0:0]camera_D7;
-  wire [0:0]camera_D8;
-  wire [0:0]camera_D9;
-  wire [0:0]camera_hs;
-  wire [0:0]camera_pc;
-  wire [0:0]camera_vs;
   wire raspberry_i2c_scl_i;
   wire raspberry_i2c_scl_io;
   wire raspberry_i2c_scl_o;
@@ -147,13 +126,6 @@ module camera_design_wrapper
         .camera_D3(camera_D3),
         .camera_D4(camera_D4),
         .camera_D5(camera_D5),
-        .camera_D6(camera_D6),
-        .camera_D7(camera_D7),
-        .camera_D8(camera_D8),
-        .camera_D9(camera_D9),
-        .camera_hs(camera_hs),
-        .camera_pc(camera_pc),
-        .camera_vs(camera_vs),
         .raspberry_i2c_scl_i(raspberry_i2c_scl_i),
         .raspberry_i2c_scl_o(raspberry_i2c_scl_o),
         .raspberry_i2c_scl_t(raspberry_i2c_scl_t),

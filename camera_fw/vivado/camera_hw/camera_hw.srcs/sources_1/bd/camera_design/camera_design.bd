@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xB577DAA7CD76AFAC",
+      "boundary_crc": "0xCE0B91FE987787C",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../camera_hw.gen/sources_1/bd/camera_design",
       "name": "camera_design",
@@ -23,9 +23,11 @@
         "m01_couplers": {},
         "m02_couplers": {}
       },
-      "xlconcat_0": "",
       "axi_gpio_0": "",
-      "axi_gpio_1": ""
+      "axi_gpio_1": "",
+      "xlslice_0": "",
+      "xlslice_1": "",
+      "xlslice_2": ""
     },
     "interface_ports": {
       "DDR": {
@@ -229,57 +231,28 @@
       }
     },
     "ports": {
-      "camera_D2": {
+      "camera_D4": {
         "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "10",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "camera_D2": {
+        "direction": "O",
         "left": "0",
         "right": "0"
       },
       "camera_D3": {
-        "direction": "I",
-        "left": "0",
-        "right": "0"
-      },
-      "camera_D4": {
-        "direction": "I",
+        "direction": "O",
         "left": "0",
         "right": "0"
       },
       "camera_D5": {
-        "direction": "I",
-        "left": "0",
-        "right": "0"
-      },
-      "camera_D6": {
-        "direction": "I",
-        "left": "0",
-        "right": "0"
-      },
-      "camera_D7": {
-        "direction": "I",
-        "left": "0",
-        "right": "0"
-      },
-      "camera_D8": {
-        "direction": "I",
-        "left": "0",
-        "right": "0"
-      },
-      "camera_D9": {
-        "direction": "I",
-        "left": "0",
-        "right": "0"
-      },
-      "camera_hs": {
-        "direction": "I",
-        "left": "0",
-        "right": "0"
-      },
-      "camera_vs": {
-        "direction": "I",
-        "left": "0",
-        "right": "0"
-      },
-      "camera_pc": {
         "direction": "O",
         "left": "0",
         "right": "0"
@@ -2608,18 +2581,6 @@
           }
         }
       },
-      "xlconcat_0": {
-        "vlnv": "xilinx.com:ip:xlconcat:2.1",
-        "ip_revision": "6",
-        "xci_name": "camera_design_xlconcat_0_0",
-        "xci_path": "ip\\camera_design_xlconcat_0_0\\camera_design_xlconcat_0_0.xci",
-        "inst_hier_path": "xlconcat_0",
-        "parameters": {
-          "NUM_PORTS": {
-            "value": "10"
-          }
-        }
-      },
       "axi_gpio_0": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "33",
@@ -2631,7 +2592,7 @@
             "value": "1"
           },
           "C_GPIO_WIDTH": {
-            "value": "10"
+            "value": "1"
           }
         }
       },
@@ -2646,7 +2607,55 @@
             "value": "1"
           },
           "C_GPIO_WIDTH": {
+            "value": "3"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "camera_design_xlslice_0_1",
+        "xci_path": "ip\\camera_design_xlslice_0_1\\camera_design_xlslice_0_1.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_WIDTH": {
+            "value": "3"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "camera_design_xlslice_0_2",
+        "xci_path": "ip\\camera_design_xlslice_0_2\\camera_design_xlslice_0_2.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_FROM": {
             "value": "1"
+          },
+          "DIN_TO": {
+            "value": "1"
+          },
+          "DIN_WIDTH": {
+            "value": "3"
+          }
+        }
+      },
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "camera_design_xlslice_0_3",
+        "xci_path": "ip\\camera_design_xlslice_0_3\\camera_design_xlslice_0_3.xci",
+        "inst_hier_path": "xlslice_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "2"
+          },
+          "DIN_TO": {
+            "value": "2"
+          },
+          "DIN_WIDTH": {
+            "value": "3"
           }
         }
       }
@@ -2696,76 +2705,24 @@
       }
     },
     "nets": {
-      "In0_0_1": {
-        "ports": [
-          "camera_D2",
-          "xlconcat_0/In0"
-        ]
-      },
-      "In1_0_1": {
-        "ports": [
-          "camera_D3",
-          "xlconcat_0/In1"
-        ]
-      },
-      "In2_0_1": {
-        "ports": [
-          "camera_D4",
-          "xlconcat_0/In2"
-        ]
-      },
-      "In3_0_1": {
-        "ports": [
-          "camera_D5",
-          "xlconcat_0/In3"
-        ]
-      },
-      "In4_0_1": {
-        "ports": [
-          "camera_D6",
-          "xlconcat_0/In4"
-        ]
-      },
-      "In5_0_1": {
-        "ports": [
-          "camera_D7",
-          "xlconcat_0/In5"
-        ]
-      },
-      "In6_0_1": {
-        "ports": [
-          "camera_D8",
-          "xlconcat_0/In6"
-        ]
-      },
-      "In7_0_1": {
-        "ports": [
-          "camera_D9",
-          "xlconcat_0/In7"
-        ]
-      },
-      "In8_0_1": {
-        "ports": [
-          "camera_hs",
-          "xlconcat_0/In8"
-        ]
-      },
-      "In9_0_1": {
-        "ports": [
-          "camera_vs",
-          "xlconcat_0/In9"
-        ]
-      },
       "axi_gpio_1_gpio_io_o": {
         "ports": [
           "axi_gpio_1/gpio_io_o",
-          "camera_pc"
+          "xlslice_0/Din",
+          "xlslice_1/Din",
+          "xlslice_2/Din"
         ]
       },
       "axi_iic_0_iic2intc_irpt": {
         "ports": [
           "axi_iic_0/iic2intc_irpt",
           "processing_system7_0/IRQ_F2P"
+        ]
+      },
+      "camera_D4_1": {
+        "ports": [
+          "camera_D4",
+          "axi_gpio_0/gpio_io_i"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {
@@ -2802,10 +2759,22 @@
           "proc_sys_reset_0/ext_reset_in"
         ]
       },
-      "xlconcat_0_dout": {
+      "xlslice_0_Dout": {
         "ports": [
-          "xlconcat_0/dout",
-          "axi_gpio_0/gpio_io_i"
+          "xlslice_0/Dout",
+          "camera_D2"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "camera_D3"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "xlslice_2/Dout",
+          "camera_D5"
         ]
       }
     },

@@ -6,6 +6,7 @@
 
 int main(void)
 {
-	cameraInit();
+	init_platform();
+    cameraInit();
     capture();
 }

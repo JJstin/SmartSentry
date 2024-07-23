@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Mon Jul 22 21:45:07 2024
+// Date        : Tue Jul 23 18:51:24 2024
 // Host        : GJiang-Laptop running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top camera_design_axi_gpio_1_0 -prefix
-//               camera_design_axi_gpio_1_0_ camera_design_axi_gpio_1_0_stub.v
+// Command     : write_verilog -force -mode synth_stub
+//               c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_axi_gpio_1_0/camera_design_axi_gpio_1_0_stub.v
 // Design      : camera_design_axi_gpio_1_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -19,7 +19,7 @@ module camera_design_axi_gpio_1_0(s_axi_aclk, s_axi_aresetn, s_axi_awaddr,
   s_axi_awvalid, s_axi_awready, s_axi_wdata, s_axi_wstrb, s_axi_wvalid, s_axi_wready, 
   s_axi_bresp, s_axi_bvalid, s_axi_bready, s_axi_araddr, s_axi_arvalid, s_axi_arready, 
   s_axi_rdata, s_axi_rresp, s_axi_rvalid, s_axi_rready, gpio_io_o)
-/* synthesis syn_black_box black_box_pad_pin="s_axi_aresetn,s_axi_awaddr[8:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[8:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,gpio_io_o[0:0]" */
+/* synthesis syn_black_box black_box_pad_pin="s_axi_aresetn,s_axi_awaddr[8:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[8:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,gpio_io_o[2:0]" */
 /* synthesis syn_force_seq_prim="s_axi_aclk" */;
   input s_axi_aclk /* synthesis syn_isclock = 1 */;
   input s_axi_aresetn;
@@ -40,5 +40,5 @@ module camera_design_axi_gpio_1_0(s_axi_aclk, s_axi_aresetn, s_axi_awaddr,
   output [1:0]s_axi_rresp;
   output s_axi_rvalid;
   input s_axi_rready;
-  output [0:0]gpio_io_o;
+  output [2:0]gpio_io_o;
 endmodule

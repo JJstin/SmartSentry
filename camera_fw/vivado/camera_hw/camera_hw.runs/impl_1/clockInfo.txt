@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.1
-| Date         : Tue Jul 23 02:09:11 2024
+| Date         : Tue Jul 23 18:53:26 2024
 | Host         : GJiang-Laptop
 | Design       : design_1
 | Device       : xc7z020-clg400-1--
