@@ -1,4 +1,6 @@
 #ifndef CAMERA_H
+#define CAMERA_H
+
 #include "xparameters.h"
 #include "xil_types.h"
 

@@ -1,4 +1,5 @@
 #include "camera.h"
+#include "capture.h"
 #include "xiic.h"
 #include "xiic_l.h"
 #include "xgpio.h"
@@ -48,45 +49,47 @@ u8 cameraInit(){
     if(buffer == NULL){
         printf("malloc failed\r\n");
     }
-    // Output Format
-    cameraWrite(0x4300, 0x00); // Raw BGBGBG... / GRGR
-    cameraWrite(0x3017, 0x60); // VSYNC and HREF pin to output
+    // // Output Format
+    // cameraWrite(0x4300, 0x00); // Raw BGBGBG... / GRGR
+    // cameraWrite(0x3017, 0x60); // VSYNC and HREF pin to output
     
-    // Test Image 8 color bar
-    cameraWrite(0x503D, 0x80);
+    // // Test Image 8 color bar
+    // cameraWrite(0x503D, 0x80);
 
-    // Set Resolution 320x240
-    cameraWrite(0x3800, 0x1);
-    cameraWrite(0x3801, 0xa8);
-    cameraWrite(0x3802, 0x0);  
-    cameraWrite(0x3803, 0xA);  
-    cameraWrite(0x3804, 0xA);  
-    cameraWrite(0x3805, 0x20); 
-    cameraWrite(0x3806, 0x7);
-    cameraWrite(0x3807, 0x98); 
-    cameraWrite(0x3808, 0x1);  
-    cameraWrite(0x3809, 0x40); 
-    cameraWrite(0x380a, 0x0);  
-    cameraWrite(0x380b, 0xF0); 
-    cameraWrite(0x380c, 0xc);  
-    cameraWrite(0x380d, 0x80);
-    cameraWrite(0x380e, 0x7);  
-    cameraWrite(0x380f, 0xd0); 
-    cameraWrite(0x5001, 0x7f); 
-    cameraWrite(0x5680, 0x0);  
-    cameraWrite(0x5681, 0x0);  
-    cameraWrite(0x5682, 0xA);  
-    cameraWrite(0x5683, 0x20);
-    cameraWrite(0x5684, 0x0);  
-    cameraWrite(0x5685, 0x0);  
-    cameraWrite(0x5686, 0x7);  
-    cameraWrite(0x5687, 0x98); 
-    cameraWrite(0x3801, 0xb0);
+    // // Set Resolution 320x240
+    // cameraWrite(0x3800, 0x1);
+    // cameraWrite(0x3801, 0xa8);
+    // cameraWrite(0x3802, 0x0);  
+    // cameraWrite(0x3803, 0xA);  
+    // cameraWrite(0x3804, 0xA);  
+    // cameraWrite(0x3805, 0x20); 
+    // cameraWrite(0x3806, 0x7);
+    // cameraWrite(0x3807, 0x98); 
+    // cameraWrite(0x3808, 0x1);  
+    // cameraWrite(0x3809, 0x40); 
+    // cameraWrite(0x380a, 0x0);  
+    // cameraWrite(0x380b, 0xF0); 
+    // cameraWrite(0x380c, 0xc);  
+    // cameraWrite(0x380d, 0x80);
+    // cameraWrite(0x380e, 0x7);  
+    // cameraWrite(0x380f, 0xd0); 
+    // cameraWrite(0x5001, 0x7f); 
+    // cameraWrite(0x5680, 0x0);  
+    // cameraWrite(0x5681, 0x0);  
+    // cameraWrite(0x5682, 0xA);  
+    // cameraWrite(0x5683, 0x20);
+    // cameraWrite(0x5684, 0x0);  
+    // cameraWrite(0x5685, 0x0);  
+    // cameraWrite(0x5686, 0x7);  
+    // cameraWrite(0x5687, 0x98); 
+    // cameraWrite(0x3801, 0xb0);
     u8 cameraID[2];
     // Read ID
     cameraRead(0x300AU, &cameraID[0]);
     cameraRead(0x300BU, &cameraID[1]);
     printf("CameID: %X%X\r\n", cameraID[0], cameraID[1]);
+    OV5640_init_setting();
+    
     return XST_SUCCESS;
 }
 
@@ -113,11 +116,11 @@ u8 cameraRead(u16 address, u8* buff){
 }
 
 u8 readHS(void){
-    return XGpio_DiscreteRead(&gpioInstInput, CAMERA_GPIO_CHANNEL) & HS_MASK;
+    return (XGpio_DiscreteRead(&gpioInstInput, CAMERA_GPIO_CHANNEL) & HS_MASK)?1:0;
 }
 
 u8 readVS(void){
-    return XGpio_DiscreteRead(&gpioInstInput, CAMERA_GPIO_CHANNEL) & VS_MASK;
+    return (XGpio_DiscreteRead(&gpioInstInput, CAMERA_GPIO_CHANNEL) & VS_MASK)? 1:0;
 }
 
 u8 cameraReadPixel(void){
@@ -125,22 +128,32 @@ u8 cameraReadPixel(void){
 }
 
 u8 togglePS(void){
-    XGpio_DiscreteWrite(&gpioInstInput, CAMERA_GPIO_CHANNEL, 1);
+    XGpio_DiscreteWrite(&gpioInstOutput, CAMERA_GPIO_CHANNEL, 1);
 
-    XGpio_DiscreteWrite(&gpioInstInput, CAMERA_GPIO_CHANNEL, 0);
+    XGpio_DiscreteWrite(&gpioInstOutput, CAMERA_GPIO_CHANNEL, 0);
     return XST_SUCCESS;
 }
 
+
+
 u8 capture(void){
     // Capture
-    cameraWrite(0x3F00U, 1);
-    togglePS();
+    // OV5640_capture();
+    cameraWrite(0x503D, 0x80);
+    int itter = 0;
     while(1){
-        togglePS();
+        //togglePS();
+        XGpio_DiscreteWrite(&gpioInstOutput, CAMERA_GPIO_CHANNEL, 1);
         u8 hs = readHS();
         u8 vs = readVS();
         u8 pixel = cameraReadPixel();
+        XGpio_DiscreteWrite(&gpioInstOutput, CAMERA_GPIO_CHANNEL, 0);
 
-        xil_printf("pixel: 0x%X hs: %d vs %d\r\n",pixel, hs, vs);
+        if(itter > 500){
+            xil_printf("pixel: 0x%X hs: %d vs %d\r\n",pixel, hs, vs);
+            itter = 0;
+        }
+        itter++;
     }
+
 }
