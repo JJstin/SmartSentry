@@ -166,6 +166,14 @@ include_folder: include
 lib_folder: lib
 libsrc_folder: libsrc
 drv_info:
+  axi_gpio_0:
+    driver: gpio
+    ip_name: axi_gpio
+    path: C:\Xilinx\Vitis\2024.1\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_11
+  axi_gpio_1:
+    driver: gpio
+    ip_name: axi_gpio
+    path: C:\Xilinx\Vitis\2024.1\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_11
   axi_iic_0:
     driver: iic
     ip_name: axi_iic
@@ -261,7 +269,7 @@ lib_config:
       name: XILTIMER_sleep_timer
       permission: read_write
       type: string
-      value: ps7_scutimer_0
+      value: Default
       default: Default
       options:
       - Default
@@ -272,7 +280,7 @@ lib_config:
       name: XILTIMER_tick_timer
       permission: read_write
       type: string
-      value: None
+      value: ps7_scutimer_0
       default: ps7_scutimer_0
       options:
       - None
@@ -880,7 +888,7 @@ lib_config:
       name: lwip220_temac_phy_link_speed
       permission: read_write
       type: string
-      value: CONFIG_LINKSPEED_AUTODETECT
+      value: CONFIG_LINKSPEED1000
       default: CONFIG_LINKSPEED_AUTODETECT
       options:
       - CONFIG_LINKSPEED10

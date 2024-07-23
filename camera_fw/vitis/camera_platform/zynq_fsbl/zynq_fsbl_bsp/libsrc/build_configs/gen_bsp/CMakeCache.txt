@@ -324,10 +324,10 @@ XILFFS_word_access:BOOL=ON
 XILTIMER_en_interval_timer:BOOL=OFF
 
 //This parameter is used to select specific timer for sleep functionality
-XILTIMER_sleep_timer:STRING=ps7_scutimer_0
+XILTIMER_sleep_timer:STRING=Default
 
 //This parameter is used to select specific timer for tick functionality
-XILTIMER_tick_timer:STRING=None
+XILTIMER_tick_timer:STRING=ps7_scutimer_0
 
 //Yocto based embeddedsw FLOW
 YOCTO:BOOL=OFF
@@ -385,6 +385,15 @@ emacps_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 emacps_SOURCE_DIR:STATIC=C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src
+
+//Value Computed by CMake
+gpio_BINARY_DIR:STATIC=C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src
+
+//Value Computed by CMake
+gpio_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+gpio_SOURCE_DIR:STATIC=C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/gpio/src
 
 //Value Computed by CMake
 gpiops_BINARY_DIR:STATIC=C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/camera_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src
@@ -692,7 +701,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=33
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=34
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
