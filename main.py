@@ -3,6 +3,10 @@ from data_preprocessing.data_preprocess import *
 from training.train_model import *
 from evaluation.test_model import *
 
+# set this FLAG for different mode
+# Data-Processing: 0
+# Training: 1
+# Evaluation: 2
 FLAG = 2
 
 # set this to the path of the video to decode
@@ -34,6 +38,8 @@ CLASS_LABELS = ['jack', 'bob']
 # │   │   │   ├── image1.jpg
 # │   │   │   └── image2.jpg
 
+# TODO: in future, when connect with db, need to refactor all the data-loading from file based
+# to db based
 if FLAG == 0:
     # 1. Fetching frames from server's queue (or fetching from db)
     # Will need a db.info to know how many classes of familiar people and the int to str map
@@ -42,6 +48,7 @@ if FLAG == 0:
 
     # 2. Extract face and resize to 224*224 and store under datasets/raw/"name"
     # (if doing the test according to note, comment this out)
+    # TODO: Try Upperbody detection, YuNet and YOLO for face detection
     extract(PATH_TO_VIDEO, 1, NAME)
 
     # 3. Apply transform. For every pic, generate 5 more pictures with transform.
@@ -56,6 +63,10 @@ elif FLAG == 1:
     print(class_labels)
     print(model_name)
 
+    ## TODO: Add training for SVM
+
 elif FLAG == 2:
     # 5. load the just trained model and give it a path to a image and output the result
+    # TODO: Add SVM
+    # TODO: implement multi-image testing, and combine the result
     predict_image_class(MODEL_NAME, CLASS_LABELS, OUTPUT_CLASS_NUMBER, IMAGE_PATH)
