@@ -102,8 +102,11 @@ void spiWrite(u8 data){
         } else {
             XGpio_DiscreteClear(&gpioInstOutput, CAMERA_GPIO_CHANNEL, MOSI_MASK);
         }
+        for(volatile int i = 0; i < 1000; i++){};
         clockHigh();
+        for(volatile int i = 0; i < 1000; i++){};
         clockLow();
+
     }
 }
 
@@ -111,9 +114,11 @@ void spiRead(u8* data){
     *data = 0;
     for(int i=0; i<8;i++){
         clockHigh();
+        for(volatile int i = 0; i < 100; i++){};
         *data <<= 1;
         *data |= (XGpio_DiscreteRead(&gpioInstInput, CAMERA_GPIO_CHANNEL)&MISO_MASK);
         clockLow();
+        for(volatile int i = 0; i < 100; i++){};
     }
 }
 
@@ -180,7 +185,7 @@ u8 cameraInit(){
     cameraWrite(0x3818, 0xA8);
     cameraWrite(0x3621, 0x10);
     cameraWrite(0x3801, 0xB0);
-    cameraWrite(0x4407, 0x0C);
+    cameraWrite(0x4407, 0x08);
     cameraWrite(0x5888, 0x00);
     cameraWrite(0x5000, 0xFF);
 

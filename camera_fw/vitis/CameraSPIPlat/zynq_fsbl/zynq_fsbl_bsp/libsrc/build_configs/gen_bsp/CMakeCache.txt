@@ -387,15 +387,6 @@ emacps_IS_TOP_LEVEL:STATIC=OFF
 emacps_SOURCE_DIR:STATIC=C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src
 
 //Value Computed by CMake
-gpio_BINARY_DIR:STATIC=C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src
-
-//Value Computed by CMake
-gpio_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-gpio_SOURCE_DIR:STATIC=C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/zynq_fsbl/zynq_fsbl_bsp/libsrc/gpio/src
-
-//Value Computed by CMake
 gpiops_BINARY_DIR:STATIC=C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src
 
 //Value Computed by CMake
@@ -481,6 +472,15 @@ sdps_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 sdps_SOURCE_DIR:STATIC=C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/zynq_fsbl/zynq_fsbl_bsp/libsrc/sdps/src
+
+//Value Computed by CMake
+spi_BINARY_DIR:STATIC=C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/spi/src
+
+//Value Computed by CMake
+spi_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+spi_SOURCE_DIR:STATIC=C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/zynq_fsbl/zynq_fsbl_bsp/libsrc/spi/src
 
 //This option is not supported in the Unified Vitis IDE in this
 // version. Change to the classic IDE if you want to use this option.

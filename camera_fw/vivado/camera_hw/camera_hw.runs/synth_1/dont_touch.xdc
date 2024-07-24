@@ -21,20 +21,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_desi
 # IP: bd/camera_design/ip/camera_design_ps7_0_axi_periph_0/camera_design_ps7_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_ps7_0_axi_periph_0 || ORIG_REF_NAME==camera_design_ps7_0_axi_periph_0} -quiet] -quiet
 
-# IP: bd/camera_design/ip/camera_design_axi_gpio_0_1/camera_design_axi_gpio_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_axi_gpio_0_1 || ORIG_REF_NAME==camera_design_axi_gpio_0_1} -quiet] -quiet
-
-# IP: bd/camera_design/ip/camera_design_axi_gpio_1_1/camera_design_axi_gpio_1_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_axi_gpio_1_1 || ORIG_REF_NAME==camera_design_axi_gpio_1_1} -quiet] -quiet
-
-# IP: bd/camera_design/ip/camera_design_xlslice_0_6/camera_design_xlslice_0_6.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_xlslice_0_6 || ORIG_REF_NAME==camera_design_xlslice_0_6} -quiet] -quiet
-
-# IP: bd/camera_design/ip/camera_design_xlslice_0_7/camera_design_xlslice_0_7.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_xlslice_0_7 || ORIG_REF_NAME==camera_design_xlslice_0_7} -quiet] -quiet
-
-# IP: bd/camera_design/ip/camera_design_xlslice_1_1/camera_design_xlslice_1_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_xlslice_1_1 || ORIG_REF_NAME==camera_design_xlslice_1_1} -quiet] -quiet
+# IP: bd/camera_design/ip/camera_design_axi_quad_spi_0_0/camera_design_axi_quad_spi_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_axi_quad_spi_0_0 || ORIG_REF_NAME==camera_design_axi_quad_spi_0_0} -quiet] -quiet
 
 # IP: bd/camera_design/ip/camera_design_auto_pc_0/camera_design_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==camera_design_auto_pc_0 || ORIG_REF_NAME==camera_design_auto_pc_0} -quiet] -quiet

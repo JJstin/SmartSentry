@@ -1,12 +1,9 @@
-axi_gpio_0:
-- axi_gpio
-- gpio
-axi_gpio_1:
-- axi_gpio
-- gpio
 axi_iic_0:
 - axi_iic
 - iic
+axi_quad_spi_0:
+- axi_quad_spi
+- spi
 ps7_afi_0:
 - ps7_afi
 - None

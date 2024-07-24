@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-//Date        : Tue Jul 23 19:37:31 2024
+//Date        : Wed Jul 24 03:02:32 2024
 //Host        : GJiang-Laptop running 64-bit major release  (build 9200)
 //Command     : generate_target camera_design_wrapper.bd
 //Design      : camera_design_wrapper
@@ -61,7 +61,7 @@ module camera_design_wrapper
   inout FIXED_IO_ps_srstb;
   output [0:0]camera_D2;
   output [0:0]camera_D3;
-  input [0:0]camera_D4;
+  input camera_D4;
   output [0:0]camera_D5;
   inout raspberry_i2c_scl_io;
   inout raspberry_i2c_sda_io;
@@ -89,7 +89,7 @@ module camera_design_wrapper
   wire FIXED_IO_ps_srstb;
   wire [0:0]camera_D2;
   wire [0:0]camera_D3;
-  wire [0:0]camera_D4;
+  wire camera_D4;
   wire [0:0]camera_D5;
   wire raspberry_i2c_scl_i;
   wire raspberry_i2c_scl_io;

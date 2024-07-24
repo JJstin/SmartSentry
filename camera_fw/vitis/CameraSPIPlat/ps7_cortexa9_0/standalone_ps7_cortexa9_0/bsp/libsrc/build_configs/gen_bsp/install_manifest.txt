@@ -20,11 +20,8 @@ C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/st
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xemacps_hw.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xenv.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xenv_standalone.h
-C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpiops.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpiops_hw.h
-C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio_i.h
-C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio_l.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xiic.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xiic_i.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xiic_l.h
@@ -70,6 +67,9 @@ C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/st
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps_core.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps_hw.h
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xspi.h
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xspi_i.h
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xspi_l.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xstatus.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xtimer_config.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xttcps.h
@@ -102,11 +102,8 @@ C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/st
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xemacps_hw.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xenv.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xenv_standalone.h
-C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpiops.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpiops_hw.h
-C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio_i.h
-C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio_l.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xiic.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xiic_i.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xiic_l.h
@@ -152,6 +149,9 @@ C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/st
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps_core.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps_hw.h
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xspi.h
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xspi_i.h
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xspi_l.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xstatus.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xtimer_config.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xttcps.h
@@ -184,11 +184,8 @@ C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/st
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xemacps_hw.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xenv.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xenv_standalone.h
-C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpiops.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpiops_hw.h
-C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio_i.h
-C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xgpio_l.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xiic.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xiic_i.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xiic_l.h
@@ -234,6 +231,9 @@ C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/st
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps_core.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xsdps_hw.h
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xspi.h
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xspi_i.h
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xspi_l.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xstatus.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xtimer_config.h
 C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/CameraSPIPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/../include/xttcps.h

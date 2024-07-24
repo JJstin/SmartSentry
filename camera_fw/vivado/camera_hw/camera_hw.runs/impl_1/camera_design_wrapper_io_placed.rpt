@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date                      : Tue Jul 23 19:49:18 2024
+| Date                      : Wed Jul 24 03:06:45 2024
 | Host                      : GJiang-Laptop running 64-bit major release  (build 9200)
 | Command                   : report_io -file camera_design_wrapper_io_placed.rpt
 | Design                    : camera_design_wrapper
@@ -381,7 +381,7 @@ Table of Contents
 | V4         |                      |            | VCCO_DDR_502            | VCCO        |                   |         |            |      |                     |                      |   any** |            |           |          |      |                  |              |                   |              |
 | V5         |                      | High Range | IO_L6N_T0_VREF_13       | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V6         |                      | High Range | IO_L22P_T3_13           | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| V7         | camera_D4[0]         | High Range | IO_L11N_T1_SRCC_13      | INPUT       | LVCMOS33          |      13 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| V7         | camera_D4            | High Range | IO_L11N_T1_SRCC_13      | INPUT       | LVCMOS33          |      13 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | V8         |                      | High Range | IO_L15P_T2_DQS_13       | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V9         |                      |            | GND                     | GND         |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | V10        |                      | High Range | IO_L21N_T3_DQS_13       | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

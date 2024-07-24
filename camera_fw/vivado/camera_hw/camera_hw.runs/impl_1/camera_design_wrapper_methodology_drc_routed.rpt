@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Tue Jul 23 19:50:29 2024
+| Date         : Wed Jul 24 03:07:30 2024
 | Host         : GJiang-Laptop running 64-bit major release  (build 9200)
 | Command      : report_methodology -file camera_design_wrapper_methodology_drc_routed.rpt -pb camera_design_wrapper_methodology_drc_routed.pb -rpx camera_design_wrapper_methodology_drc_routed.rpx
 | Design       : camera_design_wrapper
@@ -34,7 +34,7 @@ Table of Contents
 -----------------
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on camera_D4[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An input delay is missing on camera_D4 relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#2 Warning
