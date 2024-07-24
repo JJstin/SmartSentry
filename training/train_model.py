@@ -44,7 +44,7 @@ def train_model(OUTPUT_CLASS_NUMBER):
     ])
 
     # Load the datasets from Hugging Face
-    dataset = load_dataset("imagefolder", data_dir="new-datasets/processed", drop_labels=False)
+    dataset = load_dataset("imagefolder", data_dir="datasets/processed", drop_labels=False)
 
     train_dataset = dataset["train"]
     val_dataset = dataset["validation"]
