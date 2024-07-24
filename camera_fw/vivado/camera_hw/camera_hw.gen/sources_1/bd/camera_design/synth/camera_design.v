@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-//Date        : Tue Jul 23 18:50:18 2024
+//Date        : Tue Jul 23 19:37:31 2024
 //Host        : GJiang-Laptop running 64-bit major release  (build 9200)
 //Command     : generate_target camera_design.bd
 //Design      : camera_design
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "camera_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=camera_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=15,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=3,da_clkrst_cnt=1,da_ps7_cnt=2,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "camera_design.hwdef" *) 
+(* CORE_GENERATION_INFO = "camera_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=camera_design,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=15,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=12,da_board_cnt=3,da_clkrst_cnt=1,da_ps7_cnt=2,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "camera_design.hwdef" *) 
 module camera_design
    (DDR_addr,
     DDR_ba,
@@ -83,7 +83,7 @@ module camera_design
   wire axi_iic_0_IIC_SDA_O;
   wire axi_iic_0_IIC_SDA_T;
   wire axi_iic_0_iic2intc_irpt;
-  wire [0:0]camera_D4_1;
+  wire [0:0]gpio_io_i_0_1;
   wire [0:0]proc_sys_reset_0_peripheral_aresetn;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
@@ -205,14 +205,14 @@ module camera_design
   assign axi_iic_0_IIC_SDA_I = raspberry_i2c_sda_i;
   assign camera_D2[0] = xlslice_0_Dout;
   assign camera_D3[0] = xlslice_1_Dout;
-  assign camera_D4_1 = camera_D4[0];
   assign camera_D5[0] = xlslice_2_Dout;
+  assign gpio_io_i_0_1 = camera_D4[0];
   assign raspberry_i2c_scl_o = axi_iic_0_IIC_SCL_O;
   assign raspberry_i2c_scl_t = axi_iic_0_IIC_SCL_T;
   assign raspberry_i2c_sda_o = axi_iic_0_IIC_SDA_O;
   assign raspberry_i2c_sda_t = axi_iic_0_IIC_SDA_T;
-  camera_design_axi_gpio_0_0 axi_gpio_0
-       (.gpio_io_i(camera_D4_1),
+  camera_design_axi_gpio_0_1 axi_gpio_0
+       (.gpio_io_i(gpio_io_i_0_1),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[8:0]),
         .s_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),
@@ -232,7 +232,7 @@ module camera_design
         .s_axi_wready(ps7_0_axi_periph_M00_AXI_WREADY),
         .s_axi_wstrb(ps7_0_axi_periph_M00_AXI_WSTRB),
         .s_axi_wvalid(ps7_0_axi_periph_M00_AXI_WVALID));
-  camera_design_axi_gpio_1_0 axi_gpio_1
+  camera_design_axi_gpio_1_1 axi_gpio_1
        (.gpio_io_o(axi_gpio_1_gpio_io_o),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(ps7_0_axi_periph_M01_AXI_ARADDR[8:0]),
@@ -452,13 +452,13 @@ module camera_design
         .S00_AXI_wready(processing_system7_0_M_AXI_GP0_WREADY),
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
-  camera_design_xlslice_0_1 xlslice_0
+  camera_design_xlslice_0_6 xlslice_0
        (.Din(axi_gpio_1_gpio_io_o),
         .Dout(xlslice_0_Dout));
-  camera_design_xlslice_0_2 xlslice_1
+  camera_design_xlslice_0_7 xlslice_1
        (.Din(axi_gpio_1_gpio_io_o),
         .Dout(xlslice_1_Dout));
-  camera_design_xlslice_0_3 xlslice_2
+  camera_design_xlslice_1_1 xlslice_2
        (.Din(axi_gpio_1_gpio_io_o),
         .Dout(xlslice_2_Dout));
 endmodule

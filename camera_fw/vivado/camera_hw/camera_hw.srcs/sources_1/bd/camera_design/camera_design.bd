@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCE0B91FE987787C",
+      "boundary_crc": "0xCE0B91F5DF4DAF0",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../camera_hw.gen/sources_1/bd/camera_design",
       "name": "camera_design",
@@ -234,13 +234,7 @@
       "camera_D4": {
         "direction": "I",
         "left": "0",
-        "right": "0",
-        "parameters": {
-          "PortWidth": {
-            "value": "10",
-            "value_src": "ip_prop"
-          }
-        }
+        "right": "0"
       },
       "camera_D2": {
         "direction": "O",
@@ -2584,8 +2578,8 @@
       "axi_gpio_0": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "33",
-        "xci_name": "camera_design_axi_gpio_0_0",
-        "xci_path": "ip\\camera_design_axi_gpio_0_0\\camera_design_axi_gpio_0_0.xci",
+        "xci_name": "camera_design_axi_gpio_0_1",
+        "xci_path": "ip\\camera_design_axi_gpio_0_1\\camera_design_axi_gpio_0_1.xci",
         "inst_hier_path": "axi_gpio_0",
         "parameters": {
           "C_ALL_INPUTS": {
@@ -2599,8 +2593,8 @@
       "axi_gpio_1": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "33",
-        "xci_name": "camera_design_axi_gpio_1_0",
-        "xci_path": "ip\\camera_design_axi_gpio_1_0\\camera_design_axi_gpio_1_0.xci",
+        "xci_name": "camera_design_axi_gpio_1_1",
+        "xci_path": "ip\\camera_design_axi_gpio_1_1\\camera_design_axi_gpio_1_1.xci",
         "inst_hier_path": "axi_gpio_1",
         "parameters": {
           "C_ALL_OUTPUTS": {
@@ -2614,8 +2608,8 @@
       "xlslice_0": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
         "ip_revision": "4",
-        "xci_name": "camera_design_xlslice_0_1",
-        "xci_path": "ip\\camera_design_xlslice_0_1\\camera_design_xlslice_0_1.xci",
+        "xci_name": "camera_design_xlslice_0_6",
+        "xci_path": "ip\\camera_design_xlslice_0_6\\camera_design_xlslice_0_6.xci",
         "inst_hier_path": "xlslice_0",
         "parameters": {
           "DIN_WIDTH": {
@@ -2626,13 +2620,10 @@
       "xlslice_1": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
         "ip_revision": "4",
-        "xci_name": "camera_design_xlslice_0_2",
-        "xci_path": "ip\\camera_design_xlslice_0_2\\camera_design_xlslice_0_2.xci",
+        "xci_name": "camera_design_xlslice_0_7",
+        "xci_path": "ip\\camera_design_xlslice_0_7\\camera_design_xlslice_0_7.xci",
         "inst_hier_path": "xlslice_1",
         "parameters": {
-          "DIN_FROM": {
-            "value": "1"
-          },
           "DIN_TO": {
             "value": "1"
           },
@@ -2644,13 +2635,10 @@
       "xlslice_2": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
         "ip_revision": "4",
-        "xci_name": "camera_design_xlslice_0_3",
-        "xci_path": "ip\\camera_design_xlslice_0_3\\camera_design_xlslice_0_3.xci",
+        "xci_name": "camera_design_xlslice_1_1",
+        "xci_path": "ip\\camera_design_xlslice_1_1\\camera_design_xlslice_1_1.xci",
         "inst_hier_path": "xlslice_2",
         "parameters": {
-          "DIN_FROM": {
-            "value": "2"
-          },
           "DIN_TO": {
             "value": "2"
           },
@@ -2719,7 +2707,7 @@
           "processing_system7_0/IRQ_F2P"
         ]
       },
-      "camera_D4_1": {
+      "gpio_io_i_0_1": {
         "ports": [
           "camera_D4",
           "axi_gpio_0/gpio_io_i"
