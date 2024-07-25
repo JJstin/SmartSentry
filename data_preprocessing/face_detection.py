@@ -2,16 +2,17 @@ import cv2
 import os
 import shutil
 import sys
+import time
+from deepface import DeepFace
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(os.path.dirname(current_dir))
 sys.path.append(project_root)
 
-from definitions import ROOT_DIR
-
+    
 def extract(path_to_video=None, thread_num="", name="joe"):
     # Directory to save frames with detected faces
-    save_dir = os.path.join(ROOT_DIR, "datasets", "raw", name)
+    save_dir = os.path.join("..", "datasets", "raw", name)
 
     print(save_dir)
 
@@ -19,21 +20,20 @@ def extract(path_to_video=None, thread_num="", name="joe"):
         shutil.rmtree(save_dir)
     os.makedirs(save_dir)
 
-    # Load the pre-trained Haar Cascade classifier for face detection
-    face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-
+    start = time.time()
     # Feel free to replace the name of the video here with one in the directory
     if path_to_video:
         cap = cv2.VideoCapture(path_to_video)
     else:
-        video = 'Justin 1080_1920 30fps BackCam.MOV'
-        cap = cv2.VideoCapture(os.path.join("datasets", "videos", video))
+        video = 'Joe 1080_1920 60fps BackCam.MOV'
+        cap = cv2.VideoCapture(os.path.join("..", "datasets", "videos", video))
 
     if not cap.isOpened():
         print("Error: Could not open video.")
         exit()
 
-    frame_index = 0
+    frame_index = 1
+    img_index = 1
 
     while cap.isOpened():
         ret, frame = cap.read()
@@ -44,32 +44,38 @@ def extract(path_to_video=None, thread_num="", name="joe"):
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
         # Detect faces in the frame
-        faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=7, minSize=(50, 50))
-
-        for (x, y, w, h) in faces:
+        faces = DeepFace.extract_faces(frame, detector_backend='yolov8', enforce_detection = False)
+            
+        for face in faces:
+            face_rect = face["facial_area"]
+            x, y, w, h = face_rect["x"], face_rect["y"], face_rect["w"], face_rect["h"]
             # Perform aspect ratio check (assuming face boxes are more square)
-            if 0.75 < w/h < 1.33:
-                # Crop the face frame out
-                face_frame = frame[y:y+h, x:x+w]
+            if not 0.75 < w/h < 1.33:
+                continue
 
-                # Resize the face frame to 224x224
-                resized_face_frame = cv2.resize(face_frame, (224, 224))
+            face_frame = frame[y:y+h, x:x+w]
+            # Resize the face frame to 224x224
+            resized_face_frame = cv2.resize(face_frame, (224, 224))
 
-                # Save the cropped and resized face to the designated directory
-                frame_path = os.path.join(save_dir, f'face_{thread_num}_{frame_index}.jpg')
-                cv2.imwrite(frame_path, resized_face_frame)
+            # Save the cropped and resized face to the designated directory
+            frame_path = os.path.join(save_dir, f'face_{thread_num}_{img_index}.jpg')
+            cv2.imwrite(frame_path, resized_face_frame)
+            img_index += 1
 
-        # Display the frame with the rectangles (commented out)
-        # cv2.imshow('Face Detection', frame)
+            # Display the frame with the rectangles (commented out)
+            # cv2.imshow('Face Detection', frame)
+
+                
 
         # Break the loop if 'q' is pressed
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
         frame_index += 1
-
+    print(f"execution time: {time.time()-start} seconds")
     cap.release()
     cv2.destroyAllWindows()
+    print(f"total {frame_index} frames, extracted {img_index-1} images")
 
 if __name__ == "__main__":
     extract(name="joe")
