@@ -304,16 +304,16 @@ u8 capture(u8 * ImgBuffer, int * bytes){
     
     while(!isCaptureDone());
     
-    usleep(1000);
     u32 byteCount = 0;
     arducamReadFIFOSize(&byteCount);
     // xil_printf("Image Size: %d \r\n", byteCount);
     *bytes = byteCount;
-    if(byteCount > 0){
+    if(byteCount > 0 && byteCount < MAX_FIFO_SIZE){
         arducamBurstReadFIFO(ImgBuffer, byteCount, MAX_BUFF_SIZE_BYTES);
     }
     else {
         xil_printf("Resetting FIFO PTRS \n\r");
+        return XST_FAILURE;
         // arducamWriteFIFOControlReg(FIFO_RESET_WRITE_PTR | FIFO_RESET_READ_PTR);
     }
     // for (size_t index = 0; index < byteCount; index++) {

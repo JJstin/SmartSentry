@@ -28,6 +28,7 @@
  */
 
 #include <stdio.h>
+#include <xstatus.h>
 
 #include "xparameters.h"
 
@@ -240,7 +241,7 @@ int main()
 	/* receive and process packets */
 	while (1) {
         // xil_printf("capture result %d\r\n",capture(ImgBuffer, &bytes));
-        capture(ImgBuffer, &bytes);
+        int status = capture(ImgBuffer, &bytes);
 
         // xil_printf("calling transfer data\n\r");
         
@@ -252,7 +253,10 @@ int main()
         // for (size_t index = 0; index < byteCount; index++) {
         //   xil_printf("0x%X,", ImgBuffer[index]);
         // }
-        transfer_data(ImgBuffer+1, bytes);
+        if(status == XST_SUCCESS){
+            transfer_data(ImgBuffer+1, bytes);
+        }
+        
 
         // usleep(10000);
 	}
