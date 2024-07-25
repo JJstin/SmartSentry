@@ -26,8 +26,8 @@ def extract(path_to_video=None, thread_num="", name="joe"):
     if path_to_video:
         cap = cv2.VideoCapture(path_to_video)
     else:
-        video = 'Joe 1080_1920 60fps BackCam.MOV'
-        cap = cv2.VideoCapture(os.path.join(os.path.dirname(__file__), "datasets", "videos", video))
+        video = 'Justin 1080_1920 30fps BackCam.MOV'
+        cap = cv2.VideoCapture(os.path.join("datasets", "videos", video))
 
     if not cap.isOpened():
         print("Error: Could not open video.")
