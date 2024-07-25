@@ -1,7 +1,7 @@
 {
   "name": "spi_test_app",
   "type": "HOST",
-  "platform": "C:\\Users\\georg\\vitis\\SmartSentry\\camera_fw\\vitis\\spi_test\\export\\spi_test\\spi_test.xpfm",
+  "platform": "D:\\design_project-code\\SmartSentry2\\camera_fw\\vitis\\platinum\\export\\platinum\\platinum.xpfm",
   "domain": "standalone_ps7_cortexa9_0",
   "cpuInstance": "ps7_cortexa9_0",
   "cpuType": "cortex-a9",

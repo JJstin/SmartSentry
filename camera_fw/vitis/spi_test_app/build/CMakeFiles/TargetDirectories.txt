@@ -1,0 +1,3 @@
+D:/design_project-code/SmartSentry2/camera_fw/vitis/spi_test_app/build/CMakeFiles/spi_test_app.elf.dir
+D:/design_project-code/SmartSentry2/camera_fw/vitis/spi_test_app/build/CMakeFiles/edit_cache.dir
+D:/design_project-code/SmartSentry2/camera_fw/vitis/spi_test_app/build/CMakeFiles/rebuild_cache.dir

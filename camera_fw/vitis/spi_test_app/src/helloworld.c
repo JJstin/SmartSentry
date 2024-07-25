@@ -26,6 +26,9 @@
 
 int main()
 {
+    init_platform();
     cameraInit();
+    capture();
+    cleanup_platform();
     return 0;
 }

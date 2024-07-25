@@ -9,7 +9,110 @@ project(${APP_NAME})
 
 enable_language(C ASM CXX)
 find_package(common)
-collect(PROJECT_LIB_DEPS xilstandalone;xiltimer)
+collect(PROJECT_LIB_DEPS xilstandalone;xiltimer;lwip220)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -56,6 +159,7 @@ collect(PROJECT_LIB_DEPS c)
 
 collect (PROJECT_LIB_SOURCES camera_driver/camera.c)
 collect (PROJECT_LIB_SOURCES camera_driver/config.c)
+collect (PROJECT_LIB_SOURCES camera_driver/config_copy.c)
 collect (PROJECT_LIB_SOURCES helloworld.c)
 collect (PROJECT_LIB_SOURCES platform.c)
 collector_list (_sources PROJECT_LIB_SOURCES)

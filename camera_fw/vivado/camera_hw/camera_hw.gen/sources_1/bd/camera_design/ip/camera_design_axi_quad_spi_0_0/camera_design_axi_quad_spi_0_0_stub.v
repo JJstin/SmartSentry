@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Wed Jul 24 03:04:25 2024
-// Host        : GJiang-Laptop running 64-bit major release  (build 9200)
+// Date        : Wed Jul 24 13:47:05 2024
+// Host        : LAPTOP-PEAR running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/georg/vitis/SmartSentry/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_axi_quad_spi_0_0/camera_design_axi_quad_spi_0_0_stub.v
+//               d:/design_project-code/SmartSentry2/camera_fw/vivado/camera_hw/camera_hw.gen/sources_1/bd/camera_design/ip/camera_design_axi_quad_spi_0_0/camera_design_axi_quad_spi_0_0_stub.v
 // Design      : camera_design_axi_quad_spi_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

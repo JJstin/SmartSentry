@@ -35,6 +35,7 @@
 #define STATUS_VSYNC_MASK (0x01U << 0)
 #define STATUS_CAPTURE_DONE_MASK (0x01 << 3)
 
+// Arduchip masks
 #define ARDUCHIP_WRITE_MASK 0x80
 #define ARDUCAM_RESET_CPLD_MASK 0x80
 
@@ -82,6 +83,8 @@ static u8* ImgBuffer;
 
 void camWriteSensorRegs16_8(const sensor_config_t reglist[], uint16_t reglistLen);
 
+void camConfigureSensor(void);
+
 void initI2C(void){
     // Init i2c
     XIic_Config *ConfigPtr = XIic_LookupConfig(XPAR_AXI_IIC_0_BASEADDR);
@@ -103,16 +106,16 @@ void initSpi(void){
 				    SpiConfigPtr->BaseAddress);
     
     XSpi_SetOptions(&spiInst, 
-         XSP_MASTER_OPTION |
-				 XSP_CLK_PHASE_1_OPTION );
+         XSP_MASTER_OPTION | XSP_MANUAL_SSELECT_OPTION);
 
-    // Select SPI Device 1
-    XSpi_SetSlaveSelect(&spiInst, 0x1);
     /*
 	 * Start the SPI driver so that the device is enabled.
 	 */
 	XSpi_Start(&spiInst);
     XSpi_IntrGlobalDisable(&spiInst);
+
+    // Select SPI Device 1
+    XSpi_SetSlaveSelect(&spiInst, 0x1);
 }
 
 u8 cameraInit(){
@@ -124,19 +127,30 @@ u8 cameraInit(){
     cameraRead(0x300AU, &cameraID[0]);
     cameraRead(0x300BU, &cameraID[1]);
     printf("CameID: %X%X\r\n", cameraID[0], cameraID[1]);
-    uint8_t byte = 0x55;
-    resetCPLD();
-    arducamWriteSensorPowerControlReg(SENSOR_POWER_EN_MASK | SENSOR_RESET_MASK);
 
-    while(1){
+    resetCPLD();
+
+    u8 buf = 0;
+    arducamWriteSensorPowerControlReg(SENSOR_POWER_EN_MASK | SENSOR_RESET_MASK);
+    arducamReadSensorPowerControlReg(&buf);
+    xil_printf("sensor power control set to %X\n\r", buf);
+    buf = 0;
+    arducamWriteSensorTimingControlReg(VSYNC_ACTIVE_LOW_MASK);
+    arducamReadSensorTimingControlReg(&buf);
+    xil_printf("sensor timing control set to %X\n\r", buf);
+
+    // while(1){
         // Test Reg operations
-        byte = 0x55;
+        uint8_t byte = 0x55;
         xil_printf("Writing %X to test reg\r\n", byte);
         arducamWriteTestReg(byte);
         byte = 0;
         arducamReadTestReg(&byte);
         xil_printf("Read %X from test reg\r\n", byte);
-    }
+        
+        // arducamReadFWVersion(&byte);
+        // xil_printf("FW Version 0x%X\r\n", byte);
+    // }
     // delay(100);
     // cameraWrite(0xFF,0x1);
     
@@ -145,27 +159,32 @@ u8 cameraInit(){
     xil_printf("FW Version 0x%X\r\n", byte);
     //OV5640_init_setting();
 
-    cameraWrite(0x3008, 0x80);
-    camWriteSensorRegs16_8(getCamPreviewConfig(), PREVIEW_CONFIG_LEN);
-    delay(100);
-    camWriteSensorRegs16_8(getCamCaptureConfig(), JPEG_CONFIG_LEN);
-    camWriteSensorRegs16_8(getCamResolutionConfig(), RES_320_240_CONFIG_LEN);
-    delay(100);
-    cameraWrite(0x3818, 0xA8);
-    cameraWrite(0x3621, 0x10);
-    cameraWrite(0x3801, 0xB0);
-    cameraWrite(0x4407, 0x08);
-    cameraWrite(0x5888, 0x00);
-    cameraWrite(0x5000, 0xFF);
+    camConfigureSensor();
 
-    arducamWriteSensorTimingControlReg(VSYNC_ACTIVE_LOW_MASK);
-    camWriteSensorRegs16_8(getCamResolutionConfig(), RES_320_240_CONFIG_LEN);
-    delay(1000);
-    arducamWriteFIFOControlReg(FIFO_CLEAR_CAPTURE_DONE_FLAG);
-    arducamWriteCaptureControlReg(0);
+    // cameraWrite(0x3008, 0x80);
+    // camWriteSensorRegs16_8(getCamPreviewConfig(), PREVIEW_CONFIG_LEN);
+    // delay(100);
+    // camWriteSensorRegs16_8(getCamCaptureConfig(), JPEG_CONFIG_LEN);
+    // camWriteSensorRegs16_8(getCamResolutionConfig(), RES_320_240_CONFIG_LEN);
+    // delay(100);
+    // cameraWrite(0x3818, 0xA8);
+    // cameraWrite(0x3621, 0x10);
+    // cameraWrite(0x3801, 0xB0);
+    // cameraWrite(0x4407, 0x08);
+    // cameraWrite(0x5888, 0x00);
+    // cameraWrite(0x5000, 0xFF);
+
+    
+
+    // arducamWriteSensorTimingControlReg(VSYNC_ACTIVE_LOW_MASK);
+    // camWriteSensorRegs16_8(getCamResolutionConfig(), RES_320_240_CONFIG_LEN);
+    // delay(100);
+    cameraWrite(0x503D,0x80);
+    // arducamWriteFIFOControlReg(FIFO_CLEAR_CAPTURE_DONE_FLAG);
+    // arducamWriteCaptureControlReg(0);
 
     // Malloc buffer
-    ImgBuffer = malloc(MAX_BUFF_SIZE_BYTES);
+    ImgBuffer = malloc(620000);
     if(ImgBuffer == NULL){
         printf("malloc failed\r\n");
     }
@@ -195,6 +214,16 @@ u8 cameraRead(u16 address, u8* buff){
     return XIic_Recv(i2cInst.BaseAddress, CAMERA_I2C_ADDR, buff,1,XIIC_STOP);
 }
 
+void cameraVerify(u16 address, u8 buff){
+    u8 buf;
+    cameraRead(address,&buf);
+    if(buf != buff) {
+        xil_printf("cameraVerify failed! address: %X, expected: %X, actual: %X\n\r", address, buff, buf);
+        return;
+    }
+    // xil_printf("cameraVerify success! address: %X, expected: %X, actual: %X", address, buff, buf);
+}
+
 void camWriteSensorRegs16_8(const sensor_config_t reglist[], uint16_t reglistLen) {
 
   for (int i = 0; i < reglistLen; i++) {
@@ -202,37 +231,54 @@ void camWriteSensorRegs16_8(const sensor_config_t reglist[], uint16_t reglistLen
   }
 }
 
+void cameraGroupVerify(const sensor_config_t reglist[], uint16_t reglistLen) {
+
+  for (int i = 0; i < reglistLen; i++) {
+    cameraVerify(reglist[i].reg, reglist[i].val);
+  }
+}
+
 u8 isCaptureDone(void) {
   uint8_t status;
   arducamReadCaptureStatusReg(&status);
-  xil_printf("status %X\r\n", status);
+//   xil_printf("status %X\r\n", status);
   return status  & STATUS_CAPTURE_DONE_MASK;
 }
 
 void camConfigureSensor(void) {
   // Reset camera
   cameraWrite(0x3008, 0x80);
+  cameraVerify(0x3008, 0x02);
   // Setup Preview resolution
   camWriteSensorRegs16_8(getCamPreviewConfig(), PREVIEW_CONFIG_LEN);
-  delay(2);
+  cameraGroupVerify(getCamPreviewConfig(), PREVIEW_CONFIG_LEN);
+  usleep(2000);
   // Switch to JPEG capture
   camWriteSensorRegs16_8(getCamCaptureConfig(), JPEG_CONFIG_LEN);
+  cameraGroupVerify(getCamCaptureConfig(), JPEG_CONFIG_LEN);
   // Switch to lowest JPEG resolution
   camWriteSensorRegs16_8(getCamResolutionConfig(), RES_320_240_CONFIG_LEN);
+  cameraGroupVerify(getCamResolutionConfig(), RES_320_240_CONFIG_LEN);
 
-  delay(1);
+  usleep(1000);
   // Vertical flip
   cameraWrite(0x3818, 0xa8);
+  cameraVerify(0x3818, 0xa8);
   // Pixel binning
   cameraWrite(0x3621, 0x10);
+  cameraVerify(0x3621, 0x10);
   // Image horizontal control
   cameraWrite(0x3801, 0xb0);
+  cameraVerify(0x3801, 0xb0);
   // Image compression
   cameraWrite(0x4407, 0x08);
+  cameraVerify(0x4407, 0x08);
   // Lens correction
   cameraWrite(0x5888, 0x00);
+  cameraVerify(0x5888, 0x00);
   // Image processor setup
   cameraWrite(0x5000, 0xFF);
+  cameraVerify(0x5000, 0xFF);
 }
 
 u8 capture(void){
@@ -341,10 +387,10 @@ void arducamReadSensorPowerControlReg(uint8_t *buffer) {
 }
 
 void arducamWriteSensorPowerControlReg(uint8_t value) {
-  u8 cmdBuff[2];
-  cmdBuff[0] = OP_WRITE_SENSOR_POWER_CONTROL_REG;
-  cmdBuff[1] = value;
-  XSpi_Transfer(&spiInst, cmdBuff, NULL, 2);
+    u8 cmdBuff[2];
+    cmdBuff[0] = OP_WRITE_SENSOR_POWER_CONTROL_REG;
+    cmdBuff[1] = value;
+    XSpi_Transfer(&spiInst, cmdBuff, NULL, 2);
 }
 
 void arducamReadFIFO(uint8_t *buffer) {
@@ -414,21 +460,30 @@ void arducamReadFIFOSize(uint32_t *fifoSize) {
 }
 
 void resetCPLD(void) {
-  u8 cmdBuff[2];
-  cmdBuff[0] = OP_RESET_CPLD;
-  cmdBuff[1] = ARDUCAM_RESET_CPLD_MASK;
-  //XSpi_SetSlaveSelect(&spiInst, 0x1);
-  XSpi_Transfer(&spiInst, cmdBuff, NULL, 2);
-  //XSpi_SetSlaveSelect(&spiInst, 0x0);
-  
-  delay(100);
+    u8 cmdBuff[2];
+    cmdBuff[0] = OP_RESET_CPLD;
+    cmdBuff[1] = ARDUCAM_RESET_CPLD_MASK;
+    XSpi_Transfer(&spiInst, cmdBuff, NULL, 2);
 
-  cmdBuff[1] = ARDUCAM_RESET_CPLD_MASK & (~ARDUCAM_RESET_CPLD_MASK);
-  //XSpi_SetSlaveSelect(&spiInst, 0x1);
-  XSpi_Transfer(&spiInst, cmdBuff, NULL, 2);
-  //XSpi_SetSlaveSelect(&spiInst, 0x0);
+    // verify
+    u8 buf[2];    
+    cmdBuff[0] = 0x07;
+    cmdBuff[1] = DUMMY_BYTE;
+    XSpi_Transfer(&spiInst, cmdBuff, buf, 2);
+    xil_printf("CPLD set to %X\n\r", buf[1]);
 
-  
+    usleep(2000);
+
+    cmdBuff[0] = OP_RESET_CPLD; // need to reset
+    cmdBuff[1] = ARDUCAM_RESET_CPLD_MASK & (~ARDUCAM_RESET_CPLD_MASK);
+    XSpi_Transfer(&spiInst, cmdBuff, NULL, 2);
+
+    // verify
+    buf[1] = 0x00;
+    cmdBuff[0] = 0x07;
+    cmdBuff[1] = DUMMY_BYTE;
+    XSpi_Transfer(&spiInst, cmdBuff, buf, 2);
+    xil_printf("CPLD set to %X\n\r", buf[1]);
 }
 
 

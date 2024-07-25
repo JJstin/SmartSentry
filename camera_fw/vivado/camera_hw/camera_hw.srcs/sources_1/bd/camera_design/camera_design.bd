@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x367FBAD17A5614B4",
+      "boundary_crc": "0x90974C2894CCD997",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../camera_hw.gen/sources_1/bd/camera_design",
       "name": "camera_design",
@@ -225,26 +225,65 @@
             "direction": "O"
           }
         }
-      }
-    },
-    "ports": {
-      "camera_D2": {
-        "direction": "O",
-        "left": "0",
-        "right": "0"
       },
-      "camera_D3": {
-        "direction": "O",
-        "left": "0",
-        "right": "0"
-      },
-      "camera_D5": {
-        "direction": "O",
-        "left": "0",
-        "right": "0"
-      },
-      "camera_D4": {
-        "direction": "I"
+      "spi_rtl": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
+        "vlnv": "xilinx.com:interface:spi_rtl:1.0",
+        "port_maps": {
+          "IO0_I": {
+            "physical_name": "spi_rtl_io0_i",
+            "direction": "I"
+          },
+          "IO0_O": {
+            "physical_name": "spi_rtl_io0_o",
+            "direction": "O"
+          },
+          "IO0_T": {
+            "physical_name": "spi_rtl_io0_t",
+            "direction": "O"
+          },
+          "IO1_I": {
+            "physical_name": "spi_rtl_io1_i",
+            "direction": "I"
+          },
+          "IO1_O": {
+            "physical_name": "spi_rtl_io1_o",
+            "direction": "O"
+          },
+          "IO1_T": {
+            "physical_name": "spi_rtl_io1_t",
+            "direction": "O"
+          },
+          "SCK_I": {
+            "physical_name": "spi_rtl_sck_i",
+            "direction": "I"
+          },
+          "SCK_O": {
+            "physical_name": "spi_rtl_sck_o",
+            "direction": "O"
+          },
+          "SCK_T": {
+            "physical_name": "spi_rtl_sck_t",
+            "direction": "O"
+          },
+          "SS_I": {
+            "physical_name": "spi_rtl_ss_i",
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "SS_O": {
+            "physical_name": "spi_rtl_ss_o",
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "SS_T": {
+            "physical_name": "spi_rtl_ss_t",
+            "direction": "O"
+          }
+        }
       }
     },
     "components": {
@@ -1515,18 +1554,6 @@
           "PCW_SPI_PERIPHERAL_VALID": {
             "value": "0"
           },
-          "PCW_S_AXI_HP0_DATA_WIDTH": {
-            "value": "64"
-          },
-          "PCW_S_AXI_HP1_DATA_WIDTH": {
-            "value": "64"
-          },
-          "PCW_S_AXI_HP2_DATA_WIDTH": {
-            "value": "64"
-          },
-          "PCW_S_AXI_HP3_DATA_WIDTH": {
-            "value": "64"
-          },
           "PCW_TPIU_PERIPHERAL_CLKSRC": {
             "value": "External"
           },
@@ -2070,7 +2097,7 @@
         "inst_hier_path": "axi_iic_0",
         "parameters": {
           "IIC_BOARD_INTERFACE": {
-            "value": "respberry_i2c"
+            "value": "Custom"
           },
           "USE_BOARD_FLOW": {
             "value": "true"
@@ -2671,11 +2698,8 @@
         "xci_path": "ip\\camera_design_axi_quad_spi_0_0\\camera_design_axi_quad_spi_0_0.xci",
         "inst_hier_path": "axi_quad_spi_0",
         "parameters": {
-          "Multiples16": {
-            "value": "16"
-          },
-          "QSPI_BOARD_INTERFACE": {
-            "value": "spi"
+          "C_USE_STARTUP": {
+            "value": "0"
           }
         }
       }
@@ -2685,6 +2709,12 @@
         "interface_ports": [
           "raspberry_i2c",
           "axi_iic_0/IIC"
+        ]
+      },
+      "axi_quad_spi_0_SPI_0": {
+        "interface_ports": [
+          "spi_rtl",
+          "axi_quad_spi_0/SPI_0"
         ]
       },
       "processing_system7_0_DDR": {
@@ -2725,56 +2755,32 @@
           "processing_system7_0/IRQ_F2P"
         ]
       },
-      "axi_quad_spi_0_io0_o": {
-        "ports": [
-          "axi_quad_spi_0/io0_o",
-          "camera_D3"
-        ]
-      },
-      "axi_quad_spi_0_sck_o": {
-        "ports": [
-          "axi_quad_spi_0/sck_o",
-          "camera_D5"
-        ]
-      },
-      "axi_quad_spi_0_ss_o": {
-        "ports": [
-          "axi_quad_spi_0/ss_o",
-          "camera_D2"
-        ]
-      },
-      "io1_i_0_1": {
-        "ports": [
-          "camera_D4",
-          "axi_quad_spi_0/io1_i"
-        ]
-      },
       "proc_sys_reset_0_peripheral_aresetn": {
         "ports": [
           "proc_sys_reset_0/peripheral_aresetn",
           "ps7_0_axi_periph/S00_ARESETN",
-          "axi_iic_0/s_axi_aresetn",
           "ps7_0_axi_periph/M00_ARESETN",
           "ps7_0_axi_periph/ARESETN",
           "ps7_0_axi_periph/M01_ARESETN",
           "ps7_0_axi_periph/M02_ARESETN",
-          "axi_quad_spi_0/s_axi_aresetn",
-          "ps7_0_axi_periph/M03_ARESETN"
+          "ps7_0_axi_periph/M03_ARESETN",
+          "axi_iic_0/s_axi_aresetn",
+          "axi_quad_spi_0/s_axi_aresetn"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
-          "processing_system7_0/M_AXI_GP0_ACLK",
-          "proc_sys_reset_0/slowest_sync_clk",
           "ps7_0_axi_periph/S00_ACLK",
-          "axi_iic_0/s_axi_aclk",
           "ps7_0_axi_periph/M00_ACLK",
           "ps7_0_axi_periph/ACLK",
           "ps7_0_axi_periph/M01_ACLK",
           "ps7_0_axi_periph/M02_ACLK",
-          "axi_quad_spi_0/s_axi_aclk",
           "ps7_0_axi_periph/M03_ACLK",
+          "axi_iic_0/s_axi_aclk",
+          "proc_sys_reset_0/slowest_sync_clk",
+          "processing_system7_0/M_AXI_GP0_ACLK",
+          "axi_quad_spi_0/s_axi_aclk",
           "axi_quad_spi_0/ext_spi_clk"
         ]
       },

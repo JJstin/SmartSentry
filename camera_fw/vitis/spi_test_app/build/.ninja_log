@@ -1,0 +1,15 @@
+# ninja log v5
+4066	4744	7435825271187041	spi_test_app.elf	4b9f4da90f65b314
+570	4066	7435825265798375	CMakeFiles/spi_test_app.elf.dir/platform.c.obj	2750cf3dbc1fcf32
+95	3783	7435825262978561	CMakeFiles/spi_test_app.elf.dir/helloworld.c.obj	58df342cfc23d340
+26	2285	7435825247983866	CMakeFiles/spi_test_app.elf.dir/camera_driver/config.c.obj	8d42e71a8a90ced2
+1	22	0	clean	5ddd0fb8a05fe0b1
+2	2567	7435825250766181	CMakeFiles/spi_test_app.elf.dir/camera_driver/camera.c.obj	7667bbd0523f9cf5
+2	175	7435826402575923	build.ninja	e997343e5933044
+56	3257	7435825257724779	CMakeFiles/spi_test_app.elf.dir/camera_driver/config_copy.c.obj	2450a337f71651dd
+28	1811	7435826422331332	CMakeFiles/spi_test_app.elf.dir/camera_driver/config.c.obj	8d42e71a8a90ced2
+2	2507	7435826429282339	CMakeFiles/spi_test_app.elf.dir/camera_driver/camera.c.obj	7667bbd0523f9cf5
+55	3016	7435826434391701	CMakeFiles/spi_test_app.elf.dir/camera_driver/config_copy.c.obj	2450a337f71651dd
+93	3286	7435826437086718	CMakeFiles/spi_test_app.elf.dir/helloworld.c.obj	58df342cfc23d340
+578	3544	7435826439671688	CMakeFiles/spi_test_app.elf.dir/platform.c.obj	2750cf3dbc1fcf32
+3544	4116	7435826444293539	spi_test_app.elf	4b9f4da90f65b314

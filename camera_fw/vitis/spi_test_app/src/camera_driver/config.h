@@ -2,9 +2,9 @@
 
 #include "stdint.h"
 
-#define PREVIEW_CONFIG_LEN 584
-#define JPEG_CONFIG_LEN 72
-#define RES_320_240_CONFIG_LEN 27
+#define PREVIEW_CONFIG_LEN 583
+#define JPEG_CONFIG_LEN 71
+#define RES_320_240_CONFIG_LEN 26
 
 /**
  * @struct sensor_config_t
