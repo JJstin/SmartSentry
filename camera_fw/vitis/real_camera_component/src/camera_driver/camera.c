@@ -160,7 +160,7 @@ u8 cameraInit(u8** ImgBuffer){
     //OV5640_init_setting();
 
     camConfigureSensor();
-
+    arducamWriteCaptureControlReg(0);
     // cameraWrite(0x3008, 0x80);
     // camWriteSensorRegs16_8(getCamPreviewConfig(), PREVIEW_CONFIG_LEN);
     // delay(100);
@@ -264,8 +264,8 @@ void camConfigureSensor(void) {
   camWriteSensorRegs16_8(getCamCaptureConfig(), JPEG_CONFIG_LEN);
   cameraGroupVerify(getCamCaptureConfig(), JPEG_CONFIG_LEN);
   // Switch to lowest JPEG resolution
-  camWriteSensorRegs16_8(getCamResolutionConfig(), RES_320_240_CONFIG_LEN);
-  cameraGroupVerify(getCamResolutionConfig(), RES_320_240_CONFIG_LEN);
+  camWriteSensorRegs16_8(getCamResolution640_480Config(), RES_640_480_CONFIG_LEN);
+  cameraGroupVerify(getCamResolution640_480Config(), RES_640_480_CONFIG_LEN);
 
   usleep(1000);
   // Vertical flip

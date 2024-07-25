@@ -5,6 +5,8 @@
 #define PREVIEW_CONFIG_LEN 584
 #define JPEG_CONFIG_LEN 72
 #define RES_320_240_CONFIG_LEN 27
+#define RES_640_480_CONFIG_LEN 27
+#define RES_1280_960_CONFIG_LEN 27
 
 /**
  * @struct sensor_config_t
