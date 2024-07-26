@@ -1,7 +1,9 @@
 from data_preprocessing.face_detection import *
 from data_preprocessing.data_preprocess import *
 from training.train_model import *
+from training.train_svm_model import *
 from evaluation.test_model import *
+from evaluation.test_svm_model import *
 
 # set this FLAG for different mode
 # Data-Processing: 0
@@ -10,20 +12,33 @@ from evaluation.test_model import *
 FLAG = 2
 
 # set this to the path of the video to decode
-PATH_TO_VIDEO = "videos/Joe 1080_1920 60fps BackCam.MOV"
+PATH_TO_VIDEO = "datasets/videos/Joe 1080_1920 60fps BackCam.MOV"
 
 # set this to name of the person
 NAME = "Joe"
 
 # set this to the path of any random image to test
-IMAGE_PATH = "datasets/random_test/face_1.jpg"
+# correct
+# IMAGE_PATH = "datasets/processed/train/Joe/face_0000_0.png" # [familiar - correct this is training data]
+# IMAGE_PATH = "datasets/raw/bob/face__1136.jpg" # [familiar - correct this is not training data]
+# IMAGE_PATH = "datasets/processed/val/Joe/face_0000_2.png" # [familiar - correct this is not training data]
+IMAGE_PATH = "datasets/processed/train/Jack/face_0000_0.png" # [familiar - correct this training data]
+
+# incorrect
+# IMAGE_PATH = "datasets/random_test/face_1.jpg" # [stranger - incorrect this is me]
+# IMAGE_PATH = "datasets/random_test/flip.png" [stranger - incorrect this is me]
+# IMAGE_PATH = "datasets/raw/Justin/face__229.jpg" # [familiar - incorrect this is justin]
+# IMAGE_PATH = "datasets/random_test/IMG_0324.jpg" # [stranger - incorrect this is me]
+
 
 # TODO: this needs to turn into a function after connecting to db
 OUTPUT_CLASS_NUMBER = 2
 
 # these are variable to hold the return from training
 MODEL_NAME = "resnet_finetuned.pth"
+SVM_MODEL_NAME = "one_class_svm_model.pkl"
 CLASS_LABELS = ['jack', 'bob']
+SCALER_NAME = 'scaler.pkl'
 
 # NOTE: to test the flow WITHOUT analysing video, create a sub-folder, raw, under datasets,
 # add two subfolders called jack and bob, and put two images in each of jack and bob
@@ -59,14 +74,16 @@ if FLAG == 0:
 
 elif FLAG == 1:
     # 4. Train
-    class_labels, model_name = train_model(OUTPUT_CLASS_NUMBER)
-    print(class_labels)
-    print(model_name)
+    # class_labels, model_name = train_model(OUTPUT_CLASS_NUMBER)
+    # print(class_labels)
+    # print(model_name)
 
     ## TODO: Add training for SVM
 
+    train_svm_model()
 elif FLAG == 2:
     # 5. load the just trained model and give it a path to a image and output the result
     # TODO: Add SVM
     # TODO: implement multi-image testing, and combine the result
-    predict_image_class(MODEL_NAME, CLASS_LABELS, OUTPUT_CLASS_NUMBER, IMAGE_PATH)
+    # predict_image_class(MODEL_NAME, CLASS_LABELS, OUTPUT_CLASS_NUMBER, IMAGE_PATH)
+    test_svm_model(SVM_MODEL_NAME, SCALER_NAME, IMAGE_PATH)

@@ -5,6 +5,7 @@ import sys
 import time
 from deepface import DeepFace
 from PIL import Image
+from definitions import ROOT_DIR
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(os.path.dirname(current_dir))
@@ -36,7 +37,7 @@ def extract_list_of_images(images):
 
 def extract(path_to_video=None, thread_num="", name="joe"):
     # Directory to save frames with detected faces
-    save_dir = os.path.join("..", "datasets", "raw", name)
+    save_dir = os.path.join(ROOT_DIR, "datasets", "raw", name)
 
     print(save_dir)
 
