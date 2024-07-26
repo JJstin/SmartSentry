@@ -174,6 +174,16 @@ u8 cameraInit(u8** ImgBuffer){
     // cameraWrite(0x5888, 0x00);
     // cameraWrite(0x5000, 0xFF);
 
+    // mirror and flip (180 rotate)
+    // u8 reg3818;
+    // cameraRead(0x3818, &reg3818);
+    // reg3818 = reg3818 | 0x60;
+    // reg3818 = reg3818 & 0xff;
+    // cameraWrite(0x3818, reg3818 );
+    // u8 reg3621;
+    // cameraRead(0x3621, &reg3621);
+    // reg3621 = reg3621 & 0xdf;
+    // cameraWrite(0x3621, reg3621 );
     
 
     // arducamWriteSensorTimingControlReg(VSYNC_ACTIVE_LOW_MASK);
@@ -264,8 +274,12 @@ void camConfigureSensor(void) {
   camWriteSensorRegs16_8(getCamCaptureConfig(), JPEG_CONFIG_LEN);
   cameraGroupVerify(getCamCaptureConfig(), JPEG_CONFIG_LEN);
   // Switch to lowest JPEG resolution
-  camWriteSensorRegs16_8(getCamResolution640_480Config(), RES_640_480_CONFIG_LEN);
-  cameraGroupVerify(getCamResolution640_480Config(), RES_640_480_CONFIG_LEN);
+  camWriteSensorRegs16_8(getCamResolution1280_960Config(), RES_1280_960_CONFIG_LEN);
+  cameraGroupVerify(getCamResolution1280_960Config(), RES_1280_960_CONFIG_LEN);
+//   camWriteSensorRegs16_8(getCamResolution640_480Config(), RES_640_480_CONFIG_LEN);
+//   cameraGroupVerify(getCamResolution640_480Config(), RES_640_480_CONFIG_LEN);
+//   camWriteSensorRegs16_8(getCamResolutionConfig(), RES_320_240_CONFIG_LEN);
+//   cameraGroupVerify(getCamResolutionConfig(), RES_320_240_CONFIG_LEN);
 
   usleep(1000);
   // Vertical flip
@@ -286,6 +300,35 @@ void camConfigureSensor(void) {
   // Image processor setup
   cameraWrite(0x5000, 0xFF);
   cameraVerify(0x5000, 0xFF);
+
+  //Saturation +3
+  cameraWrite(0x5001, 0xFF);
+  cameraWrite(0x5583, 0x70);
+  cameraWrite(0x5584, 0x70);
+  cameraWrite(0x5580, 0x02);
+
+  //Advanced AWB light mode
+    cameraWrite(0x3406 ,0x0 );
+    cameraWrite(0x5192 ,0x04);
+    cameraWrite(0x5191 ,0xf8);
+    cameraWrite(0x518d ,0x26);
+    cameraWrite(0x518f ,0x42);
+    cameraWrite(0x518e ,0x2b);
+    cameraWrite(0x5190 ,0x42);
+    cameraWrite(0x518b ,0xd0);
+    cameraWrite(0x518c ,0xbd);
+    cameraWrite(0x5187 ,0x18);
+    cameraWrite(0x5188 ,0x18);
+    cameraWrite(0x5189 ,0x56);
+    cameraWrite(0x518a ,0x5c);
+    cameraWrite(0x5186 ,0x1c);
+    cameraWrite(0x5181 ,0x50);
+    cameraWrite(0x5184 ,0x20);
+    cameraWrite(0x5182 ,0x11);
+    cameraWrite(0x5183 ,0x0 );
+
+  
+
 }
 
 u8 capture(u8 * ImgBuffer, int * bytes){
@@ -293,7 +336,7 @@ u8 capture(u8 * ImgBuffer, int * bytes){
     //OV5640_capture();
     // camConfigureSensor();
     // cameraWrite(0x503D, 0x80);
-    u8 registerVal;
+    // u8 registerVal;
     // arducamReadSensorPowerControlReg(&registerVal);
     // // Set standby bit (active high)
     // registerVal &= (~SENSOR_STANDBY_MASK);
@@ -306,13 +349,14 @@ u8 capture(u8 * ImgBuffer, int * bytes){
     
     u32 byteCount = 0;
     arducamReadFIFOSize(&byteCount);
-    // xil_printf("Image Size: %d \r\n", byteCount);
+    xil_printf("Image Size: %d \r\n", byteCount);
     *bytes = byteCount;
     if(byteCount > 0 && byteCount < MAX_FIFO_SIZE){
         arducamBurstReadFIFO(ImgBuffer, byteCount, MAX_BUFF_SIZE_BYTES);
     }
     else {
         xil_printf("Resetting FIFO PTRS \n\r");
+        
         return XST_FAILURE;
         // arducamWriteFIFOControlReg(FIFO_RESET_WRITE_PTR | FIFO_RESET_READ_PTR);
     }
@@ -422,7 +466,30 @@ void arducamReadFIFO(uint8_t *buffer) {
   *buffer = recvBuff[1];
 }
 
+#define BURST_READ_SIZE 2048U
+
+// void arducamBurstReadFIFO(uint8_t *buffer, size_t readCount, size_t bufferSize) {
+//   xil_printf("burst ptr: 0x %X", (uint32_t)buffer); 
+//   if(readCount+1>bufferSize){
+//       xil_printf("readcount > buffer size\r\n");
+//       return;
+//   }
+//   if(readCount < 1){return;}
+//   readCount++;
+//   size_t offset = 0;
+//   while(readCount > 0){
+//     size_t transferCount = (readCount<BURST_READ_SIZE)? readCount : BURST_READ_SIZE;
+//     u8 temp = *buffer;
+//     *buffer = OP_FIFO_BURST_READ;
+//     XSpi_Transfer(&spiInst, buffer, buffer + offset, transferCount+1);
+//     buffer[offset] = temp;
+//     offset +=transferCount;
+//     readCount -= (transferCount);
+//   }
+// }
+
 void arducamBurstReadFIFO(uint8_t *buffer, size_t readCount, size_t bufferSize) {
+//   xil_printf("burst ptr: 0x %X", (uint32_t)buffer); 
   if(readCount>bufferSize){
       xil_printf("readcount > buffer size\r\n");
       return;

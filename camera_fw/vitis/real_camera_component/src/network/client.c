@@ -152,7 +152,7 @@ void transfer_data(u8 * ImgBuffer, int bytes) {
                         xil_printf("TCP client: Error on tcp_output: %d\r\n", err);
                     }
                     bytes_to_send -= sendbuf_size;
-                    ++ImgBuffer;
+                    ImgBuffer += sendbuf_size;
                 }
             }
         }

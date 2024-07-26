@@ -249,4 +249,4 @@ sensor_config_t* getCamResolutionConfig(void) { return OV5642_320x240; }
 
 sensor_config_t* getCamResolution640_480Config(void) {return ov5642_640x480;}
 
-sensor_config_t* getCamResolution1280_960Config(void){return ov5642_1280x960};
+sensor_config_t* getCamResolution1280_960Config(void){return ov5642_1280x960;}

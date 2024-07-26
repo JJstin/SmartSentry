@@ -242,7 +242,7 @@ int main()
 	while (1) {
         // xil_printf("capture result %d\r\n",capture(ImgBuffer, &bytes));
         int status = capture(ImgBuffer, &bytes);
-
+        
         // xil_printf("calling transfer data\n\r");
         
         // struct test_image img;
@@ -250,11 +250,11 @@ int main()
         // int image_length = img.size;
         // u8 * image = img.buf;
 
-        // for (size_t index = 0; index < byteCount; index++) {
-        //   xil_printf("0x%X,", ImgBuffer[index]);
-        // }
         if(status == XST_SUCCESS){
-            transfer_data(ImgBuffer+1, bytes);
+            // for (size_t index = 0; index < bytes; index++) {
+            //     xil_printf("0x%X,", ImgBuffer[index]);
+            // }
+            transfer_data(ImgBuffer+1, bytes - 1);
         }
         
 

@@ -1,0 +1,3 @@
+D:/design_project-code/SmartSentry2/camera_fw/vitis/platinum/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+D:/design_project-code/SmartSentry2/camera_fw/vitis/platinum/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+D:/design_project-code/SmartSentry2/camera_fw/vitis/platinum/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

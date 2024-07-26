@@ -1,0 +1,14 @@
+The C compiler identification could not be found in "D:/design_project-code/SmartSentry2/camera_fw/vitis/platinum/zynq_fsbl/build/CMakeFiles/3.24.2/CompilerIdC/a-CMakeCCompilerId.d"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: D:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe 
+Build flags: ;-O2;-DSDT;-mcpu=cortex-a9;-mfpu=vfpv3;-mfloat-abi=hard;;-MMD;-MP;-specs=D:/design_project-code/SmartSentry2/camera_fw/vitis/platinum/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec;-ID:/design_project-code/SmartSentry2/camera_fw/vitis/platinum/zynq_fsbl/zynq_fsbl_bsp/include
+Id flags:  
+
+The output was:
+-1
+CreateProcessA() failed: 5
+
+
+The CXX compiler identification could not be found in "D:/design_project-code/SmartSentry2/camera_fw/vitis/platinum/zynq_fsbl/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.d"
+
