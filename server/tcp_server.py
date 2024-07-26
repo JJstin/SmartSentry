@@ -1,8 +1,8 @@
 import socket
 import threading
-
+import keyboard
 import queue
-
+import time
 # import matplotlib.pyplot as plt
 # import matplotlib.image as mpimg
 
@@ -16,6 +16,22 @@ connections = []
 total_connections = 0
 
 images = queue.Queue()
+use_images = 0
+to_use_images = []
+
+def on_key_event(event):
+    pass
+
+def interrupt_routine():
+    global use_images
+    keyboard.hook(on_key_event)
+    while True:
+        # Wait indefinitely to keep the script running and listening for events
+        if keyboard.read_key() == 17:
+            print()
+            print("key pressed")
+            use_images = 1
+            time.sleep(15)
 
 # byte = b''
 # print(byte)
@@ -86,9 +102,11 @@ class Consumer(threading.Thread):
         return "consumer"
     
     def run(self):
+        global to_use_images
+        global use_images
         print("consumer: started")
         window_name = 'stream'
-        cv2.namedWindow(window_name, cv2.WINDOW_NORMAL) 
+        # cv2.namedWindow(window_name, cv2.WINDOW_NORMAL) 
         # cv2.resizeWindow(window_name, 600, 800)
         while self.signal:
             buf = images.get()
@@ -100,12 +118,23 @@ class Consumer(threading.Thread):
             if(img is None):
                 continue
             #     print("Got invalid image of size " + str(len(buf)) + ", saving to img3.txt")
-            with open("img3.txt", "wb") as f:
-                f.write(buf)
-                # continue
-            cv2.imwrite("recv_img2.jpg",img)
-            cv2.imshow(window_name,img)
-            cv2.waitKey(1)
+            # with open("img3.txt", "wb") as f:
+            #     f.write(buf)
+            #     # continue
+            # cv2.imwrite("recv_img2.jpg",img)
+            # # cv2.imshow(window_name,img)
+            # cv2.waitKey(1)
+
+            # using images to model
+            if use_images:
+                if len(to_use_images) >= 15:
+                    pass
+                    #process()
+                    print("YESSSS")
+                    use_images = 0
+                    to_use_images = []
+                else:
+                    to_use_images.append(img)
 
 #Wait for new connections
 def newConnections(socket):
@@ -120,8 +149,8 @@ def newConnections(socket):
 
 def main():
     #Get host and port
-    host = "192.168.1.100"
-    # host = "127.0.0.1"
+    # host = "192.168.1.100"
+    host = "127.0.0.1"
     port = 12345
 
     #Create new server socket
@@ -136,5 +165,8 @@ def main():
     print("Starting consumer")
     consumer = Consumer(True)
     consumer.start()
+
+    # setup keyboard interrupt
+    interrupt_routine()
     
 main()
