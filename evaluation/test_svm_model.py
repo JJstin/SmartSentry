@@ -47,13 +47,13 @@ def predict_with_svm(resnet_model, svm_model, scaler, device, image_path):
     with torch.no_grad():
         # Extract features using the model
         features = extract_features(resnet_model, image, device)
-    
+
     # Flatten the features
     features = flatten_features(features)
 
     # Standardize the features
     features = scaler.transform(features)
-    
+
     # Predict if the features represent a familiar face
     is_familiar = svm_model.predict(features)
 
@@ -63,13 +63,20 @@ def test_svm_model(svm_model_path, scaler_path, image_path):
     resnet_model, device = load_resnet_model()
     svm_model = joblib.load(svm_model_path)
     scaler = joblib.load(scaler_path)
-    
+
     is_familiar = predict_with_svm(resnet_model, svm_model, scaler, device, image_path)
 
     if is_familiar == -1:
         print(f"The person in the image is a stranger.")
     else:
         print(f"The person in the image is familiar.")
+
+def test_svm_model_directory(svm_model_name, scaler_name, image_dir):
+    for filename in os.listdir(image_dir):
+        if filename.endswith(('.jpg', '.jpeg', '.png', '.bmp', '.tiff')):  # Adjust file extensions as needed
+            image_path = os.path.join(image_dir, filename)
+            print(f"Testing image: {image_path}")
+            test_svm_model(svm_model_name, scaler_name, image_path)
 
 # Example usage
 if __name__ == "__main__":
