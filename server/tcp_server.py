@@ -19,6 +19,7 @@ parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(parent_dir)
 
 from data_preprocessing.face_detection import *
+# from evaluation.test_svm_model_on_single_image import *
 
 # set this FLAG for different mode
 # Data-Processing: 0
@@ -40,6 +41,7 @@ OUTPUT_CLASS_NUMBER = 2
 
 # these are variable to hold the return from training
 MODEL_NAME = "resnet_finetuned_20240726_000932.pth"
+SVM_MODEL_NAME = "face_recognition_svm_model.pkl"
 CLASS_LABELS = ['jack', 'bob']# set this FLAG for different mode
 # Data-Processing: 0
 # Training: 1
@@ -190,7 +192,9 @@ class Consumer(threading.Thread):
             if use_images:
                 if len(to_use_images) >= 5:
                     face_images = extract_list_of_images(to_use_images)
-                    predict_image_class(MODEL_NAME, CLASS_LABELS, OUTPUT_CLASS_NUMBER, face_images)
+                    # predict_image_class(MODEL_NAME, CLASS_LABELS, OUTPUT_CLASS_NUMBER, face_images)
+                    results = test_svm_model_on_list_of_images(SVM_MODEL_NAME, face_images)
+                    print(results)
                     for img in to_use_images:
                         cv2.imwrite("joe/image"+str(time.time())+".jpg",img)
                     use_images = 0

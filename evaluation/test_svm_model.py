@@ -58,7 +58,7 @@ def test_svm_model(model_filename, test_folder):
         predicted_label = svm_model.classes_[max_prob_index]
         max_probability = probabilities[max_prob_index]
 
-        if max_probability >= 0.7:  # Set threshold for recognition
+        if max_probability >= 0.9:  # Set threshold for recognition
             if predicted_label == label:
                 correct_predictions += 1
             print(f"Predicted: {predicted_label}, Actual: {label}, Probability: {max_probability:.2f}")
