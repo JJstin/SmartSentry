@@ -63,8 +63,8 @@ def train_svm_model():
     svm_model.fit(train_features)
 
     # Save the SVM model and the scaler
-    svm_model_filename = 'one_class_svm_model.pkl'
-    scaler_filename = 'scaler.pkl'
+    svm_model_filename = 'one_class_svm_model_GJ.pkl'
+    scaler_filename = 'scaler_GJ.pkl'
     joblib.dump(svm_model, svm_model_filename)
     joblib.dump(scaler, scaler_filename)
 
