@@ -9,13 +9,13 @@ from evaluation.test_svm_model import *
 # Data-Processing: 0
 # Training: 1
 # Evaluation: 2
-FLAG = 2
+FLAG = 0
 
 # set this to the path of the video to decode
 PATH_TO_VIDEO = "datasets/videos/Joe 1080_1920 60fps BackCam.MOV"
 
 # set this to name of the person
-NAME = "Joe"
+NAME = "joe"
 
 # set this to the path of any random image to test
 # correct
@@ -64,23 +64,24 @@ if FLAG == 0:
     # 2. Extract face and resize to 224*224 and store under datasets/raw/"name"
     # (if doing the test according to note, comment this out)
     # TODO: Try Upperbody detection, YuNet and YOLO for face detection
-    extract(PATH_TO_VIDEO, 1, NAME)
+    # extract(PATH_TO_VIDEO, 1, NAME)
+    extract_faces_from_folders(ROOT_DIR, thread_num="1")
 
     # 3. Apply transform. For every pic, generate 5 more pictures with transform.
     # Shuffle these pictures and split into dir/train/"name", dir/val/"name",
     # dir/test/"name" (70/15/15), where dir = datasets/processed
     # Note that normalization is applied on-the-fly in train_model so image can display normally
-    process_and_split_images(NAME)
+    # process_and_split_images(NAME)
 
 elif FLAG == 1:
     # 4. Train
-    # class_labels, model_name = train_model(OUTPUT_CLASS_NUMBER)
-    # print(class_labels)
-    # print(model_name)
+    class_labels, model_name = train_model(OUTPUT_CLASS_NUMBER)
+    print(class_labels)
+    print(model_name)
 
     ## TODO: Add training for SVM
 
-    train_svm_model()
+    # train_svm_model()
 elif FLAG == 2:
     # 5. load the just trained model and give it a path to a image and output the result
     # TODO: Add SVM
