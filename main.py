@@ -4,6 +4,8 @@ from training.train_model import *
 from training.train_svm_model import *
 from evaluation.test_model import *
 from evaluation.test_svm_model import *
+from evaluation.test_svm_model_with_unknowns import *
+from evaluation.test_svm_model_on_single_image import *
 
 # set this FLAG for different mode
 # Data-Processing: 0
@@ -17,6 +19,15 @@ PATH_TO_VIDEO = "datasets/videos/Joe 1080_1920 60fps BackCam.MOV"
 # set this to name of the person
 NAME = "Justin"
 
+# Set this to the path of the datasets
+TRAIN_FOLDER = os.path.join(ROOT_DIR, "datasets/processed/train")
+TEST_FOLDER = os.path.join(ROOT_DIR, "datasets/processed/val")
+UNKNOWN_FOLDERS = [
+    os.path.join(ROOT_DIR, "datasets/random_test/Xavier"),
+    os.path.join(ROOT_DIR, "datasets/random_test/joe"),
+    os.path.join(ROOT_DIR, "datasets/random_test/yifei")
+]
+
 # set this to the path of any random image to test
 # correct
 # IMAGE_PATH = "datasets/processed/train/Joe/face_0000_0.png" # [familiar - correct this is training data]
@@ -24,13 +35,13 @@ NAME = "Justin"
 # IMAGE_PATH = "datasets/processed/val/Joe/face_0000_2.png" # [familiar - correct this is not training data]
 # IMAGE_PATH = "datasets/processed/train/Jack/face_0000_0.png" # [familiar - correct this training data]
 # IMAGE_PATH = "datasets/random_test/image_js.png"
-IMAGE_PATH = "datasets/random_test/face_1.jpg"
+IMAGE_PATH = "datasets/random_test/face_1_142.jpg"
 # incorrect
 # IMAGE_PATH = "datasets/random_test/face_1.jpg" # [stranger - incorrect this is me]
 # IMAGE_PATH = "datasets/random_test/flip.png" [stranger - incorrect this is me]
 # IMAGE_PATH = "datasets/raw/Justin/face__229.jpg" # [familiar - incorrect this is justin]
 # IMAGE_PATH = "datasets/random_test/IMG_0324.jpg" # [stranger - incorrect this is me]
-IMAGE_DIR = "datasets/random_test/joe"
+IMAGE_DIR = "datasets/random_test/George"
 
 # TODO: this needs to turn into a function after connecting to db
 OUTPUT_CLASS_NUMBER = 2
@@ -40,6 +51,7 @@ MODEL_NAME = "resnet_finetuned_20240726_020653.pth"
 SVM_MODEL_NAME = "one_class_svm_model_GJ.pkl"
 CLASS_LABELS = ['George', 'Justin']
 SCALER_NAME = 'scaler_GJ.pkl'
+MODEL_FILENAME = "face_recognition_svm_model.pkl"
 
 # NOTE: to test the flow WITHOUT analysing video, create a sub-folder, raw, under datasets,
 # add two subfolders called jack and bob, and put two images in each of jack and bob
@@ -82,11 +94,19 @@ elif FLAG == 1:
 
     ## TODO: Add training for SVM
 
-    train_svm_model()
+    # train_svm_model()
+    train_svm_model(TRAIN_FOLDER)
 elif FLAG == 2:
     # 5. load the just trained model and give it a path to a image and output the result
     # TODO: Add SVM
     # TODO: implement multi-image testing, and combine the result
     # predict_image_class(MODEL_NAME, CLASS_LABELS, OUTPUT_CLASS_NUMBER, IMAGE_PATH)
+
+    # old svm model
     # test_svm_model(SVM_MODEL_NAME, SCALER_NAME, IMAGE_PATH)
-    test_svm_model_directory(SVM_MODEL_NAME, SCALER_NAME, IMAGE_DIR)
+    # test_svm_model_directory(SVM_MODEL_NAME, SCALER_NAME, IMAGE_DIR)
+
+    # new svm model
+    # test_svm_model(MODEL_FILENAME, TEST_FOLDER)
+    test_svm_model_on_single_image(MODEL_FILENAME, IMAGE_PATH)
+    # test_svm_model_on_unknowns(MODEL_FILENAME, UNKNOWN_FOLDERS)
