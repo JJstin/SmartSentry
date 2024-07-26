@@ -4,6 +4,7 @@ import torchvision.transforms as transforms
 from torchvision.models import resnet18
 from PIL import Image
 import os
+import numpy as np
 
 # Define the necessary transformations
 transform = transforms.Compose([
@@ -49,20 +50,30 @@ def load_model(model_path, num_classes):
     return model, device
 
 
-def predict(model, device, class_names, image_path):
-    image = Image.open(image_path).convert('RGB')
-    image = transform(image)
-    image = image.unsqueeze(0)  # Add batch dimension
+def predict(model, device, class_names, images):
+    # Initialize a dictionary to count class votes
+    class_votes = {class_name: 0 for class_name in class_names}
+    combined_probabilities = np.zeros(len(class_names))
 
-    image = image.to(device)
-    with torch.no_grad():
-        outputs = model(image)
-        probabilities = torch.softmax(outputs, dim=1)
-        _, predicted = torch.max(probabilities, 1)
-        predicted_class = class_names[predicted.item()]
-        class_probabilities = probabilities.cpu().numpy()[0]
+    for im in images:
+        image = transform(im)
+        image = image.unsqueeze(0)  # Add batch dimension
+        image = image.to(device)
 
-    return predicted_class, class_probabilities
+        with torch.no_grad():
+            outputs = model(image)
+            probabilities = torch.softmax(outputs, dim=1)
+            _, predicted = torch.max(probabilities, 1)
+            predicted_class = class_names[predicted.item()]
+            class_votes[predicted_class] += 1
+            combined_probabilities += probabilities.cpu().numpy()[0]
+
+    # Find the class with the most votes
+    most_voted_class = max(class_votes, key=class_votes.get)
+    print("max vote is:", most_voted_class)
+    average_probabilities = combined_probabilities / len(images)
+
+    return most_voted_class, average_probabilities
 
 # Example usage
 if __name__ == "__main__":
@@ -93,9 +104,15 @@ if __name__ == "__main__":
 
 def predict_image_class(model_path, class_labels, num_classes, image_path):
     model, device = load_model(model_path, num_classes)
-    predicted_class, class_probabilities = predict(model, device, class_labels, image_path)
+    # predicted_class, class_probabilities = predict(model, device, class_labels, image_path)
+
+    predicted_class, class_probabilities = predict(model, device, class_labels, get_images(image_path))
+
     print(f"Predicted Class: {predicted_class}")
     for i, prob in enumerate(class_probabilities):
         print(f"{class_labels[i]}: {prob:.4f}")
     return predicted_class, class_probabilities
 
+# TODO: change this to fetch a list of images from the server's queue
+def get_images(image_path):
+    return [Image.open(image_path).convert('RGB'), Image.open(image_path).convert('RGB'), Image.open(image_path).convert('RGB')]

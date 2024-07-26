@@ -9,7 +9,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(os.path.dirname(current_dir))
 sys.path.append(project_root)
 
-    
+
 def extract(path_to_video=None, thread_num="", name="joe"):
     # Directory to save frames with detected faces
     save_dir = os.path.join("..", "datasets", "raw", name)
@@ -45,7 +45,7 @@ def extract(path_to_video=None, thread_num="", name="joe"):
 
         # Detect faces in the frame
         faces = DeepFace.extract_faces(frame, detector_backend='yolov8', enforce_detection = False)
-            
+
         for face in faces:
             face_rect = face["facial_area"]
             x, y, w, h = face_rect["x"], face_rect["y"], face_rect["w"], face_rect["h"]
@@ -64,8 +64,6 @@ def extract(path_to_video=None, thread_num="", name="joe"):
 
             # Display the frame with the rectangles (commented out)
             # cv2.imshow('Face Detection', frame)
-
-                
 
         # Break the loop if 'q' is pressed
         if cv2.waitKey(1) & 0xFF == ord('q'):
