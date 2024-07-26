@@ -39,7 +39,7 @@ IMAGE_PATH = "datasets/random_test/face_1.jpg"
 OUTPUT_CLASS_NUMBER = 2
 
 # these are variable to hold the return from training
-MODEL_NAME = "resnet_finetuned.pth"
+MODEL_NAME = "resnet_finetuned_20240726_000932.pth"
 CLASS_LABELS = ['jack', 'bob']# set this FLAG for different mode
 # Data-Processing: 0
 # Training: 1
@@ -69,7 +69,7 @@ total_connections = 0
 images = queue.Queue()
 use_images = 0
 to_use_images = []
-
+start = 0
 
 def on_key_event(event):
     pass
@@ -84,6 +84,8 @@ def interrupt_routine():
             if len(to_use_images) != 0:
                 continue
             print()
+            global start
+            start = time.time()
             print("key pressed")
             use_images = 1
 
@@ -103,10 +105,10 @@ class Client(threading.Thread):
         self.id = id
         self.name = name
         self.signal = signal
-    
+
     def __str__(self):
         return str(self.id) + " " + str(self.address)
-    
+
     #Attempt to get data from client
     #If unable to, assume client has disconnected and remove him from server data
     #If able to and we get data back, print it in the server and send it back to every
@@ -119,7 +121,7 @@ class Client(threading.Thread):
             if(buf is None):
                 self.close()
                 break
-            
+
             image_size = int.from_bytes(buf,endian)
             # print(buf)
             # print(image_size)
@@ -130,7 +132,7 @@ class Client(threading.Thread):
             # print(buf)
             # print("image with len: " + str(len(buf)) + " put in buffer, there are " + str(images.qsize()) + " in the buffer")
             images.put(buf)
-                
+
     def recvall(self, n):
         data = bytearray()
         while n > 0:
@@ -140,7 +142,7 @@ class Client(threading.Thread):
             data.extend(packet)
             n = n - len(packet)
         return data
-            
+
     def close(self):
         print("Client " + str(self.address) + " has disconnected")
         self.signal = False
@@ -151,16 +153,16 @@ class Consumer(threading.Thread):
     def __init__(self, signal):
         threading.Thread.__init__(self)
         self.signal = signal
-    
+
     def __str__(self):
         return "consumer"
-    
+
     def run(self):
         global to_use_images
         global use_images
         print("consumer: started")
         window_name = 'stream'
-        # cv2.namedWindow(window_name, cv2.WINDOW_NORMAL) 
+        # cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
         # cv2.resizeWindow(window_name, 600, 800)
         while self.signal:
             buf = images.get()
@@ -170,23 +172,33 @@ class Consumer(threading.Thread):
             nparr = numpy.frombuffer(buf, numpy.uint8)
             img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
             if(img is None):
+                print("Got invalid image of size " + str(len(buf)))
                 continue
             #     print("Got invalid image of size " + str(len(buf)) + ", saving to img3.txt")
             # with open("img3.txt", "wb") as f:
             #     f.write(buf)
             #     # continue
-            # cv2.imwrite("recv_img2.jpg",img)
+            img = cv2.flip(img,0)
+            img = cv2.flip(img,1)
+
+            # cv2.imwrite("joe/image"+str(time.time())+".jpg",img)
+
             # # cv2.imshow(window_name,img)
             # cv2.waitKey(1)
 
             # using images to model
             if use_images:
-                if len(to_use_images) >= 15:
+                if len(to_use_images) >= 5:
                     face_images = extract_list_of_images(to_use_images)
-                    predict_image_class(MODEL_NAME, CLASS_LABELS, OUTPUT_CLASS_NUMBER, face_images)                    
+                    predict_image_class(MODEL_NAME, CLASS_LABELS, OUTPUT_CLASS_NUMBER, face_images)
+                    for img in to_use_images:
+                        cv2.imwrite("joe/image"+str(time.time())+".jpg",img)
                     use_images = 0
                     to_use_images = []
                 else:
+                    if len(to_use_images) == 0:
+                        global start
+                        print(f"latency: {time.time()-start}s")
                     to_use_images.append(img)
 
 #Wait for new connections
@@ -216,8 +228,8 @@ def predict_image_class(model_path, class_labels, num_classes, images):
 
 def main():
     #Get host and port
-    # host = "192.168.1.100"
-    host = "127.0.0.1"
+    host = "192.168.1.100"
+    # host = "127.0.0.1"
     port = 12345
 
     #Create new server socket
@@ -225,7 +237,7 @@ def main():
     sock.bind((host, port))
     sock.listen(5)
     print("Listening on: " + host + ":" + str(port))
-    
+
     #Create new thread to wait for connections
     newConnectionsThread = threading.Thread(target = newConnections, args = (sock,))
     newConnectionsThread.start()
@@ -235,5 +247,5 @@ def main():
 
     # setup keyboard interrupt
     interrupt_routine()
-    
+
 main()
