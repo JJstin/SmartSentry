@@ -4,3 +4,4 @@ __pycache__/
 *.jpg
 logs/
 *.pth
+*.DS_Store

@@ -6,10 +6,61 @@ import time
 # import matplotlib.pyplot as plt
 # import matplotlib.image as mpimg
 
-import io
+import sys
+import os
 
 import cv2
 import numpy
+
+# Get the parent directory
+parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+
+# Add the parent directory to sys.path
+sys.path.append(parent_dir)
+
+from data_preprocessing.face_detection import *
+
+# set this FLAG for different mode
+# Data-Processing: 0
+# Training: 1
+# Evaluation: 2
+FLAG = 2
+
+# set this to the path of the video to decode
+PATH_TO_VIDEO = "datasets/videos/Joe 1080_1920 60fps BackCam.MOV"
+
+# set this to name of the person
+NAME = "Joe"
+
+# set this to the path of any random image to test
+IMAGE_PATH = "datasets/random_test/face_1.jpg"
+
+# TODO: this needs to turn into a function after connecting to db
+OUTPUT_CLASS_NUMBER = 2
+
+# these are variable to hold the return from training
+MODEL_NAME = "resnet_finetuned.pth"
+CLASS_LABELS = ['jack', 'bob']# set this FLAG for different mode
+# Data-Processing: 0
+# Training: 1
+# Evaluation: 2
+FLAG = 2
+
+# set this to the path of the video to decode
+PATH_TO_VIDEO = "videos/Joe 1080_1920 60fps BackCam.MOV"
+
+# set this to name of the person
+NAME = "Joe"
+
+# set this to the path of any random image to test
+IMAGE_PATH = "datasets/random_test/face_1.jpg"
+
+# TODO: this needs to turn into a function after connecting to db
+OUTPUT_CLASS_NUMBER = 2
+
+# these are variable to hold the return from training
+MODEL_NAME = "resnet_finetuned.pth"
+CLASS_LABELS = ['jack', 'bob']
 
 #Variables for holding information about connections
 connections = []
@@ -19,19 +70,22 @@ images = queue.Queue()
 use_images = 0
 to_use_images = []
 
+
 def on_key_event(event):
     pass
 
 def interrupt_routine():
     global use_images
+    global to_use_images
     keyboard.hook(on_key_event)
     while True:
         # Wait indefinitely to keep the script running and listening for events
         if keyboard.read_key() == 17:
+            if len(to_use_images) != 0:
+                continue
             print()
             print("key pressed")
             use_images = 1
-            time.sleep(15)
 
 # byte = b''
 # print(byte)
@@ -67,14 +121,14 @@ class Client(threading.Thread):
                 break
             
             image_size = int.from_bytes(buf,endian)
-            print(buf)
-            print(image_size)
+            # print(buf)
+            # print(image_size)
             buf = self.recvall(image_size)
             if(buf is None):
                 self.close()
                 break
             # print(buf)
-            print("image with len: " + str(len(buf)) + " put in buffer, there are " + str(images.qsize()) + " in the buffer")
+            # print("image with len: " + str(len(buf)) + " put in buffer, there are " + str(images.qsize()) + " in the buffer")
             images.put(buf)
                 
     def recvall(self, n):
@@ -110,7 +164,7 @@ class Consumer(threading.Thread):
         # cv2.resizeWindow(window_name, 600, 800)
         while self.signal:
             buf = images.get()
-            print("consumer: read data from images queue, length " + str(len(buf)))
+            # print("consumer: read data from images queue, length " + str(len(buf)))
             # print(buf)
             # process buf
             nparr = numpy.frombuffer(buf, numpy.uint8)
@@ -128,9 +182,8 @@ class Consumer(threading.Thread):
             # using images to model
             if use_images:
                 if len(to_use_images) >= 15:
-                    pass
-                    #process()
-                    print("YESSSS")
+                    face_images = extract_list_of_images(to_use_images)
+                    predict_image_class(MODEL_NAME, CLASS_LABELS, OUTPUT_CLASS_NUMBER, face_images)                    
                     use_images = 0
                     to_use_images = []
                 else:
@@ -146,6 +199,20 @@ def newConnections(socket):
         print("New connection at ID " + str(connections[len(connections) - 1]))
         print("Address: " + str(address))
         total_connections += 1
+
+from evaluation.test_model import *
+
+def predict_image_class(model_path, class_labels, num_classes, images):
+    model, device = load_model(model_path, num_classes)
+    # predicted_class, class_probabilities = predict(model, device, class_labels, image_path)
+
+    predicted_class, class_probabilities = predict(model, device, class_labels, images)
+
+    print(f"Predicted Class: {predicted_class}")
+    for i, prob in enumerate(class_probabilities):
+        print(f"{class_labels[i]}: {prob:.4f}")
+    return predicted_class, class_probabilities
+
 
 def main():
     #Get host and port

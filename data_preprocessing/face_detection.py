@@ -4,10 +4,34 @@ import shutil
 import sys
 import time
 from deepface import DeepFace
+from PIL import Image
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(os.path.dirname(current_dir))
 sys.path.append(project_root)
+
+def extract_list_of_images(images):
+    if images is None:
+        print("error: empty image list")
+        return
+    
+    face_images = []
+    for frame in images:
+        faces = DeepFace.extract_faces(frame, detector_backend='yolov8', enforce_detection = False)
+
+        for face in faces:
+            face_rect = face["facial_area"]
+            x, y, w, h = face_rect["x"], face_rect["y"], face_rect["w"], face_rect["h"]
+            # Perform aspect ratio check (assuming face boxes are more square)
+            if not 0.75 < w/h < 1.33:
+                continue
+
+            face_frame = frame[y:y+h, x:x+w]
+            # Resize the face frame to 224x224, convert from numpy array to PIL image
+            resized_face_frame = Image.fromarray(cv2.resize(face_frame, (224, 224)))
+
+            face_images.append(resized_face_frame)
+    return face_images
 
 
 def extract(path_to_video=None, thread_num="", name="joe"):
