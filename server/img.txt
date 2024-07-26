@@ -1,0 +1,2039 @@
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5176
+capture result 0
+Image Size: 5176
+capture result 0
+Image Size: 5176
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5208
+capture result 0
+Image Size: 5176
+capture result 0
+Image Size: 5176
+capture result 0
+Image Size: 5176
+capture result 0
+Image Size: 5176
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5208
+capture result 0
+Image Size: 5208
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5208
+capture result 0
+Image Size: 5208
+capture result 0
+Image Size: 5208
+capture result 0
+Image Size: 5208
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5208
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5192
+capture result 0
+Image Size: 5208
+capture result 0
+Image Size: 5224
+capture result 0
+Image Size: 5224
+capture result 0
+Image Size: 5208
+capture result 0
+Image Size: 5224
+capture result 0
+Image Size: 5224
+capture result 0
+Image Size: 5224
+capture result 0
+Image Size: 5224
+capture result 0
+Image Size: 5224
+capture result 0
+Image Size: 5208
+capture result 0
+Image Size: 5208
+capture result 0
+Image Size: 5224
+capture result 0
+Image Size: 5240
+capture result 0
+Image Size: 5240
+capture result 0
+Image Size: 5224
+capture result 0
+Image Size: 5224
+capture result 0
+Image Size: 5240
+capture result 0
+Image Size: 5224
+capture result 0
+Image Size: 5240
+capture result 0
+
+
+-----lwIP TCP echo server ------
+TCP packets sent to port 6001 will be echoed back
+Using default Speed from design
+link speed for phy address 1: 1000
+Board IP: 192.168.1.10
+Netmask : 255.255.255.0
+Gateway : 192.168.1.1
+CameID: 5642
+CPLD set to 80
+CPLD set to 0
+sensor power control set to 5
+sensor timing control set to 2
+Writing 55 to test reg
+Read 55 from test reg
+FW Version 0x80
+cameraVerify failed! address: 3008, expected: 82, actual: 2
+cameraVerify failed! address: 3810, expected: C2, actual: 40
+cameraVerify failed! address: 3605, expected: 7C, actual: 4
+cameraVerify failed! address: 3621, expected: 9, actual: 87
+cameraVerify failed! address: 3604, expected: 40, actual: 48
+cameraVerify failed! address: 3603, expected: A7, actual: 27
+cameraVerify failed! address: 3600, expected: 54, actual: 52
+cameraVerify failed! address: 3606, expected: 3F, actual: 1B
+cameraVerify failed! address: 5000, expected: 4F, actual: CF
+cameraVerify failed! address: 5181, expected: 79, actual: 52
+cameraVerify failed! address: 5182, expected: 0, actual: 11
+cameraVerify failed! address: 5185, expected: 22, actual: 24
+cameraVerify failed! address: 5500, expected: A, actual: 10
+cameraVerify failed! address: 3808, expected: 2, actual: 1
+cameraVerify failed! address: 3809, expected: 80, actual: 40
+cameraVerify failed! address: 380A, expected: 1, actual: 0
+cameraVerify failed! address: 380B, expected: E0, actual: F0
+cameraVerify failed! address: 380E, expected: 7, actual: 3
+cameraVerify failed! address: 380F, expected: D0, actual: E8
+cameraVerify failed! address: 5000, expected: 4F, actual: CF
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3501, expected: 73, actual: 0
+cameraVerify failed! address: 3502, expected: 80, actual: 60
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3501, expected: 1E, actual: 0
+cameraVerify failed! address: 3502, expected: 80, actual: 60
+cameraVerify failed! address: 350B, expected: 7F, actual: 0
+cameraVerify failed! address: 3A0D, expected: 4, actual: 8
+cameraVerify failed! address: 3A0E, expected: 3, actual: 6
+cameraVerify failed! address: 3801, expected: 80, actual: 50
+cameraVerify failed! address: 3A08, expected: 12, actual: 9
+cameraVerify failed! address: 3A09, expected: C0, actual: 60
+cameraVerify failed! address: 3A0A, expected: F, actual: 7
+cameraVerify failed! address: 3A0B, expected: A0, actual: D0
+cameraVerify failed! address: 350C, expected: 7, actual: 3
+cameraVerify failed! address: 350D, expected: D0, actual: E8
+cameraVerify failed! address: 3502, expected: 0, actual: 60
+cameraVerify failed! address: 528A, expected: 2, actual: 0
+cameraVerify failed! address: 528B, expected: 4, actual: 1
+cameraVerify failed! address: 528C, expected: 8, actual: 4
+cameraVerify failed! address: 528E, expected: 8, actual: 10
+cameraVerify failed! address: 528F, expected: 10, actual: 20
+cameraVerify failed! address: 5290, expected: 10, actual: 30
+cameraVerify failed! address: 5293, expected: 2, actual: 0
+cameraVerify failed! address: 5295, expected: 2, actual: 1
+cameraVerify failed! address: 5297, expected: 2, actual: 4
+cameraVerify failed! address: 5299, expected: 2, actual: 8
+cameraVerify failed! address: 529B, expected: 2, actual: 10
+cameraVerify failed! address: 529D, expected: 2, actual: 20
+cameraVerify failed! address: 529F, expected: 2, actual: 30
+cameraVerify failed! address: 528A, expected: 1, actual: 0
+cameraVerify failed! address: 528B, expected: 4, actual: 1
+cameraVerify failed! address: 528C, expected: 8, actual: 4
+cameraVerify failed! address: 528D, expected: 10, actual: 8
+cameraVerify failed! address: 528E, expected: 20, actual: 10
+cameraVerify failed! address: 528F, expected: 28, actual: 20
+cameraVerify failed! address: 5293, expected: 1, actual: 0
+cameraVerify failed! address: 5295, expected: 4, actual: 1
+cameraVerify failed! address: 5297, expected: 8, actual: 4
+cameraVerify failed! address: 5299, expected: 10, actual: 8
+cameraVerify failed! address: 529B, expected: 20, actual: 10
+cameraVerify failed! address: 529D, expected: 28, actual: 20
+cameraVerify failed! address: 530D, expected: C, actual: 10
+cameraVerify failed! address: 5316, expected: 10, actual: 0
+cameraVerify failed! address: 5186, expected: 6, actual: 14
+cameraVerify failed! address: 5187, expected: 8, actual: 14
+cameraVerify failed! address: 5188, expected: 8, actual: 14
+cameraVerify failed! address: 5189, expected: 7C, actual: 69
+cameraVerify failed! address: 518B, expected: B2, actual: A2
+cameraVerify failed! address: 518C, expected: B2, actual: 9C
+cameraVerify failed! address: 518D, expected: 44, actual: 36
+cameraVerify failed! address: 518E, expected: 3D, actual: 34
+cameraVerify failed! address: 518F, expected: 58, actual: 54
+cameraVerify failed! address: 5190, expected: 46, actual: 4C
+cameraVerify failed! address: 5199, expected: 12, actual: 50
+cameraVerify failed! address: 519D, expected: 82, actual: F6
+cameraVerify failed! address: 519E, expected: 0, actual: A0
+cameraVerify failed! address: 5583, expected: 40, actual: 50
+cameraVerify failed! address: 5584, expected: 40, actual: 50
+cameraVerify failed! address: 3632, expected: 51, actual: 52
+cameraVerify failed! address: 370D, expected: 3, actual: B
+cameraVerify failed! address: 3606, expected: 24, actual: 1B
+cameraVerify failed! address: 519E, expected: 0, actual: A0
+cameraVerify failed! address: 5198, expected: 5, actual: 4
+cameraVerify failed! address: 5199, expected: 2F, actual: 68
+cameraVerify failed! address: 519C, expected: 6, actual: 7
+cameraVerify failed! address: 519D, expected: A0, actual: 60
+cameraVerify failed! address: 5316, expected: 10, actual: 0
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3A10, expected: 32, actual: 40
+cameraVerify failed! address: 3A1B, expected: 3C, actual: 4A
+cameraVerify failed! address: 3A1E, expected: 32, actual: 3E
+cameraVerify failed! address: 3A11, expected: 80, actual: 70
+cameraVerify failed! address: 3002, expected: C, actual: 0
+cameraVerify failed! address: FFFF, expected: FF, actual: 0
+cameraVerify failed! address: 3801, expected: A8, actual: B0
+cameraVerify failed! address: FFFF, expected: FF, actual: 0
+Preparing to connect to 192.169.1.100:12345
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 1000
+Ethernet Link up
+
+
+-----lwIP TCP echo server ------
+TCP packets sent to port 6001 will be echoed back
+Start PHY autonegotiation
+Waiting for PHY to complete autonegotiation.
+autonegotiation complete
+Using default Speed from design
+link speed for phy address 1: 1000
+Board IP: 192.168.1.10
+Netmask : 255.255.255.0
+Gateway : 192.168.1.1
+CameID: 5642
+CPLD set to 80
+CPLD set to 0
+sensor power control set to 5
+sensor timing control set to 2
+Writing 55 to test reg
+Read 55 from test reg
+FW Version 0x80
+cameraVerify failed! address: 3008, expected: 82, actual: 2
+cameraVerify failed! address: 3810, expected: C2, actual: 40
+cameraVerify failed! address: 3605, expected: 7C, actual: 4
+cameraVerify failed! address: 3621, expected: 9, actual: 87
+cameraVerify failed! address: 3604, expected: 40, actual: 48
+cameraVerify failed! address: 3603, expected: A7, actual: 27
+cameraVerify failed! address: 3600, expected: 54, actual: 52
+cameraVerify failed! address: 3606, expected: 3F, actual: 1B
+cameraVerify failed! address: 5000, expected: 4F, actual: CF
+cameraVerify failed! address: 5181, expected: 79, actual: 52
+cameraVerify failed! address: 5182, expected: 0, actual: 11
+cameraVerify failed! address: 5185, expected: 22, actual: 24
+cameraVerify failed! address: 5500, expected: A, actual: 10
+cameraVerify failed! address: 3808, expected: 2, actual: 1
+cameraVerify failed! address: 3809, expected: 80, actual: 40
+cameraVerify failed! address: 380A, expected: 1, actual: 0
+cameraVerify failed! address: 380B, expected: E0, actual: F0
+cameraVerify failed! address: 380E, expected: 7, actual: 3
+cameraVerify failed! address: 380F, expected: D0, actual: E8
+cameraVerify failed! address: 5000, expected: 4F, actual: CF
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3501, expected: 73, actual: 0
+cameraVerify failed! address: 3502, expected: 80, actual: D0
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3501, expected: 1E, actual: 0
+cameraVerify failed! address: 3502, expected: 80, actual: D0
+cameraVerify failed! address: 350B, expected: 7F, actual: 0
+cameraVerify failed! address: 3A0D, expected: 4, actual: 8
+cameraVerify failed! address: 3A0E, expected: 3, actual: 6
+cameraVerify failed! address: 3801, expected: 80, actual: 50
+cameraVerify failed! address: 3A08, expected: 12, actual: 9
+cameraVerify failed! address: 3A09, expected: C0, actual: 60
+cameraVerify failed! address: 3A0A, expected: F, actual: 7
+cameraVerify failed! address: 3A0B, expected: A0, actual: D0
+cameraVerify failed! address: 350C, expected: 7, actual: 3
+cameraVerify failed! address: 350D, expected: D0, actual: E8
+cameraVerify failed! address: 3502, expected: 0, actual: D0
+cameraVerify failed! address: 528A, expected: 2, actual: 0
+cameraVerify failed! address: 528B, expected: 4, actual: 1
+cameraVerify failed! address: 528C, expected: 8, actual: 4
+cameraVerify failed! address: 528E, expected: 8, actual: 10
+cameraVerify failed! address: 528F, expected: 10, actual: 20
+cameraVerify failed! address: 5290, expected: 10, actual: 30
+cameraVerify failed! address: 5293, expected: 2, actual: 0
+cameraVerify failed! address: 5295, expected: 2, actual: 1
+cameraVerify failed! address: 5297, expected: 2, actual: 4
+cameraVerify failed! address: 5299, expected: 2, actual: 8
+cameraVerify failed! address: 529B, expected: 2, actual: 10
+cameraVerify failed! address: 529D, expected: 2, actual: 20
+cameraVerify failed! address: 529F, expected: 2, actual: 30
+cameraVerify failed! address: 528A, expected: 1, actual: 0
+cameraVerify failed! address: 528B, expected: 4, actual: 1
+cameraVerify failed! address: 528C, expected: 8, actual: 4
+cameraVerify failed! address: 528D, expected: 10, actual: 8
+cameraVerify failed! address: 528E, expected: 20, actual: 10
+cameraVerify failed! address: 528F, expected: 28, actual: 20
+cameraVerify failed! address: 5293, expected: 1, actual: 0
+cameraVerify failed! address: 5295, expected: 4, actual: 1
+cameraVerify failed! address: 5297, expected: 8, actual: 4
+cameraVerify failed! address: 5299, expected: 10, actual: 8
+cameraVerify failed! address: 529B, expected: 20, actual: 10
+cameraVerify failed! address: 529D, expected: 28, actual: 20
+cameraVerify failed! address: 530D, expected: C, actual: 10
+cameraVerify failed! address: 5316, expected: 10, actual: 0
+cameraVerify failed! address: 5186, expected: 6, actual: 14
+cameraVerify failed! address: 5187, expected: 8, actual: 14
+cameraVerify failed! address: 5188, expected: 8, actual: 14
+cameraVerify failed! address: 5189, expected: 7C, actual: 69
+cameraVerify failed! address: 518B, expected: B2, actual: A2
+cameraVerify failed! address: 518C, expected: B2, actual: 9C
+cameraVerify failed! address: 518D, expected: 44, actual: 36
+cameraVerify failed! address: 518E, expected: 3D, actual: 34
+cameraVerify failed! address: 518F, expected: 58, actual: 54
+cameraVerify failed! address: 5190, expected: 46, actual: 4C
+cameraVerify failed! address: 5199, expected: 12, actual: E4
+cameraVerify failed! address: 519C, expected: 6, actual: 5
+cameraVerify failed! address: 519D, expected: 82, actual: D4
+cameraVerify failed! address: 519E, expected: 0, actual: A0
+cameraVerify failed! address: 5583, expected: 40, actual: 50
+cameraVerify failed! address: 5584, expected: 40, actual: 50
+cameraVerify failed! address: 3632, expected: 51, actual: 52
+cameraVerify failed! address: 370D, expected: 3, actual: B
+cameraVerify failed! address: 3606, expected: 24, actual: 1B
+cameraVerify failed! address: 519E, expected: 0, actual: A0
+cameraVerify failed! address: 5198, expected: 5, actual: 4
+cameraVerify failed! address: 5199, expected: 2F, actual: E4
+cameraVerify failed! address: 519C, expected: 6, actual: 5
+cameraVerify failed! address: 519D, expected: A0, actual: D4
+cameraVerify failed! address: 5316, expected: 10, actual: 0
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3A10, expected: 32, actual: 40
+cameraVerify failed! address: 3A1B, expected: 3C, actual: 4A
+cameraVerify failed! address: 3A1E, expected: 32, actual: 3E
+cameraVerify failed! address: 3A11, expected: 80, actual: 70
+cameraVerify failed! address: 3002, expected: C, actual: 0
+cameraVerify failed! address: FFFF, expected: FF, actual: 0
+cameraVerify failed! address: 3801, expected: A8, actual: B0
+cameraVerify failed! address: FFFF, expected: FF, actual: 0
+Preparing to connect to 192.169.1.100:12345
+connected to server!
+end
+server acked 4342
+server acked 7230
+server acked 3854
+server acked 1042
+server acked 4342
+server acked 678
+server acked 4342
+server acked 678
+server acked 4342
+server acked 678
+server acked 4342
+server acked 726
+server acked 4342
+server acked 678
+server acked 4342
+server acked 630
+server acked 4342
+server acked 598
+server acked 4342
+server acked 518
+server acked 4342
+server acked 470
+server acked 4342
+server acked 502
+server acked 2896
+server acked 1276
+server acked 4342
+server acked 278
+server acked 4342
+server acked 38
+server acked 4342
+server acked 342
+server acked 4342
+server acked 582
+server acked 4342
+server acked 582
+server acked 4342
+server acked 502
+server acked 4342
+server acked 438
+server acked 4342
+server acked 1078
+server acked 4342
+server acked 1062
+server acked 4342
+server acked 934
+server acked 4342
+server acked 998
+server acked 4342
+server acked 278
+server acked 4342
+server acked 822
+server acked 4342
+server acked 758
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 566
+server acked 4342
+server acked 278
+server acked 2896
+server acked 1116
+server acked 4342
+server acked 1206
+server acked 4342
+server acked 102
+server acked 4342
+server acked 262
+server acked 4342
+server acked 358
+server acked 4342
+server acked 390
+server acked 2896
+server acked 1084
+server acked 4342
+server acked 1190
+server acked 4342
+server acked 118
+server acked 2896
+server acked 1276
+server acked 4342
+server acked 6
+server acked 4342
+server acked 262
+server acked 4342
+server acked 102
+server acked 4342
+server acked 790
+server acked 4342
+server acked 646
+server acked 4342
+server acked 534
+server acked 4342
+server acked 534
+server acked 4342
+server acked 454
+server acked 4342
+server acked 406
+server acked 4342
+server acked 358
+server acked 4342
+server acked 326
+server acked 4342
+server acked 262
+server acked 4342
+server acked 278
+server acked 4342
+server acked 262
+server acked 4342
+server acked 278
+server acked 4342
+server acked 278
+server acked 4342
+server acked 294
+server acked 4342
+server acked 278
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 326
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 326
+server acked 4342
+server acked 358
+server acked 4342
+server acked 358
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 342
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 278
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 326
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 278
+server acked 4342
+server acked 294
+server acked 4342
+server acked 278
+server acked 4342
+server acked 278
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 326
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 326
+server acked 4342
+server acked 310
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 310
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 342
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 278
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 278
+server acked 4342
+server acked 278
+server acked 4342
+server acked 278
+server acked 4342
+server acked 278
+server acked 4342
+server acked 278
+server acked 4342
+server acked 278
+server acked 4342
+server acked 278
+server acked 4342
+server acked 262
+server acked 4342
+server acked 278
+server acked 4342
+server acked 294
+server acked 4342
+server acked 278
+server acked 4342
+server acked 294
+server acked 4342
+server acked 278
+server acked 4342
+server acked 294
+server acked 4342
+server acked 278
+server acked 4342
+server acked 294
+server acked 4342
+server acked 278
+server acked 4342
+server acked 278
+server acked 4342
+server acked 294
+server acked 4342
+server acked 278
+server acked 4342
+server acked 294
+server acked 4342
+server acked 278
+server acked 4342
+server acked 278
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 278
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 278
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 326
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 310
+server acked 4342
+server acked 326
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 310
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 310
+server acked 4342
+server acked 294
+server acked 4342
+server acked 294
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 294
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 310
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 310
+server acked 4342
+server acked 326
+server acked 4342
+server acked 310
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 342
+server acked 4342
+server acked 326
+server acked 4342
+server acked 342
+server acked 4342
+server acked 326
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 326
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 326
+server acked 4342
+server acked 358
+server acked 4342
+server acked 342
+server acked 4342
+server acked 326
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 358
+server acked 4342
+server acked 358
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 326
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 358
+server acked 4342
+server acked 358
+server acked 4342
+server acked 358
+server acked 4342
+server acked 358
+server acked 4342
+server acked 358
+server acked 4342
+server acked 358
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 358
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 358
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 358
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 358
+server acked 4342
+server acked 342
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 342
+server acked 4342
+server acked 342
+server acked 4342
+server acked 374
+server acked 4342
+server acked 374
+server acked 4342
+server acked 358
+server acked 4342
+server acked 374
+server acked 4342
+server acked 358
+server acked 4342
+server acked 326
+server acked 4342
+server acked 342
+server acked 4342
+server acked 390
+server acked 4342
+server acked 326
+server acked 4342
+server acked 326
+server acked 4342
+server acked 390
+server acked 4342
+server acked 502
+server acked 4342
+server acked 502
+server acked 4342
+server acked 566
+tcp error!
+error code:
+
+
+-----lwIP TCP echo server ------
+TCP packets sent to port 6001 will be echoed back
+Start PHY autonegotiation
+Waiting for PHY to complete autonegotiation.
+autonegotiation complete
+Using default Speed from design
+link speed for phy address 1: 1000
+Board IP: 192.168.1.10
+Netmask : 255.255.255.0
+Gateway : 192.168.1.1
+CameID: 5642
+CPLD set to 80
+CPLD set to 0
+sensor power control set to 5
+sensor timing control set to 2
+Writing 55 to test reg
+Read 55 from test reg
+FW Version 0x80
+cameraVerify failed! address: 3008, expected: 82, actual: 2
+cameraVerify failed! address: 3810, expected: C2, actual: 40
+cameraVerify failed! address: 3605, expected: 7C, actual: 4
+cameraVerify failed! address: 3621, expected: 9, actual: 87
+cameraVerify failed! address: 3604, expected: 40, actual: 48
+cameraVerify failed! address: 3603, expected: A7, actual: 27
+cameraVerify failed! address: 3600, expected: 54, actual: 52
+cameraVerify failed! address: 3606, expected: 3F, actual: 1B
+cameraVerify failed! address: 5000, expected: 4F, actual: CF
+cameraVerify failed! address: 5181, expected: 79, actual: 52
+cameraVerify failed! address: 5182, expected: 0, actual: 11
+cameraVerify failed! address: 5185, expected: 22, actual: 24
+cameraVerify failed! address: 5500, expected: A, actual: 10
+cameraVerify failed! address: 3808, expected: 2, actual: 1
+cameraVerify failed! address: 3809, expected: 80, actual: 40
+cameraVerify failed! address: 380A, expected: 1, actual: 0
+cameraVerify failed! address: 380B, expected: E0, actual: F0
+cameraVerify failed! address: 380E, expected: 7, actual: 3
+cameraVerify failed! address: 380F, expected: D0, actual: E8
+cameraVerify failed! address: 5000, expected: 4F, actual: CF
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3501, expected: 73, actual: 0
+cameraVerify failed! address: 3502, expected: 80, actual: B0
+cameraVerify failed! address: 350B, expected: 0, actual: 1
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3501, expected: 1E, actual: 0
+cameraVerify failed! address: 3502, expected: 80, actual: B0
+cameraVerify failed! address: 350B, expected: 7F, actual: 1
+cameraVerify failed! address: 3A0D, expected: 4, actual: 8
+cameraVerify failed! address: 3A0E, expected: 3, actual: 6
+cameraVerify failed! address: 3801, expected: 80, actual: 50
+cameraVerify failed! address: 3A08, expected: 12, actual: 9
+cameraVerify failed! address: 3A09, expected: C0, actual: 60
+cameraVerify failed! address: 3A0A, expected: F, actual: 7
+cameraVerify failed! address: 3A0B, expected: A0, actual: D0
+cameraVerify failed! address: 350C, expected: 7, actual: 3
+cameraVerify failed! address: 350D, expected: D0, actual: E8
+cameraVerify failed! address: 3502, expected: 0, actual: B0
+cameraVerify failed! address: 350B, expected: 0, actual: 1
+cameraVerify failed! address: 528A, expected: 2, actual: 0
+cameraVerify failed! address: 528B, expected: 4, actual: 1
+cameraVerify failed! address: 528C, expected: 8, actual: 4
+cameraVerify failed! address: 528E, expected: 8, actual: 10
+cameraVerify failed! address: 528F, expected: 10, actual: 20
+cameraVerify failed! address: 5290, expected: 10, actual: 30
+cameraVerify failed! address: 5293, expected: 2, actual: 0
+cameraVerify failed! address: 5295, expected: 2, actual: 1
+cameraVerify failed! address: 5297, expected: 2, actual: 4
+cameraVerify failed! address: 5299, expected: 2, actual: 8
+cameraVerify failed! address: 529B, expected: 2, actual: 10
+cameraVerify failed! address: 529D, expected: 2, actual: 20
+cameraVerify failed! address: 529F, expected: 2, actual: 30
+cameraVerify failed! address: 528A, expected: 1, actual: 0
+cameraVerify failed! address: 528B, expected: 4, actual: 1
+cameraVerify failed! address: 528C, expected: 8, actual: 4
+cameraVerify failed! address: 528D, expected: 10, actual: 8
+cameraVerify failed! address: 528E, expected: 20, actual: 10
+cameraVerify failed! address: 528F, expected: 28, actual: 20
+cameraVerify failed! address: 5293, expected: 1, actual: 0
+cameraVerify failed! address: 5295, expected: 4, actual: 1
+cameraVerify failed! address: 5297, expected: 8, actual: 4
+cameraVerify failed! address: 5299, expected: 10, actual: 8
+cameraVerify failed! address: 529B, expected: 20, actual: 10
+cameraVerify failed! address: 529D, expected: 28, actual: 20
+cameraVerify failed! address: 530D, expected: C, actual: 10
+cameraVerify failed! address: 5316, expected: 10, actual: 0
+cameraVerify failed! address: 5186, expected: 6, actual: 14
+cameraVerify failed! address: 5187, expected: 8, actual: 14
+cameraVerify failed! address: 5188, expected: 8, actual: 14
+cameraVerify failed! address: 5189, expected: 7C, actual: 69
+cameraVerify failed! address: 518B, expected: B2, actual: A2
+cameraVerify failed! address: 518C, expected: B2, actual: 9C
+cameraVerify failed! address: 518D, expected: 44, actual: 36
+cameraVerify failed! address: 518E, expected: 3D, actual: 34
+cameraVerify failed! address: 518F, expected: 58, actual: 54
+cameraVerify failed! address: 5190, expected: 46, actual: 4C
+cameraVerify failed! address: 5199, expected: 12, actual: FE
+cameraVerify failed! address: 519C, expected: 6, actual: 5
+cameraVerify failed! address: 519D, expected: 82, actual: AA
+cameraVerify failed! address: 519E, expected: 0, actual: A0
+cameraVerify failed! address: 5583, expected: 40, actual: 50
+cameraVerify failed! address: 5584, expected: 40, actual: 50
+cameraVerify failed! address: 3632, expected: 51, actual: 52
+cameraVerify failed! address: 370D, expected: 3, actual: B
+cameraVerify failed! address: 3606, expected: 24, actual: 1B
+cameraVerify failed! address: 519E, expected: 0, actual: A0
+cameraVerify failed! address: 5198, expected: 5, actual: 4
+cameraVerify failed! address: 5199, expected: 2F, actual: FE
+cameraVerify failed! address: 519C, expected: 6, actual: 5
+cameraVerify failed! address: 519D, expected: A0, actual: AA
+cameraVerify failed! address: 5316, expected: 10, actual: 0
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3A10, expected: 32, actual: 40
+cameraVerify failed! address: 3A1B, expected: 3C, actual: 4A
+cameraVerify failed! address: 3A1E, expected: 32, actual: 3E
+cameraVerify failed! address: 3A11, expected: 80, actual: 70
+cameraVerify failed! address: 3002, expected: C, actual: 0
+cameraVerify failed! address: FFFF, expected: FF, actual: 0
+cameraVerify failed! address: 3801, expected: A8, actual: B0
+cameraVerify failed! address: FFFF, expected: FF, actual: 0
+Preparing to connect to 192.169.1.100:12345
+connected to server!
+end
+tcp error!
+error code:
+
+
+-----lwIP TCP echo server ------
+TCP packets sent to port 6001 will be echoed back
+Start PHY autonegotiation
+Waiting for PHY to complete autonegotiation.
+autonegotiation complete
+Using default Speed from design
+link speed for phy address 1: 1000
+Board IP: 192.168.1.10
+Netmask : 255.255.255.0
+Gateway : 192.168.1.1
+CameID: 5642
+CPLD set to 80
+CPLD set to 0
+sensor power control set to 5
+sensor timing control set to 2
+Writing 55 to test reg
+Read 55 from test reg
+FW Version 0x80
+cameraVerify failed! address: 3008, expected: 82, actual: 2
+cameraVerify failed! address: 3810, expected: C2, actual: 40
+cameraVerify failed! address: 3605, expected: 7C, actual: 4
+cameraVerify failed! address: 3621, expected: 9, actual: 87
+cameraVerify failed! address: 3604, expected: 40, actual: 48
+cameraVerify failed! address: 3603, expected: A7, actual: 27
+cameraVerify failed! address: 3600, expected: 54, actual: 52
+cameraVerify failed! address: 3606, expected: 3F, actual: 1B
+cameraVerify failed! address: 5000, expected: 4F, actual: CF
+cameraVerify failed! address: 5181, expected: 79, actual: 52
+cameraVerify failed! address: 5182, expected: 0, actual: 11
+cameraVerify failed! address: 5185, expected: 22, actual: 24
+cameraVerify failed! address: 5500, expected: A, actual: 10
+cameraVerify failed! address: 3808, expected: 2, actual: 1
+cameraVerify failed! address: 3809, expected: 80, actual: 40
+cameraVerify failed! address: 380A, expected: 1, actual: 0
+cameraVerify failed! address: 380B, expected: E0, actual: F0
+cameraVerify failed! address: 380E, expected: 7, actual: 3
+cameraVerify failed! address: 380F, expected: D0, actual: E8
+cameraVerify failed! address: 5000, expected: 4F, actual: CF
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3501, expected: 73, actual: 0
+cameraVerify failed! address: 3502, expected: 80, actual: 60
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3501, expected: 1E, actual: 0
+cameraVerify failed! address: 3502, expected: 80, actual: 60
+cameraVerify failed! address: 350B, expected: 7F, actual: 0
+cameraVerify failed! address: 3A0D, expected: 4, actual: 8
+cameraVerify failed! address: 3A0E, expected: 3, actual: 6
+cameraVerify failed! address: 3801, expected: 80, actual: 50
+cameraVerify failed! address: 3A08, expected: 12, actual: 9
+cameraVerify failed! address: 3A09, expected: C0, actual: 60
+cameraVerify failed! address: 3A0A, expected: F, actual: 7
+cameraVerify failed! address: 3A0B, expected: A0, actual: D0
+cameraVerify failed! address: 350C, expected: 7, actual: 3
+cameraVerify failed! address: 350D, expected: D0, actual: E8
+cameraVerify failed! address: 3502, expected: 0, actual: 60
+cameraVerify failed! address: 528A, expected: 2, actual: 0
+cameraVerify failed! address: 528B, expected: 4, actual: 1
+cameraVerify failed! address: 528C, expected: 8, actual: 4
+cameraVerify failed! address: 528E, expected: 8, actual: 10
+cameraVerify failed! address: 528F, expected: 10, actual: 20
+cameraVerify failed! address: 5290, expected: 10, actual: 30
+cameraVerify failed! address: 5293, expected: 2, actual: 0
+cameraVerify failed! address: 5295, expected: 2, actual: 1
+cameraVerify failed! address: 5297, expected: 2, actual: 4
+cameraVerify failed! address: 5299, expected: 2, actual: 8
+cameraVerify failed! address: 529B, expected: 2, actual: 10
+cameraVerify failed! address: 529D, expected: 2, actual: 20
+cameraVerify failed! address: 529F, expected: 2, actual: 30
+cameraVerify failed! address: 528A, expected: 1, actual: 0
+cameraVerify failed! address: 528B, expected: 4, actual: 1
+cameraVerify failed! address: 528C, expected: 8, actual: 4
+cameraVerify failed! address: 528D, expected: 10, actual: 8
+cameraVerify failed! address: 528E, expected: 20, actual: 10
+cameraVerify failed! address: 528F, expected: 28, actual: 20
+cameraVerify failed! address: 5293, expected: 1, actual: 0
+cameraVerify failed! address: 5295, expected: 4, actual: 1
+cameraVerify failed! address: 5297, expected: 8, actual: 4
+cameraVerify failed! address: 5299, expected: 10, actual: 8
+cameraVerify failed! address: 529B, expected: 20, actual: 10
+cameraVerify failed! address: 529D, expected: 28, actual: 20
+cameraVerify failed! address: 530D, expected: C, actual: 10
+cameraVerify failed! address: 5316, expected: 10, actual: 0
+cameraVerify failed! address: 5186, expected: 6, actual: 14
+cameraVerify failed! address: 5187, expected: 8, actual: 14
+cameraVerify failed! address: 5188, expected: 8, actual: 14
+cameraVerify failed! address: 5189, expected: 7C, actual: 69
+cameraVerify failed! address: 518B, expected: B2, actual: A2
+cameraVerify failed! address: 518C, expected: B2, actual: 9C
+cameraVerify failed! address: 518D, expected: 44, actual: 36
+cameraVerify failed! address: 518E, expected: 3D, actual: 34
+cameraVerify failed! address: 518F, expected: 58, actual: 54
+cameraVerify failed! address: 5190, expected: 46, actual: 4C
+cameraVerify failed! address: 519D, expected: 82, actual: FE
+cameraVerify failed! address: 519E, expected: 0, actual: A0
+cameraVerify failed! address: 5583, expected: 40, actual: 50
+cameraVerify failed! address: 5584, expected: 40, actual: 50
+cameraVerify failed! address: 3632, expected: 51, actual: 52
+cameraVerify failed! address: 370D, expected: 3, actual: B
+cameraVerify failed! address: 3606, expected: 24, actual: 1B
+cameraVerify failed! address: 519E, expected: 0, actual: A0
+cameraVerify failed! address: 5198, expected: 5, actual: 4
+cameraVerify failed! address: 5199, expected: 2F, actual: 1E
+cameraVerify failed! address: 519C, expected: 6, actual: 7
+cameraVerify failed! address: 519D, expected: A0, actual: 66
+cameraVerify failed! address: 5316, expected: 10, actual: 0
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3A10, expected: 32, actual: 40
+cameraVerify failed! address: 3A1B, expected: 3C, actual: 4A
+cameraVerify failed! address: 3A1E, expected: 32, actual: 3E
+cameraVerify failed! address: 3A11, expected: 80, actual: 70
+cameraVerify failed! address: 3002, expected: C, actual: 0
+cameraVerify failed! address: FFFF, expected: FF, actual: 0
+cameraVerify failed! address: 3801, expected: A8, actual: B0
+cameraVerify failed! address: FFFF, expected: FF, actual: 0
+Preparing to connect to 192.169.1.100:12345
+connected to server!
+end
+tcp error!
+error code:
+
+
+-----lwIP TCP echo server ------
+TCP packets sent to port 6001 will be echoed back
+Using default Speed from design
+link speed for phy address 1: 100
+Board IP: 192.168.1.10
+Netmask : 255.255.255.0
+Gateway : 192.168.1.1
+CameID: 5642
+CPLD set to 80
+CPLD set to 0
+sensor power control set to 5
+sensor timing control set to 2
+Writing 55 to test reg
+Read 55 from test reg
+FW Version 0x80
+cameraVerify failed! address: 3008, expected: 82, actual: 2
+cameraVerify failed! address: 3810, expected: C2, actual: 40
+cameraVerify failed! address: 3605, expected: 7C, actual: 4
+cameraVerify failed! address: 3621, expected: 9, actual: 87
+cameraVerify failed! address: 3604, expected: 40, actual: 48
+cameraVerify failed! address: 3603, expected: A7, actual: 27
+cameraVerify failed! address: 3600, expected: 54, actual: 52
+cameraVerify failed! address: 3606, expected: 3F, actual: 1B
+cameraVerify failed! address: 5000, expected: 4F, actual: CF
+cameraVerify failed! address: 5181, expected: 79, actual: 52
+cameraVerify failed! address: 5182, expected: 0, actual: 11
+cameraVerify failed! address: 5185, expected: 22, actual: 24
+cameraVerify failed! address: 5500, expected: A, actual: 10
+cameraVerify failed! address: 3808, expected: 2, actual: 1
+cameraVerify failed! address: 3809, expected: 80, actual: 40
+cameraVerify failed! address: 380A, expected: 1, actual: 0
+cameraVerify failed! address: 380B, expected: E0, actual: F0
+cameraVerify failed! address: 380E, expected: 7, actual: 3
+cameraVerify failed! address: 380F, expected: D0, actual: E8
+cameraVerify failed! address: 5000, expected: 4F, actual: CF
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3501, expected: 73, actual: 0
+cameraVerify failed! address: 3502, expected: 80, actual: 90
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3501, expected: 1E, actual: 0
+cameraVerify failed! address: 3502, expected: 80, actual: 90
+cameraVerify failed! address: 350B, expected: 7F, actual: 0
+cameraVerify failed! address: 3A0D, expected: 4, actual: 8
+cameraVerify failed! address: 3A0E, expected: 3, actual: 6
+cameraVerify failed! address: 3801, expected: 80, actual: 50
+cameraVerify failed! address: 3A08, expected: 12, actual: 9
+cameraVerify failed! address: 3A09, expected: C0, actual: 60
+cameraVerify failed! address: 3A0A, expected: F, actual: 7
+cameraVerify failed! address: 3A0B, expected: A0, actual: D0
+cameraVerify failed! address: 350C, expected: 7, actual: 3
+cameraVerify failed! address: 350D, expected: D0, actual: E8
+cameraVerify failed! address: 3502, expected: 0, actual: 90
+cameraVerify failed! address: 528A, expected: 2, actual: 0
+cameraVerify failed! address: 528B, expected: 4, actual: 1
+cameraVerify failed! address: 528C, expected: 8, actual: 4
+cameraVerify failed! address: 528E, expected: 8, actual: 10
+cameraVerify failed! address: 528F, expected: 10, actual: 20
+cameraVerify failed! address: 5290, expected: 10, actual: 30
+cameraVerify failed! address: 5293, expected: 2, actual: 0
+cameraVerify failed! address: 5295, expected: 2, actual: 1
+cameraVerify failed! address: 5297, expected: 2, actual: 4
+cameraVerify failed! address: 5299, expected: 2, actual: 8
+cameraVerify failed! address: 529B, expected: 2, actual: 10
+cameraVerify failed! address: 529D, expected: 2, actual: 20
+cameraVerify failed! address: 529F, expected: 2, actual: 30
+cameraVerify failed! address: 528A, expected: 1, actual: 0
+cameraVerify failed! address: 528B, expected: 4, actual: 1
+cameraVerify failed! address: 528C, expected: 8, actual: 4
+cameraVerify failed! address: 528D, expected: 10, actual: 8
+cameraVerify failed! address: 528E, expected: 20, actual: 10
+cameraVerify failed! address: 528F, expected: 28, actual: 20
+cameraVerify failed! address: 5293, expected: 1, actual: 0
+cameraVerify failed! address: 5295, expected: 4, actual: 1
+cameraVerify failed! address: 5297, expected: 8, actual: 4
+cameraVerify failed! address: 5299, expected: 10, actual: 8
+cameraVerify failed! address: 529B, expected: 20, actual: 10
+cameraVerify failed! address: 529D, expected: 28, actual: 20
+cameraVerify failed! address: 530D, expected: C, actual: 10
+cameraVerify failed! address: 5316, expected: 10, actual: 0
+cameraVerify failed! address: 5186, expected: 6, actual: 14
+cameraVerify failed! address: 5187, expected: 8, actual: 14
+cameraVerify failed! address: 5188, expected: 8, actual: 14
+cameraVerify failed! address: 5189, expected: 7C, actual: 69
+cameraVerify failed! address: 518B, expected: B2, actual: A2
+cameraVerify failed! address: 518C, expected: B2, actual: 9C
+cameraVerify failed! address: 518D, expected: 44, actual: 36
+cameraVerify failed! address: 518E, expected: 3D, actual: 34
+cameraVerify failed! address: 518F, expected: 58, actual: 54
+cameraVerify failed! address: 5190, expected: 46, actual: 4C
+cameraVerify failed! address: 5199, expected: 12, actual: 24
+cameraVerify failed! address: 519D, expected: 82, actual: CC
+cameraVerify failed! address: 519E, expected: 0, actual: A0
+cameraVerify failed! address: 5583, expected: 40, actual: 50
+cameraVerify failed! address: 5584, expected: 40, actual: 50
+cameraVerify failed! address: 3632, expected: 51, actual: 52
+cameraVerify failed! address: 370D, expected: 3, actual: B
+cameraVerify failed! address: 3606, expected: 24, actual: 1B
+cameraVerify failed! address: 519E, expected: 0, actual: A0
+cameraVerify failed! address: 5198, expected: 5, actual: 4
+cameraVerify failed! address: 5199, expected: 2F, actual: 50
+cameraVerify failed! address: 519D, expected: A0, actual: F2
+cameraVerify failed! address: 5316, expected: 10, actual: 0
+cameraVerify failed! address: 3503, expected: 7, actual: 0
+cameraVerify failed! address: 3A10, expected: 32, actual: 40
+cameraVerify failed! address: 3A1B, expected: 3C, actual: 4A
+cameraVerify failed! address: 3A1E, expected: 32, actual: 3E
+cameraVerify failed! address: 3A11, expected: 80, actual: 70
+cameraVerify failed! address: 3002, expected: C, actual: 0
+cameraVerify failed! address: FFFF, expected: FF, actual: 0
+cameraVerify failed! address: 3801, expected: A8, actual: B0
+cameraVerify failed! address: FFFF, expected: FF, actual: 0
+Preparing to connect to 192.169.1.100:12345
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+Using default Speed from design
+link speed for phy address 1: 100
+Ethernet Link up
+Ethernet Link down
+U
