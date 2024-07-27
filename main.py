@@ -17,15 +17,17 @@ FLAG = 2
 PATH_TO_VIDEO = "datasets/videos/Joe 1080_1920 60fps BackCam.MOV"
 
 # set this to name of the person
-NAME = "Justin"
+NAME = "george"
 
 # Set this to the path of the datasets
 TRAIN_FOLDER = os.path.join(ROOT_DIR, "datasets/processed/train")
-TEST_FOLDER = os.path.join(ROOT_DIR, "datasets/processed/val")
+TEST_FOLDER = os.path.join(ROOT_DIR, "datasets/random_test/Xavier")
 UNKNOWN_FOLDERS = [
     os.path.join(ROOT_DIR, "datasets/random_test/Xavier"),
-    os.path.join(ROOT_DIR, "datasets/random_test/joe"),
-    os.path.join(ROOT_DIR, "datasets/random_test/yifei")
+    os.path.join(ROOT_DIR, "datasets/processed/train/george")
+    # os.path.join(ROOT_DIR, "datasets/random_test/joe"),
+
+    # os.path.join(ROOT_DIR, "datasets/random_test/yifei")
 ]
 
 # set this to the path of any random image to test
@@ -78,7 +80,7 @@ if FLAG == 0:
     # (if doing the test according to note, comment this out)
     # TODO: Try Upperbody detection, YuNet and YOLO for face detection
     # extract(PATH_TO_VIDEO, 1, NAME)
-    # extract_faces_from_folders(ROOT_DIR, thread_num="1")
+    extract_faces_from_folders(ROOT_DIR, thread_num="1")
 
     # 3. Apply transform. For every pic, generate 5 more pictures with transform.
     # Shuffle these pictures and split into dir/train/"name", dir/val/"name",
@@ -108,5 +110,5 @@ elif FLAG == 2:
 
     # new svm model
     # test_svm_model(MODEL_FILENAME, TEST_FOLDER)
-    test_svm_model_on_single_image(MODEL_FILENAME, IMAGE_PATH)
-    # test_svm_model_on_unknowns(MODEL_FILENAME, UNKNOWN_FOLDERS)
+    # test_svm_model_on_single_image(MODEL_FILENAME, IMAGE_PATH)
+    test_svm_model_on_unknowns(MODEL_FILENAME, UNKNOWN_FOLDERS)

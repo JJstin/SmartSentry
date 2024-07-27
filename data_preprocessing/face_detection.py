@@ -29,7 +29,7 @@ def extract_list_of_images(images):
 
             face_frame = frame[y:y+h, x:x+w]
             # Resize the face frame to 224x224, convert from numpy array to PIL image
-            resized_face_frame = Image.fromarray(cv2.resize(face_frame, (224, 224)))
+            resized_face_frame = cv2.resize(face_frame, (224, 224))
 
             face_images.append(resized_face_frame)
     return face_images
@@ -150,6 +150,9 @@ def extract_faces_from_folders(root_folder, thread_num=""):
 
                         face_frame = frame[y:y+h, x:x+w]
                         # Resize the face frame to 224x224
+                        if not face_frame.size:
+                            continue
+
                         resized_face_frame = cv2.resize(face_frame, (224, 224))
 
                         # Save the cropped and resized face to the designated directory

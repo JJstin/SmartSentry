@@ -19,7 +19,7 @@ parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(parent_dir)
 
 from data_preprocessing.face_detection import *
-# from evaluation.test_svm_model_on_single_image import *
+from evaluation.test_svm_model_on_single_image import *
 
 # set this FLAG for different mode
 # Data-Processing: 0
@@ -190,20 +190,25 @@ class Consumer(threading.Thread):
 
             # using images to model
             if use_images:
-                if len(to_use_images) >= 5:
-                    face_images = extract_list_of_images(to_use_images)
-                    # predict_image_class(MODEL_NAME, CLASS_LABELS, OUTPUT_CLASS_NUMBER, face_images)
-                    results = test_svm_model_on_list_of_images(SVM_MODEL_NAME, face_images)
-                    print(results)
-                    for img in to_use_images:
-                        cv2.imwrite("joe/image"+str(time.time())+".jpg",img)
-                    use_images = 0
-                    to_use_images = []
-                else:
-                    if len(to_use_images) == 0:
-                        global start
-                        print(f"latency: {time.time()-start}s")
-                    to_use_images.append(img)
+                # if len(to_use_images) >= 5:
+                face_images = extract_list_of_images([img])
+
+                # predict_image_class(MODEL_NAME, CLASS_LABELS, OUTPUT_CLASS_NUMBER, face_images)
+
+                # print(results)
+                # for img in to_use_images:
+                if len(face_images) == 0:
+                    print("no face")
+                    continue
+                cv2.imwrite("image"+".jpg",face_images[0])
+                test_svm_model_on_single_image(SVM_MODEL_NAME, "image.jpg")
+                use_images = 0
+                to_use_images = []
+                # else:
+                #     if len(to_use_images) == 0:
+                #         global start
+                #         print(f"latency: {time.time()-start}s")
+                #     to_use_images.append(img)
 
 #Wait for new connections
 def newConnections(socket):
