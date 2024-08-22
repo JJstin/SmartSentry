@@ -1,0 +1,13 @@
+numpy
+matplotlib
+pillow
+torchvision
+torch
+scikit-learn
+opencv-python
+datasets
+deepface
+tf-keras
+keyboard
+ultralytics
+face-recognition

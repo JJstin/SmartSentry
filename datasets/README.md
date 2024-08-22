@@ -1,1 +1,0 @@
-The datasets should be split into 3 sets: training set, cross-validation set, and test set.
