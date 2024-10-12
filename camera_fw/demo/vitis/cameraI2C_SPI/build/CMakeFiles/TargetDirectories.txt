@@ -1,0 +1,3 @@
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/cameraI2C_SPI/build/CMakeFiles/cameraI2C_SPI.elf.dir
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/cameraI2C_SPI/build/CMakeFiles/edit_cache.dir
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/cameraI2C_SPI/build/CMakeFiles/rebuild_cache.dir

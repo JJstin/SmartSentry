@@ -1,0 +1,3 @@
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/T-TVitisWhyT-T/build/CMakeFiles/T-TVitisWhyT-T.elf.dir
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/T-TVitisWhyT-T/build/CMakeFiles/edit_cache.dir
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/T-TVitisWhyT-T/build/CMakeFiles/rebuild_cache.dir

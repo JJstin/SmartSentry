@@ -1,0 +1,9 @@
+# ninja log v5
+34	180	7434972541196466	CMakeFiles/T-TVitisWhyT-T.elf.dir/platform.c.obj	6f3d665e3f2a39a5
+20	367	7434972543076431	CMakeFiles/T-TVitisWhyT-T.elf.dir/camera_driver/camera.c.obj	d8eaf27a7a6c2c66
+29	210	7434972541516489	CMakeFiles/T-TVitisWhyT-T.elf.dir/helloworld.c.obj	7cf4a93d50bb605b
+367	789	7434972545296448	T-TVitisWhyT-T.elf	a7925e28df5692ef
+25	175	7434972541126431	CMakeFiles/T-TVitisWhyT-T.elf.dir/camera_driver/config.c.obj	48b35a1337a0c049
+28	278	7504517662579413	CMakeFiles/T-TVitisWhyT-T.elf.dir/camera_driver/config.c.obj	48b35a1337a0c049
+60	279	7504517662599413	CMakeFiles/T-TVitisWhyT-T.elf.dir/platform.c.obj	6f3d665e3f2a39a5
+43	281	7504517662599413	CMakeFiles/T-TVitisWhyT-T.elf.dir/helloworld.c.obj	7cf4a93d50bb605b

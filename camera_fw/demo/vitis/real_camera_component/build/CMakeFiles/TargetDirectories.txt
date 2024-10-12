@@ -1,0 +1,3 @@
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/real_camera_component/build/CMakeFiles/real_camera_component.elf.dir
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/real_camera_component/build/CMakeFiles/edit_cache.dir
+C:/Users/georg/vitis/SmartSentry/camera_fw/vitis/real_camera_component/build/CMakeFiles/rebuild_cache.dir

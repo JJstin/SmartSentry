@@ -1,0 +1,11 @@
+# ninja log v5
+33	207	7435099926973816	CMakeFiles/cameraI2C_SPI.elf.dir/camera_driver/config.c.obj	1ed0b0ab502c6034
+38	256	7435099927493818	CMakeFiles/cameraI2C_SPI.elf.dir/helloworld.c.obj	a567ea85755e2d0e
+43	225	7435099927153818	CMakeFiles/cameraI2C_SPI.elf.dir/platform.c.obj	ab160ecdd5ee5503
+16	355	7435097067311570	CMakeFiles/cameraI2C_SPI.elf.dir/camera_driver/camera.c.obj	a5f07bd3ebf2adfe
+356	620	7435097069201882	cameraI2C_SPI.elf	5c26884d76e7f756
+31	242	7435100393684900	CMakeFiles/cameraI2C_SPI.elf.dir/camera_driver/config.c.obj	1ed0b0ab502c6034
+43	245	7435100393704898	CMakeFiles/cameraI2C_SPI.elf.dir/platform.c.obj	ab160ecdd5ee5503
+36	282	7435100394114919	CMakeFiles/cameraI2C_SPI.elf.dir/helloworld.c.obj	a567ea85755e2d0e
+23	485	7435100396164891	CMakeFiles/cameraI2C_SPI.elf.dir/camera_driver/camera.c.obj	a5f07bd3ebf2adfe
+486	741	7435100398165016	cameraI2C_SPI.elf	5c26884d76e7f756
